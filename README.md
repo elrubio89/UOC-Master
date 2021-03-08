@@ -10,7 +10,7 @@ Revisión de la bibliografía: distintos métodos de análisis del resistoma y b
 
 ## 5/3/21
 Tutorial con Groot (basado en short reads)
-Instalación de RGI y ARIBA  (basado en de novo assembly). 
+Instalación de RGI y ARIBA  (basado en _de novo_ assembly). 
 
 ## 12/3/21
 
