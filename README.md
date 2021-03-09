@@ -13,10 +13,10 @@ Tutorial con Groot (basado en short reads): descarga de secuencias del tutorial.
 Instalación de RGI y ARIBA  (basado en _de novo_ assembly). 
 
 ## 12/3/21
-Uso de Groot con base de datos CARD y secencias del tutorial de Groot (solo 2 muestras: urban/rural) 
-Uso de RGI (versió short reads, está en beta) con las secuencias del tutorial de Groot (solo 2 muestras: urban/rural) 
-Aprender a usar Git/GitHub
-Archivos: sam/bam/cram
-bedtools/samtools
-Programa Tablet para visualizar archivos bam 
+Uso de Groot con base de datos CARD y secencias del tutorial de Groot (solo 2 muestras: urban/rural)  
+Uso de RGI (versió short reads, está en beta) con las secuencias del tutorial de Groot (solo 2 muestras: urban/rural)  
+Aprender a usar Git/GitHub  
+Archivos: sam/bam/cram  
+bedtools/samtools  
+Programa Tablet para visualizar archivos bam   
 
