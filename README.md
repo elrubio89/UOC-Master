@@ -17,6 +17,6 @@ Uso de Groot con base de datos CARD y secencias del tutorial de Groot (solo 2 mu
 Uso de RGI (versió short reads, está en beta) con las secuencias del tutorial de Groot (solo 2 muestras: urban/rural)  
 Aprender a usar Git/GitHub  
 Archivos: sam/bam/cram  
-bedtools/samtools  
+bedtools/samtools/bamtools  
 Programa Tablet para visualizar archivos bam   
 
