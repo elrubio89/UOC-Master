@@ -18,3 +18,6 @@ echo "call script as: script.sh File1 File2"
 rgi run card_db $myInFile1 -out `basename $myInFile1`
 
 echo "wololo"
+
+echo "wololo2"
+
