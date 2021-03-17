@@ -9,6 +9,27 @@ if [ $# -ne 3 ]
         exit
 fi
 
+forward=$1
+reverse=$2
+samplename=$3
+
+if [ ! -f $forward ]
+then
+    echo "File '$forward' not found! Cannot continue"
+    exit 1
+fi
+if [ ! -f $reverse ]
+then
+    echo "File '$reverse' not found! Cannot continue"
+    exit 1
+fi
+
+if [ $forward = $reverse ]
+then
+    echo "Same file provided for forwards and reverse reads. Cannot continue"
+    exit 1
+fi
+
 
 ##Volia afegir el comando: conda activate rgi pero em dona error
 
@@ -30,20 +51,7 @@ rgi load -i card.json --card_annotation card_database_v$version.fasta --local
 echo "Downloaded card database version v$version"
 echo "Aligning forward and reverse FASTQ reads using Bowtie2 against v$version CARD database"
 
-forward=$1
-reverse=$2
-samplename=$3
 
-if [ ! -f $forward ]
-then
-    echo "File '$forward' not found! Cannot continue"
-    exit 1
-fi
-if [ ! -f $reverse ]
-then
-    echo "File '$reverse' not found! Cannot continue"
-    exit 1
-fi
 
 
 rgi bwt --read_one  $forward\
