@@ -18,5 +18,8 @@ Uso de RGI (versió short reads, está en beta) con las secuencias del tutorial 
 Aprender a usar Git/GitHub  
 Archivos: sam/bam/cram  
 bedtools/samtools/bamtools  
-Programa Tablet para visualizar archivos bam   
+Programa Tablet para visualizar archivos bam
 
+## 19/3/21
+Aprender lenguaje en bash (generar variables, archivos ejecutables)
+Analizar secuencias con RGI y ARIBA (archivos bash)
