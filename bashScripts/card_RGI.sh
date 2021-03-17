@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
-if [ $# -ne 2 ]
+if [ $# -ne 3 ]
     then
-        echo "usage: card_RGI.sh forward reverse (accepts fastq and fastq.gz formats)"
+        echo "usage: card_RGI.sh forward reverse samplename"
+	    echo "forward format: fastq or fastq.gz"
+	    echo "reverse format: fastq or fastq.gz"
+	    echo "samplename: name of the sample, string"
         echo "Downloads CARD database and aligns forward and reverse FASTQ reads using Bowtie2"
         exit
 fi
@@ -9,6 +12,8 @@ fi
 
 ##Volia afegir el comando: conda activate rgi pero em dona error
 
+mkdir RGI_analysis
+cd RGI_analysis
 
 set -e
 
@@ -27,6 +32,7 @@ echo "Aligning forward and reverse FASTQ reads using Bowtie2 against v$version C
 
 forward=$1
 reverse=$2
+samplename=$3
 
 if [ ! -f $forward ]
 then
@@ -43,6 +49,5 @@ fi
 rgi bwt --read_one  $forward\
  --read_two $reverse\
  --aligner bowtie2\
- --output_file ${forward: -19:7}_RGI_output\
+ --output_file ${samplename}_RGI_output\
  --threads 8 --local
-
