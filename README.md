@@ -21,5 +21,5 @@ bedtools/samtools/bamtools
 Programa Tablet para visualizar archivos bam
 
 ## 19/3/21
-Aprender lenguaje en bash (generar variables, archivos ejecutables)
-Analizar secuencias con RGI y ARIBA (archivos bash)
+Aprender lenguaje en bash (generar variables, archivos ejecutables)  
+Analizar secuencias con RGI y ARIBA (archivos bash)  
