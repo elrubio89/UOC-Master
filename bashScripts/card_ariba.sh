@@ -26,7 +26,10 @@ fi
 mkdir ariba_analysis
 cd ariba_analysis
 
-ariba getref card out.card ##generates files out.card.fa out.card.log out.card.tsv in current directory
-ariba prepareref -f out.card.fa -m out.card.tsv ariba_db ##generates folder ariba_db
+ariba getref card out.card 
+##generates files out.card.fa out.card.log out.card.tsv in current directory
+ariba prepareref -f out.card.fa -m out.card.tsv ariba_db 
+#generates folder ariba_db
 
-ariba run ariba_db $forward $reverse ariba_results ##stores results in ariba_results folder 
+ariba run ariba_db $forward $reverse ariba_results 
+##stores results in ariba_results folder 
