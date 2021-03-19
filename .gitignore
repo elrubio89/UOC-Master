@@ -1,0 +1,7 @@
+*.sam
+*.fas
+*.csv
+*.fna
+*.project
+*.pydevproject
+testData/
