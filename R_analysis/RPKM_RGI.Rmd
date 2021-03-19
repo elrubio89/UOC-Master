@@ -1,0 +1,72 @@
+---
+title: "RPKM_RGI"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+setwd("~/Documentos/UOCMaster/RTC/RGI_analysis")
+```
+
+## How to calculate RPKM (Reads per Kilobase per Milion)
+
+1. Count up the total reads in a sample and divide that number by 1,000,000 – this is our “per million” scaling factor.
+2. Divide the read counts by the “per million” scaling factor. This normalizes for sequencing depth, giving you reads per million (RPM)
+3. Divide the RPM values by the length of the gene, in kilobases. This gives you RPKM.
+
+RPKM =   numReads / ( geneLength/1000 * totalNumReads/1,000,000 )
+
+numReads - number of reads mapped to a gene sequence (All Mapped Reads)  
+geneLength - length of the gene sequence (Referece Length)  
+totalNumReads - total number of mapped reads of a sample (mapping stats)  
+
+```{r}
+library(readr)
+gene_mapping_data <- read_delim("RTC_149_RGI_output.gene_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+allele_mapping_data <- read_delim("RTC_149_RGI_output.allele_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+```
+
+```{r}
+library(dplyr)
+totalNumReads<-19968 ##value obtained from *overall_mapping_stats.txt
+
+allele_mapping_data<-allele_mapping_data%>%mutate(RPKM=`All Mapped Reads` /(`Reference Length`/1000 * totalNumReads/1000000))
+gene_mapping_data<-gene_mapping_data%>%mutate(RPKM=`All Mapped Reads` /(`Reference Length`/1000 * totalNumReads/1000000))
+```
+
+## Average MAPQ distribution
+
+```{r}
+library(ggplot2)
+ggplot(allele_mapping_data, aes(`Average MAPQ (Completely Mapped Reads)`)) +
+  geom_histogram(bins=50, aes(y = stat(density)))+geom_density()+theme_bw()
+
+ggplot(allele_mapping_data, aes(`Average MAPQ (Completely Mapped Reads)`)) +
+  geom_histogram(bins=50)+theme_bw()
+
+allele_mapping_data%>%filter(`Average MAPQ (Completely Mapped Reads)`<10)%>%nrow()
+```
+
+## RPKM sum per AMR gene family
+
+```{r}
+library(knitr)
+n_distinct(allele_mapping_data$`AMR Gene Family`)
+AMR_family<-allele_mapping_data%>%
+  group_by(`AMR Gene Family`)%>%
+  summarise('number of AMR genes per family'=n(),
+            sum_RPKM=sum(RPKM),
+            avg_MAPQ=mean(`Average MAPQ (Completely Mapped Reads)`),
+            q1_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`, 0.25),
+            p3_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`,0.75),)%>%arrange(desc(sum_RPKM))
+kable(head(AMR_family))
+```
+
+
+```{r}
+ggplot(AMR_family, aes(log(sum_RPKM), avg_MAPQ))+geom_point()+theme_bw()
+```
+
+
+
+
