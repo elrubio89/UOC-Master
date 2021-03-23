@@ -2,7 +2,8 @@
 if [ $# -ne 2 ]
     then
         echo "usage: fastp_filter.sh forward reverse (accepts fastq and fastq.gz formats)"
-        echo "Filters paried-end sequences according to fastp defalult parameters"
+        echo "Filters paried-end sequences: Q20, min length 50 and base correction for"
+        echo "overlapped regions is activated"
         exit
 fi
 
@@ -28,8 +29,8 @@ then
     exit 1
 fi
 
-
 mkdir fastp_analysis
 cd fastp_analysis
 
-fastp -i $forward -I $reverse -o filtered_${forward##/*/} -O filtered_${reverse##/*/}
+fastp -i $forward -I $reverse -o filtered2_${forward##/*/} -O filtered2_${reverse##/*/} -q 20 -l 50 -c
+
