@@ -1,6 +1,6 @@
 ARIBA run with this command:
-/home/erubio/miniconda3/envs/ariba2/bin/ariba run ariba_db /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R1.fastq /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R2.fastq ariba_results
-from this directory: /home/erubio/Documentos/UOCMaster/RTC/test/ariba_analysis
+/home/erubio/miniconda3/envs/ariba2/bin/ariba run ariba_db /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R1.fastq /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R2.fastq ariba_results2 --noclean
+from this directory: /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis
 
 ARIBA version: 2.14.6
 
