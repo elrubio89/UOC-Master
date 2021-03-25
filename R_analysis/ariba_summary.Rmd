@@ -1,0 +1,79 @@
+---
+title: "ARIBA"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+https://github.com/sanger-pathogens/ariba/wiki
+
+### Methods:
+1. Reference sequences in the AMR database are clustered by similarity using **CD-HIT**  
+2. Reads are mapped to the reference sequences using **minimap** (we obtain a set of reads per reference cluster)  
+3. The reads for each reference cluster are assembled independently using **fermi-lite**: we obtain contigs/assemblies  
+4. The closest reference sequence to the obtained contigs is identified **nucmer**
+5. The contigs are compared to the reference sequence to identify variants (SNPs) **nucmer**
+6. The reads for each reference cluster are mapped to the contigs **Bowtie2** and variants are identified using **SAMtools**
+
+![](/home/erubio/Documentos/UOCMaster/UOC/ARIBA.jpg)
+
+
+
+### 1. getref: 
+**ariba getref card out.card**  
+_generates files out.card.fa out.card.log out.card.tsv in current directory_  
+  
+out.card.tsv. Metadata de base de datos CARD: 7014 entradas: 2934 unicas  
+out.card.fa Secuencias de base de datos CARD: 2934 secuencias  
+```{r}
+library(readr)
+library(knitr)
+library(dplyr)
+out_card <- read_delim("/home/erubio/Documentos/UOCMaster/ARIBA/out.card.tsv", 
+    "\t", escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)
+kable(head(out_card))
+n_distinct(out_card$X1)
+```
+**Metadata variables meaning (out.card.tsv)**  
+X1: Name.ARO.NCBI.start_end.sequenceid      
+X2: 1=gene, 0=non-coding  
+X3: 1=variant only, 0=presence/absence  
+X4: mutation  
+X5:  
+X6: Free text that can be used to describe the sequence and/or the variant.  
+
+### 2. prepareref:   
+**ariba prepareref -f out.card.fa -m out.card.tsv ariba_db**  
+_generates folder ariba_db_    
+It is important to check any removed sequences and/or variants. If you are missing a gene from your final output after running ARIBA, please check that it was not removed by prepareref.    
+Warning I get:  
+WARNING. Problem with at least one variant. Problem variants are removed. Please see the file ariba_db/01.filter.check_metadata.log for details.  
+  
+### 3. run:
+**ariba run ariba_db $forward $reverse ariba_results**  
+_stores results in ariba_results folder_    
+  
+**Output:**  
+**report.tsv** (most important)  
+**assembled_genes.fa.gz**: reference CARD sequences  
+**assemblies.fa.gz**: obtained contigs from local assembly  
+**assembled_seqs.fa.gz**: parts of the contigs that match the reference CARD sequences  
+**debug.report.tsv**: Not only does this file contain all rows of report.tsv, but also includes rows about synonymous mutations.  
+**log.clusters.gz** Detailed logging is kept for the progress of each cluster. This is a gzipped file containing all the logging information.  
+**version_info.txt** This contains detailed information on the versions of ARIBA and its dependencies. It is the output of running the task version.
+
+### 4. summary
+Summarises the results from one or more runs of ARIBA.
+**ariba summary out report.tsv**
+Out file: 
+
+```{r}
+out <- read_csv("/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results/out.csv")
+t(out)
+```
+
+
+
