@@ -2,8 +2,8 @@
 if [ $# -ne 2 ]
     then
         echo "usage: fastp_filter.sh forward reverse (accepts fastq and fastq.gz formats)"
-        echo "Filters paried-end sequences: Q20, min length 50 and base correction for"
-        echo "overlapped regions is activated"
+        echo "Filters paried-end sequences according to fastp defalult parameters"
+        echo "additionally generates merged files (default parameters"
         exit
 fi
 
@@ -34,4 +34,5 @@ fi
 mkdir fastp_analysis
 cd fastp_analysis
 
-fastp -i $forward -I $reverse -o filtered2_$filename_f -O filtered2_$filename_r -q 20 -l 50 -c
+fastp -i $forward -I $reverse -o filtered_$filename_f -O filtered_$filename_r -j fastp_filter.json -h fastp_filter.html
+fastp -i $forward -I $reverse --merge --merged_out merged_$sample -o unmerged_$filename_f -O unmerged_$filename_r -j fastp_merge.json -h fastp_merge.html
