@@ -584,9 +584,7 @@ str(report$rp)</code></pre>
 <h3>RPKM sum per AMR gene family</h3>
 <pre class="r"><code>library(knitr)
 library(dplyr)
-n_distinct(allele_mapping_data$`AMR Gene Family`)</code></pre>
-<pre><code>## [1] 33</code></pre>
-<pre class="r"><code>AMR_family_ARIBA&lt;-report%&gt;%
+AMR_family_ARIBA&lt;-report%&gt;%
   group_by(`AMR Gene Family`)%&gt;%
   summarise('number of AMR genes per family(ARIBA)'=n(),
             'sum RPKM (ARIBA)'=sum(RPKM))%&gt;%arrange(desc('sum RPKM (ARIBA)'))
@@ -635,69 +633,117 @@ kable(head(AMR_family_ARIBA))</code></pre>
 </table>
 </div>
 </div>
-<div id="ariba-vs-rgi" class="section level1">
-<h1>ARIBA vs RGI</h1>
-<pre class="r"><code>AMR_family_ARIBA$`AMR Gene Family`</code></pre>
-<pre><code>##  [1] &quot;ABC-F ATP-binding cassette ribosomal protection protein&quot;   
-##  [2] &quot;ACI beta-lactamase&quot;                                        
-##  [3] &quot;ANT(6)&quot;                                                    
-##  [4] &quot;APH(3')&quot;                                                   
-##  [5] &quot;CblA beta-lactamase&quot;                                       
-##  [6] &quot;CfxA beta-lactamase&quot;                                       
-##  [7] &quot;Erm 23S ribosomal RNA methyltransferase&quot;                   
-##  [8] &quot;lincosamide nucleotidyltransferase (LNU)&quot;                  
-##  [9] &quot;major facilitator superfamily (MFS) antibiotic efflux pump&quot;
-## [10] &quot;rifamycin-resistant beta-subunit of RNA polymerase (rpoB)&quot; 
-## [11] &quot;sulfonamide resistant sul&quot;                                 
-## [12] &quot;TEM beta-lactamase&quot;                                        
-## [13] &quot;tetracycline inactivation enzyme&quot;                          
-## [14] &quot;tetracycline-resistant ribosomal protection protein&quot;       
-## [15] &quot;trimethoprim resistant dihydrofolate reductase dfr&quot;</code></pre>
-<pre class="r"><code>AMR_family_RGI$`AMR Gene Family`</code></pre>
-<pre><code>##  [1] &quot;tetracycline-resistant ribosomal protection protein&quot;              
-##  [2] &quot;Erm 23S ribosomal RNA methyltransferase&quot;                          
-##  [3] &quot;ABC-F ATP-binding cassette ribosomal protection protein&quot;          
-##  [4] &quot;tetracycline inactivation enzyme&quot;                                 
-##  [5] &quot;CblA beta-lactamase&quot;                                              
-##  [6] &quot;CfxA beta-lactamase&quot;                                              
-##  [7] &quot;ANT(6)&quot;                                                           
-##  [8] &quot;major facilitator superfamily (MFS) antibiotic efflux pump&quot;       
-##  [9] &quot;lincosamide nucleotidyltransferase (LNU)&quot;                         
-## [10] &quot;rifamycin-resistant beta-subunit of RNA polymerase (rpoB)&quot;        
-## [11] &quot;APH(3')&quot;                                                          
-## [12] &quot;chloramphenicol acetyltransferase (CAT)&quot;                          
-## [13] &quot;resistance-nodulation-cell division (RND) antibiotic efflux pump&quot; 
-## [14] &quot;TEM beta-lactamase&quot;                                               
-## [15] &quot;sulfonamide resistant sul&quot;                                        
-## [16] &quot;glycopeptide resistance gene cluster; vanR&quot;                       
-## [17] &quot;streptothricin acetyltransferase (SAT)&quot;                           
-## [18] &quot;trimethoprim resistant dihydrofolate reductase dfr&quot;               
-## [19] &quot;ACI beta-lactamase&quot;                                               
-## [20] &quot;macrolide phosphotransferase (MPH)&quot;                               
-## [21] &quot;ATP-binding cassette (ABC) antibiotic efflux pump&quot;                
-## [22] &quot;glycopeptide resistance gene cluster; vanT&quot;                       
-## [23] &quot;glycopeptide resistance gene cluster; vanXY&quot;                      
-## [24] &quot;Llm 23S ribosomal RNA methyltransferase&quot;                          
-## [25] &quot;ANT(9)&quot;                                                           
-## [26] &quot;pmr phosphoethanolamine transferase&quot;                              
-## [27] &quot;cepA beta-lactamase&quot;                                              
-## [28] &quot;APH(2'')&quot;                                                         
-## [29] &quot;glycopeptide resistance gene cluster; van ligase&quot;                 
-## [30] &quot;General Bacterial Porin with reduced permeability to beta-lactams&quot;
-## [31] &quot;multidrug and toxic compound extrusion (MATE) transporter&quot;        
-## [32] &quot;APH(2''); AAC(6')&quot;                                                
-## [33] &quot;antibiotic-resistant isoleucyl-tRNA synthetase (ileS)&quot;</code></pre>
-<pre class="r"><code>AMR_family&lt;-merge(AMR_family_ARIBA, AMR_family_RGI, by=&quot;AMR Gene Family&quot;, all=TRUE)
+<div id="groot" class="section level1">
+<h1>GROOT</h1>
+<p>Get groot report:</p>
+<pre class="r"><code>library(readr)
+groot_report &lt;- read_delim(&quot;~/Documentos/UOCMaster/groot/filtered_RTC_149-report-0&quot;, 
+    &quot;\t&quot;, escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)</code></pre>
+<pre><code>## 
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   X1 = col_character(),
+##   X2 = col_double(),
+##   X3 = col_double(),
+##   X4 = col_character()
+## )</code></pre>
+<pre class="r"><code>names(groot_report)&lt;-c(&quot;AMR.gene&quot;, &quot;read.count&quot;, &quot;gene.length&quot;, &quot;coverage.cigar&quot;)
+head(groot_report)</code></pre>
+<pre><code>## # A tibble: 6 x 4
+##   AMR.gene                      read.count gene.length coverage.cigar           
+##   &lt;chr&gt;                              &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;                    
+## 1 TEM-30.3000900.AJ437107.208-…         13         861 45D152M44D152M18D303M147D
+## 2 TEM-188.3001048.JN211012.213…          8         861 241D227M32D200M161D      
+## 3 TEM-147.3001014.DQ279850.0-8…          9         861 17D180M44D152M107D165M36…
+## 4 TEM-96.3000963.AY092401.0-86…         18         861 17D180M44D235M24D307M54D 
+## 5 TEM-149.3001016.DQ369751.0-8…          3         861 312D156M80D152M161D      
+## 6 TEM-47.3000916.Y10279.0-861.…         11         861 45D152M44D227M32D200M161D</code></pre>
+<p>Report: This will report gene, read count, gene length, coverage cigar&quot; Trasform GROOT notation and merge with CARD DB</p>
+<pre class="r"><code>library(stringr)
+library(reshape2)
+library(dplyr)
+y&lt;-colsplit(groot_report$AMR.gene, &quot;\\.&quot;, c(&quot;ARO Term&quot;, &quot;ARO Acession&quot;,&quot;NCBI&quot;,&quot;init_final&quot;,&quot;Model Sequence ID&quot;,&quot;X&quot;))
+
+y$NCBI&lt;-ifelse(str_detect(y$init_final, &quot;-&quot;),y$NCBI ,paste(y$NCBI,&quot;.&quot;,y$init_final) )
+y$init_final&lt;-ifelse(str_detect(y$init_final, &quot;-&quot;), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`&lt;-ifelse(str_detect(y$`Model Sequence ID`, &quot;-&quot;), y$X, y$`Model Sequence ID`)
+y&lt;-select(y, -X)
+groot_report&lt;-cbind(groot_report,y)
+groot_report&lt;-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by=&quot;Model Sequence ID&quot;)</code></pre>
+<p>Calculate RPKM:</p>
+<pre class="r"><code>otalNumReads&lt;-  17072992
+groot_report&lt;-groot_report%&gt;%mutate(RPKM=read.count /(gene.length/1000 * totalNumReads/1000000))</code></pre>
+<pre class="r"><code>library(knitr)
+n_distinct(groot_report$`AMR Gene Family`)</code></pre>
+<pre><code>## [1] 23</code></pre>
+<pre class="r"><code>AMR_family_Groot&lt;-groot_report%&gt;%
+  group_by(`AMR Gene Family`)%&gt;%
+  summarise('number of AMR genes per family (groot)'=n(),
+            sum_RPKM_groot=sum(RPKM))%&gt;%arrange(desc(sum_RPKM_groot))
+kable(head(AMR_family_Groot))</code></pre>
+<table>
+<thead>
+<tr class="header">
+<th align="left">AMR Gene Family</th>
+<th align="right">number of AMR genes per family (groot)</th>
+<th align="right">sum_RPKM_groot</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">CfxA beta-lactamase</td>
+<td align="right">6</td>
+<td align="right">434.53861</td>
+</tr>
+<tr class="even">
+<td align="left">TEM beta-lactamase</td>
+<td align="right">147</td>
+<td align="right">111.84385</td>
+</tr>
+<tr class="odd">
+<td align="left">tetracycline-resistant ribosomal protection protein</td>
+<td align="right">7</td>
+<td align="right">46.63759</td>
+</tr>
+<tr class="even">
+<td align="left">tetracycline inactivation enzyme</td>
+<td align="right">2</td>
+<td align="right">44.76972</td>
+</tr>
+<tr class="odd">
+<td align="left">Erm 23S ribosomal RNA methyltransferase</td>
+<td align="right">4</td>
+<td align="right">32.75118</td>
+</tr>
+<tr class="even">
+<td align="left">CblA beta-lactamase</td>
+<td align="right">1</td>
+<td align="right">12.55585</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ariba-vs-rgi-vs-groot" class="section level1">
+<h1>ARIBA vs RGI vs GROOT</h1>
+<pre class="r"><code>length(AMR_family_ARIBA$`AMR Gene Family`)</code></pre>
+<pre><code>## [1] 15</code></pre>
+<pre class="r"><code>length(AMR_family_RGI$`AMR Gene Family`)</code></pre>
+<pre><code>## [1] 33</code></pre>
+<pre class="r"><code>length(AMR_family_Groot$`AMR Gene Family`)</code></pre>
+<pre><code>## [1] 23</code></pre>
+<pre class="r"><code>AMR_family&lt;-merge(AMR_family_ARIBA, AMR_family_RGI[ ,1:3], by=&quot;AMR Gene Family&quot;, all=TRUE)
+AMR_family&lt;-merge(AMR_family, AMR_family_Groot, by=&quot;AMR Gene Family&quot;, all=TRUE)
+
 kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <table>
 <colgroup>
-<col width="33%"></col>
-<col width="19%"></col>
-<col width="8%"></col>
-<col width="18%"></col>
-<col width="6%"></col>
+<col width="47%"></col>
+<col width="12%"></col>
+<col width="5%"></col>
+<col width="12%"></col>
 <col width="4%"></col>
-<col width="4%"></col>
+<col width="12%"></col>
 <col width="4%"></col>
 </colgroup>
 <thead>
@@ -707,9 +753,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <th align="right">sum RPKM (ARIBA)</th>
 <th align="right">number of AMR genes per family (RGI)</th>
 <th align="right">sum_RPKM_RGI</th>
-<th align="right">avg_MAPQ</th>
-<th align="right">q1_MAPQ</th>
-<th align="right">p3_MAPQ</th>
+<th align="right">number of AMR genes per family (groot)</th>
+<th align="right">sum_RPKM_groot</th>
 </tr>
 </thead>
 <tbody>
@@ -719,9 +764,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">31.1614803</td>
 <td align="right">5</td>
 <td align="right">55.1733791</td>
-<td align="right">25.74400</td>
-<td align="right">18.3300</td>
-<td align="right">35.7500</td>
+<td align="right">2</td>
+<td align="right">0.4554283</td>
 </tr>
 <tr class="even">
 <td align="left">ACI beta-lactamase</td>
@@ -729,9 +773,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">1.2330956</td>
 <td align="right">1</td>
 <td align="right">1.0960850</td>
-<td align="right">43.75000</td>
-<td align="right">43.7500</td>
-<td align="right">43.7500</td>
+<td align="right">1</td>
+<td align="right">0.4795372</td>
 </tr>
 <tr class="odd">
 <td align="left">ANT(6)</td>
@@ -739,9 +782,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">14.1006767</td>
 <td align="right">3</td>
 <td align="right">14.7435642</td>
-<td align="right">26.51667</td>
-<td align="right">20.8900</td>
-<td align="right">30.8850</td>
+<td align="right">1</td>
+<td align="right">5.4911289</td>
 </tr>
 <tr class="even">
 <td align="left">APH(3’)</td>
@@ -749,9 +791,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">2.9470210</td>
 <td align="right">1</td>
 <td align="right">2.8733454</td>
-<td align="right">38.87000</td>
-<td align="right">38.8700</td>
-<td align="right">38.8700</td>
+<td align="right">1</td>
+<td align="right">1.2524839</td>
 </tr>
 <tr class="odd">
 <td align="left">CblA beta-lactamase</td>
@@ -759,9 +800,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">39.0480278</td>
 <td align="right">1</td>
 <td align="right">39.7054020</td>
-<td align="right">38.02000</td>
-<td align="right">38.0200</td>
-<td align="right">38.0200</td>
+<td align="right">1</td>
+<td align="right">12.5558473</td>
 </tr>
 <tr class="even">
 <td align="left">lincosamide nucleotidyltransferase (LNU)</td>
@@ -769,9 +809,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">2.6032019</td>
 <td align="right">2</td>
 <td align="right">4.0174618</td>
-<td align="right">40.65000</td>
-<td align="right">38.9750</td>
-<td align="right">42.3250</td>
+<td align="right">2</td>
+<td align="right">0.3535650</td>
 </tr>
 <tr class="odd">
 <td align="left">rifamycin-resistant beta-subunit of RNA polymerase (rpoB)</td>
@@ -779,9 +818,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">0.1973784</td>
 <td align="right">2</td>
 <td align="right">3.7379985</td>
-<td align="right">17.02500</td>
-<td align="right">16.4475</td>
-<td align="right">17.6025</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">sulfonamide resistant sul</td>
@@ -789,9 +827,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">1.4355893</td>
 <td align="right">1</td>
 <td align="right">1.4355893</td>
-<td align="right">33.30000</td>
-<td align="right">33.3000</td>
-<td align="right">33.3000</td>
+<td align="right">1</td>
+<td align="right">0.5024562</td>
 </tr>
 <tr class="odd">
 <td align="left">TEM beta-lactamase</td>
@@ -799,9 +836,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">4.3537871</td>
 <td align="right">1</td>
 <td align="right">1.4905232</td>
-<td align="right">24.74000</td>
-<td align="right">24.7400</td>
-<td align="right">24.7400</td>
+<td align="right">147</td>
+<td align="right">111.8438520</td>
 </tr>
 <tr class="even">
 <td align="left">tetracycline inactivation enzyme</td>
@@ -809,9 +845,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">68.5599049</td>
 <td align="right">2</td>
 <td align="right">49.9635744</td>
-<td align="right">25.45000</td>
-<td align="right">23.8400</td>
-<td align="right">27.0600</td>
+<td align="right">2</td>
+<td align="right">44.7697183</td>
 </tr>
 <tr class="odd">
 <td align="left">trimethoprim resistant dihydrofolate reductase dfr</td>
@@ -819,9 +854,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">1.4199283</td>
 <td align="right">1</td>
 <td align="right">1.1832736</td>
-<td align="right">37.00000</td>
-<td align="right">37.0000</td>
-<td align="right">37.0000</td>
+<td align="right">1</td>
+<td align="right">0.5916368</td>
 </tr>
 <tr class="even">
 <td align="left">CfxA beta-lactamase</td>
@@ -829,9 +863,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">207.8804150</td>
 <td align="right">1</td>
 <td align="right">28.4039118</td>
-<td align="right">26.39000</td>
-<td align="right">26.3900</td>
-<td align="right">26.3900</td>
+<td align="right">6</td>
+<td align="right">434.5386125</td>
 </tr>
 <tr class="odd">
 <td align="left">major facilitator superfamily (MFS) antibiotic efflux pump</td>
@@ -839,9 +872,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">9.9702373</td>
 <td align="right">3</td>
 <td align="right">10.1672388</td>
-<td align="right">40.67333</td>
-<td align="right">40.0100</td>
-<td align="right">41.4050</td>
+<td align="right">2</td>
+<td align="right">4.1648461</td>
 </tr>
 <tr class="even">
 <td align="left">Erm 23S ribosomal RNA methyltransferase</td>
@@ -849,9 +881,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">162.7884433</td>
 <td align="right">5</td>
 <td align="right">163.8588316</td>
-<td align="right">37.97400</td>
-<td align="right">36.6700</td>
-<td align="right">38.0000</td>
+<td align="right">4</td>
+<td align="right">32.7511795</td>
 </tr>
 <tr class="odd">
 <td align="left">tetracycline-resistant ribosomal protection protein</td>
@@ -859,9 +890,62 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">242.5141847</td>
 <td align="right">7</td>
 <td align="right">323.2794719</td>
-<td align="right">36.37286</td>
-<td align="right">36.2800</td>
-<td align="right">40.8700</td>
+<td align="right">7</td>
+<td align="right">46.6375880</td>
+</tr>
+<tr class="even">
+<td align="left">16s rRNA with mutation conferring resistance to aminoglycoside antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.0377641</td>
+</tr>
+<tr class="odd">
+<td align="left">23S rRNA with mutation conferring resistance to lincosamide antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.2016944</td>
+</tr>
+<tr class="even">
+<td align="left">23S rRNA with mutation conferring resistance to macrolide antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">5</td>
+<td align="right">1.1041621</td>
+</tr>
+<tr class="odd">
+<td align="left">23S rRNA with mutation conferring resistance to macrolide antibiotics;23S rRNA with mutation conferring resistance to streptogramins antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.2218638</td>
+</tr>
+<tr class="even">
+<td align="left">23S rRNA with mutation conferring resistance to oxazolidinone antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.2016944</td>
+</tr>
+<tr class="odd">
+<td align="left">23S rRNA with mutation conferring resistance to phenicol antibiotics</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.2016944</td>
 </tr>
 <tr class="even">
 <td align="left">ANT(9)</td>
@@ -869,9 +953,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.1496093</td>
-<td align="right">22.00000</td>
-<td align="right">22.0000</td>
-<td align="right">22.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">antibiotic-resistant isoleucyl-tRNA synthetase (ileS)</td>
@@ -879,9 +962,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.0352419</td>
-<td align="right">22.00000</td>
-<td align="right">22.0000</td>
-<td align="right">22.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">APH(2’’)</td>
@@ -889,9 +971,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.1292981</td>
-<td align="right">11.00000</td>
-<td align="right">11.0000</td>
-<td align="right">11.0000</td>
+<td align="right">1</td>
+<td align="right">0.0646491</td>
 </tr>
 <tr class="odd">
 <td align="left">APH(2’‘); AAC(6’)</td>
@@ -899,9 +980,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.0813501</td>
-<td align="right">36.00000</td>
-<td align="right">36.0000</td>
-<td align="right">36.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">ATP-binding cassette (ABC) antibiotic efflux pump</td>
@@ -909,9 +989,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">2</td>
 <td align="right">0.6260984</td>
-<td align="right">28.57000</td>
-<td align="right">21.3550</td>
-<td align="right">35.7850</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">cepA beta-lactamase</td>
@@ -919,9 +998,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.1297277</td>
-<td align="right">22.00000</td>
-<td align="right">22.0000</td>
-<td align="right">22.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">chloramphenicol acetyltransferase (CAT)</td>
@@ -929,9 +1007,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">3</td>
 <td align="right">2.6741926</td>
-<td align="right">22.80667</td>
-<td align="right">16.5000</td>
-<td align="right">28.7100</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">General Bacterial Porin with reduced permeability to beta-lactams</td>
@@ -939,9 +1016,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.1041281</td>
-<td align="right">41.00000</td>
-<td align="right">41.0000</td>
-<td align="right">41.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
 <td align="left">glycopeptide resistance gene cluster; van ligase</td>
@@ -949,9 +1025,8 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.1115658</td>
-<td align="right">44.00000</td>
-<td align="right">44.0000</td>
-<td align="right">44.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="odd">
 <td align="left">glycopeptide resistance gene cluster; vanR</td>
@@ -959,89 +1034,89 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 <td align="right">NA</td>
 <td align="right">2</td>
 <td align="right">1.3385745</td>
-<td align="right">12.57000</td>
-<td align="right">11.7850</td>
-<td align="right">13.3550</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
 <tr class="even">
+<td align="left">glycopeptide resistance gene cluster;vanT</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
+<td align="right">1</td>
+<td align="right">0.0547658</td>
+</tr>
+<tr class="odd">
 <td align="left">glycopeptide resistance gene cluster; vanT</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.4381265</td>
-<td align="right">36.88000</td>
-<td align="right">36.8800</td>
-<td align="right">36.8800</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">glycopeptide resistance gene cluster; vanXY</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.3062590</td>
-<td align="right">42.00000</td>
-<td align="right">42.0000</td>
-<td align="right">42.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">Llm 23S ribosomal RNA methyltransferase</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.2711669</td>
-<td align="right">22.00000</td>
-<td align="right">22.0000</td>
-<td align="right">22.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">macrolide phosphotransferase (MPH)</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.7941972</td>
-<td align="right">14.67000</td>
-<td align="right">14.6700</td>
-<td align="right">14.6700</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">multidrug and toxic compound extrusion (MATE) transporter</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">0.0863894</td>
-<td align="right">11.00000</td>
-<td align="right">11.0000</td>
-<td align="right">11.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">pmr phosphoethanolamine transferase</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">2</td>
 <td align="right">0.1391651</td>
-<td align="right">26.50000</td>
-<td align="right">18.7500</td>
-<td align="right">34.2500</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="left">resistance-nodulation-cell division (RND) antibiotic efflux pump</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">14</td>
 <td align="right">2.4712763</td>
-<td align="right">17.92429</td>
-<td align="right">11.3975</td>
-<td align="right">22.0000</td>
+<td align="right">NA</td>
+<td align="right">NA</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td align="left">streptothricin acetyltransferase (SAT)</td>
 <td align="right">NA</td>
 <td align="right">NA</td>
 <td align="right">1</td>
 <td align="right">1.2944098</td>
-<td align="right">29.00000</td>
-<td align="right">29.0000</td>
-<td align="right">29.0000</td>
+<td align="right">1</td>
+<td align="right">0.1078675</td>
 </tr>
 </tbody>
 </table>

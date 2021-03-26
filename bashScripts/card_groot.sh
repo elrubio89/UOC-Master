@@ -53,3 +53,4 @@ groot align -i grootIndex$seqlen -f $forward,$reverse -p 8 -g $sample-groot-grap
 
 groot report --bamFile $sample-FR.bam >$sample-report
 groot report --bamFile $sample-FR.bam --lowCov>$sample-lowCov-report
+echo "Report: This will report gene, read count, gene length, coverage cigar"

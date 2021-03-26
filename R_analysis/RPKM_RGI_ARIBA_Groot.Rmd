@@ -129,7 +129,6 @@ Mapping quality?
 ```{r}
 library(knitr)
 library(dplyr)
-n_distinct(allele_mapping_data$`AMR Gene Family`)
 AMR_family_ARIBA<-report%>%
   group_by(`AMR Gene Family`)%>%
   summarise('number of AMR genes per family(ARIBA)'=n(),
@@ -138,12 +137,63 @@ AMR_family_ARIBA<-report%>%
 kable(head(AMR_family_ARIBA))
 ```
 
-# ARIBA vs RGI
+# GROOT
+Get groot report:
 
 ```{r}
-AMR_family_ARIBA$`AMR Gene Family`
-AMR_family_RGI$`AMR Gene Family`
-AMR_family<-merge(AMR_family_ARIBA, AMR_family_RGI, by="AMR Gene Family", all=TRUE)
+library(readr)
+groot_report <- read_delim("~/Documentos/UOCMaster/groot/filtered_RTC_149-report-0", 
+    "\t", escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)
+names(groot_report)<-c("AMR.gene", "read.count", "gene.length", "coverage.cigar")
+head(groot_report)
+```
+Report: This will report gene, read count, gene length, coverage cigar"
+Trasform GROOT notation and merge with CARD  DB
+```{r}
+library(stringr)
+library(reshape2)
+library(dplyr)
+y<-colsplit(groot_report$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","X"))
+
+y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
+y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
+y<-select(y, -X)
+groot_report<-cbind(groot_report,y)
+groot_report<-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+```
+
+Calculate RPKM:
+
+```{r}
+otalNumReads<-	17072992
+groot_report<-groot_report%>%mutate(RPKM=read.count /(gene.length/1000 * totalNumReads/1000000))
+```
+
+```{r}
+library(knitr)
+n_distinct(groot_report$`AMR Gene Family`)
+AMR_family_Groot<-groot_report%>%
+  group_by(`AMR Gene Family`)%>%
+  summarise('number of AMR genes per family (groot)'=n(),
+            sum_RPKM_groot=sum(RPKM))%>%arrange(desc(sum_RPKM_groot))
+kable(head(AMR_family_Groot))
+```
+
+# ARIBA vs RGI vs GROOT
+
+```{r}
+length(AMR_family_ARIBA$`AMR Gene Family`)
+length(AMR_family_RGI$`AMR Gene Family`)
+length(AMR_family_Groot$`AMR Gene Family`)
+AMR_family<-merge(AMR_family_ARIBA, AMR_family_RGI[ ,1:3], by="AMR Gene Family", all=TRUE)
+AMR_family<-merge(AMR_family, AMR_family_Groot, by="AMR Gene Family", all=TRUE)
+
 kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))
+```
+
+```{r}
+##write_tsv(AMR_family, "AMR_family.tsv")
 ```
 
