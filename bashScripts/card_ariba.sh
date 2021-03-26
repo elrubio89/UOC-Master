@@ -11,9 +11,9 @@ fi
 
 forward=$1
 reverse=$2
-filename_f=${forward##*/}
-filename_r=${reverse##*/}
-sample=${filename%_*}
+filenamef=${forward##*/}
+filenamer=${reverse##*/}
+sample=${filenamef%_*}
 
 if [ ! -f $forward ]
 then

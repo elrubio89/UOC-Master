@@ -11,9 +11,9 @@ set -e
 
 forward=$1
 reverse=$2
-filename_f=${forward##*/}
-filename_r=${reverse##*/}
-sample=${filename%_*}
+filenamef=${forward##*/}
+filenamer=${reverse##*/}
+sample=${filenamef%_*}
 
 if [ ! -f $forward ]
 then
@@ -34,5 +34,5 @@ fi
 mkdir fastp_analysis
 cd fastp_analysis
 
-fastp -i $forward -I $reverse -o filtered_$filename_f -O filtered_$filename_r -j fastp_filter.json -h fastp_filter.html
-fastp -i $forward -I $reverse --merge --merged_out merged_$sample -o unmerged_$filename_f -O unmerged_$filename_r -j fastp_merge.json -h fastp_merge.html
+fastp -i $forward -I $reverse -o filtered_$filenamef -O filtered_$filenamer -j fastp_filter.json -h fastp_filter.html
+fastp -i $forward -I $reverse --merge --merged_out merged_$sample -o unmerged_$filenamef -O unmerged_$filenamer -j fastp_merge.json -h fastp_merge.html
