@@ -36,6 +36,9 @@ then
     exit 1
 fi
 
+mkdir groot_analysis
+cd groot_analysis
+
 
 groot get -d card
 ##generates a folder called card.90 in working directory with clustered card database
