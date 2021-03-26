@@ -5,3 +5,6 @@ filtered2_RTC_149_R1	filtered2_RTC_149_R1.fastq	Conventional base calls	Sanger /
 filtered2_RTC_149_R2	filtered2_RTC_149_R2.fastq	Conventional base calls	Sanger / Illumina 1.9	8455195.0	0.0	50-151	47.0	85.45510748598323	141.55033692303962	pass	pass	fail	pass	fail	pass	pass	warn	pass	pass	pass
 filtered_RTC_149_R1	filtered_RTC_149_R1.fastq	Conventional base calls	Sanger / Illumina 1.9	8536496.0	0.0	31-151	46.0	84.3806031065276	140.5766678740317	pass	pass	warn	pass	fail	pass	pass	warn	pass	pass	pass
 filtered_RTC_149_R2	filtered_RTC_149_R2.fastq	Conventional base calls	Sanger / Illumina 1.9	8536496.0	0.0	31-151	47.0	85.77781999979828	140.5766678740317	pass	pass	fail	pass	fail	pass	pass	warn	pass	pass	pass
+merged_RTC_149_R1	merged_RTC_149_R1.fastq	Conventional base calls	Sanger / Illumina 1.9	4939918.0	0.0	31-271	46.0	87.32699916355745	165.5544320776175	pass	pass	warn	pass	fail	pass	pass	warn	pass	pass	pass
+unmerged_RTC_149_R1	unmerged_RTC_149_R1.fastq	Conventional base calls	Sanger / Illumina 1.9	3603230.0	0.0	151.0	47.0	88.56066113367422	151.0	pass	pass	warn	pass	fail	pass	pass	pass	pass	pass	pass
+unmerged_RTC_149_R2	unmerged_RTC_149_R2.fastq	Conventional base calls	Sanger / Illumina 1.9	3603230.0	0.0	151.0	47.0	90.41718179329574	151.0	pass	pass	fail	pass	fail	pass	pass	pass	pass	pass	pass
