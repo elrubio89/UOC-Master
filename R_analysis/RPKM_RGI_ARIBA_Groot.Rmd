@@ -5,7 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-setwd("~/Documentos/UOCMaster/RTC/RGI_analysis")
+knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/testOutputs")
 ```
 
 ## How to calculate RPKM (Reads per Kilobase per Milion)
@@ -24,9 +24,8 @@ totalNumReads - total number of mapped reads of a sample (mapping stats)
 
 ```{r}
 library(readr)
-setwd("~/Documentos/UOCMaster/RTC/RGI_analysis")
-gene_mapping_data <- read_delim("RTC_149_RGI_output.gene_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
-allele_mapping_data <- read_delim("RTC_149_RGI_output.allele_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+gene_mapping_data <- read_delim("RGI/RTC_149_RGI_output.gene_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
+allele_mapping_data <- read_delim("RGI/RTC_149_RGI_output.allele_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
 
 ```{r}
@@ -80,7 +79,7 @@ ggplot(AMR_family_RGI, aes(log(sum_RPKM_RGI), avg_MAPQ))+geom_point()+theme_bw()
 # ARIBA
 
 ```{r}
-report <- read_delim("~/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results/report.tsv", 
+report <- read_delim("ARIBA/report.tsv", 
     "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
 Select only coding sequences and remove contig and variant data
@@ -102,7 +101,7 @@ Import CARD data aro index:
 
 ```{r}
 library(readr)
-aro_index <- read_delim("~/Documentos/UOCMaster/CARD_data/aro_index.tsv", 
+aro_index <- read_delim("aro_index.tsv", 
     "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
 
@@ -142,7 +141,7 @@ Get groot report:
 
 ```{r}
 library(readr)
-groot_report <- read_delim("~/Documentos/UOCMaster/groot/filtered_RTC_149-report-0", 
+groot_report <- read_delim("Groot/filtered_RTC_149-report-0", 
     "\t", escape_double = FALSE, col_names = FALSE, 
     trim_ws = TRUE)
 names(groot_report)<-c("AMR.gene", "read.count", "gene.length", "coverage.cigar")
