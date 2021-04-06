@@ -30,7 +30,7 @@ allele_mapping_data <- read_delim("RGI/RTC_149_RGI_output.allele_mapping_data.tx
 
 ```{r}
 library(dplyr)
-totalMapReads<-19968 ##value obtained from *overall_mapping_stats.txt
+RGIMapReads<-19968 ##value obtained from *overall_mapping_stats.txt
 totalNumReads<-	17072992
 
 allele_mapping_data<-allele_mapping_data%>%mutate(RPKM=`All Mapped Reads` /(`Reference Length`/1000 * totalNumReads/1000000))
@@ -89,9 +89,10 @@ report<-report%>% filter(gene==1)%>%select(c(1:8,31))%>%unique()
 ```
 
 
-ARIBA does not generate the nº of mapped reads, I will use the nº reads per sample (once filtered)
+I will use the total nº of reads instead mapped reads
 
 ```{r}
+AribaMapReds<-5803 ##obtained from minimap.properPairs
 totalNumReads<-	17072992
 report<-report%>%mutate(RPKM=reads /(ref_len/1000 * totalNumReads/1000000))
 ```
@@ -117,8 +118,6 @@ y<-select(y, -X)
 report<-cbind(report,y)
 
 report<-merge(report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
-str(report$rp)
-
 ```
 
 Mapping quality?
