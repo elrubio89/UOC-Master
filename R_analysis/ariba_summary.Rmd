@@ -5,7 +5,7 @@ output: html_document
 
 ```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-setwd("~/Documentos/Repos/UOC-Master/testOutputs")
+knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/testOutputs")
 ```
 
 https://github.com/sanger-pathogens/ariba/wiki
@@ -32,7 +32,6 @@ out.card.fa Secuencias de base de datos CARD: 2934 secuencias
 library(readr)
 library(knitr)
 library(dplyr)
-setwd("~/Documentos/Repos/UOC-Master/testOutputs")
 out_card <- read_delim("ARIBA/out.card.tsv", 
     "\t", escape_double = FALSE, col_names = FALSE, 
     trim_ws = TRUE)
@@ -43,8 +42,8 @@ n_distinct(out_card$X1)
 X1: Name.ARO.NCBI.start_end.sequenceid      
 X2: 1=gene, 0=non-coding  
 X3: 1=variant only, 0=presence/absence  
-X4: mutation  
-X5:  
+X4: If this line is describing a variant, put it here in the form /wild type/position/variant type/, for example K10L    
+X5: Variants can be put into groups. This is the group name for this variant.    
 X6: Free text that can be used to describe the sequence and/or the variant.  
 
 ### 2. prepareref:   

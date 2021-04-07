@@ -1,0 +1,24 @@
+---
+title: "Groot Summary"
+output: html_document
+---
+https://groot-documentation.readthedocs.io/en/latest/using-groot.html
+
+![](/home/erubio/Documentos/UOCMaster/UOC/groot.jpg)
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/testOutputs")
+```
+
+### 1. get: 
+**groot get -d card**   
+_generates a folder called card.90 with clustered database at 90% identity (only option) in msa (Multiple sequence alignment) files (each cluster is an msa file)_  
+msa structure: (clusterXXX.msa)  
+\>Reference sequence  
+\>Consensus  
+  
+Card: 1176 clusters  
+
+### 2. index:
+
