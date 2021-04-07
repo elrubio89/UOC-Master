@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+483	825	52	394	343	343	90.43	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8	

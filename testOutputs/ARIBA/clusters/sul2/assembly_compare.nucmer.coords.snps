@@ -1,0 +1,10 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/sul2/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/sul2/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+319	C	G	68	31	68	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1
+350	A	T	99	12	99	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1
+362	C	T	111	1	111	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1
+363	A	C	112	1	112	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1
+644	T	G	393	20	45	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1
+664	C	G	413	20	25	0	0	816	437	1	1	sul2.3000412.AY055428.1.20268_21084.4745	sul2.l15.c30.ctg.1

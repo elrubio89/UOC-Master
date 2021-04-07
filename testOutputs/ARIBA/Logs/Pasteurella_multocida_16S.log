@@ -1,0 +1,57 @@
+Getting reads for Pasteurella_multocida_16S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Pasteurella_multocida_16S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Pasteurella_multocida_16S ___________________
+
+Using 468 from a total of 468 for assembly.
+Assembling reads:
+Pasteurella_multocida_16S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	10	462.3	1117
+6	17	6	612.333	932
+6	30	4	711.5	1363
+15	4	6	541.667	1630
+15	17	2	534.5	697
+15	30	2	448	506
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	136	134	1	136	134	95.59	1551	214	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l15.c4.ctg.2
+[choose ref nucmer]	1	175	173	1	175	173	94.29	1551	253	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c4.ctg.6
+[choose ref nucmer]	560	1401	842	1	842	842	90.68	1551	842	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c17.ctg.2
+[choose ref nucmer]	664	1356	697	5	693	693	90.82	1551	697	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l15.c17.ctg.1
+[choose ref nucmer]	777	976	199	1	200	199	91.50	1551	199	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c4.ctg.10
+[choose ref nucmer]	788	980	192	1	193	192	91.19	1551	192	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c4.ctg.5
+[choose ref nucmer]	872	1544	4	677	673	674	90.56	1551	709	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c4.ctg.4
+[choose ref nucmer]	897	1401	1	506	505	506	90.57	1551	506	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l15.c30.ctg.1
+[choose ref nucmer]	1297	1406	68	178	110	111	90.99	1551	426	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c30.ctg.2
+[choose ref nucmer]	1297	1406	68	178	110	111	90.09	1551	426	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c4.ctg.3
+Closest cluster ref sequence is Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252 to assembly Pasteurella_multocida_16S.l6.c17
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	560	1401	842	1	842	842	90.68	1551	842	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c17.ctg.2:1-842
+Closest reference is Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c17\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Pasteurella_multocida_16S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Pasteurella_multocida_16S ____________________

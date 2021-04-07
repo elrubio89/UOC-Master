@@ -1,0 +1,10 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+366	503	456	593	138	138	94.20	2904	594	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3	
+481	634	91	242	154	152	94.81	2904	386	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8	
+975	1126	235	386	152	152	94.12	2904	386	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8	
+1883	2121	1	239	239	239	99.58	2904	383	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4	
+1889	1962	309	382	74	74	98.65	2904	383	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4	
+2434	2883	1	450	450	450	96.00	2904	594	1	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3	[END]

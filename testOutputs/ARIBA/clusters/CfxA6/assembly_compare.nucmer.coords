@@ -1,0 +1,7 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	996	594	1589	996	996	99.70	996	1751	1	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.1	[CONTAINED]
+69	371	1	303	303	303	91.42	996	303	1	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.3	[CONTAINS]
+496	977	5	486	482	482	90.46	996	579	1	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.2	[END]

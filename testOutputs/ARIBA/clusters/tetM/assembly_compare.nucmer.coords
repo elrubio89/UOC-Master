@@ -1,0 +1,6 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetM/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetM/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	887	86	972	887	887	98.31	1920	972	1	1	tetM.3000186.AB039845.1.25_1945.6139	tetM.l6.c4.ctg.1	[BEGIN]
+1528	1920	1	393	393	393	100.00	1920	396	1	1	tetM.3000186.AB039845.1.25_1945.6139	tetM.l6.c4.ctg.2	[CONTAINS]

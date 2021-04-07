@@ -1,0 +1,95 @@
+Getting reads for rrsB+ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for rrsB+ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START rrsB+ _____________________________
+
+Using 576 from a total of 576 for assembly.
+Assembling reads:
+rrsB+ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	6	657.5	1695
+6	17	3	810.667	1514
+6	30	4	680	1395
+15	4	7	537.857	989
+15	17	3	453.333	509
+15	30	1	604	604
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	Escherichia_coli_16S.3003223.U00096.4166659_4168200.3234	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	Escherichia_coli_16S.3003223.U00096.4166659_4168200.3234	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrnB.3003377.U00096.4166659_4168200.3239	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrnB.3003377.U00096.4166659_4168200.3239	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrnB.3003406.U00096.4166659_4168200.3237	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrnB.3003406.U00096.4166659_4168200.3237	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrnB.3003411.U00096.4166659_4168200.3236	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrnB.3003411.U00096.4166659_4168200.3236	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003376.U00096.4166659_4168200.3240	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003376.U00096.4166659_4168200.3240	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003396.U00096.4166659_4168200.3233	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003396.U00096.4166659_4168200.3233	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003397.U00096.4166659_4168200.3230	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003397.U00096.4166659_4168200.3230	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003399.U00096.4166659_4168200.3232	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003399.U00096.4166659_4168200.3232	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003402.U00096.4166659_4168200.3235	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003402.U00096.4166659_4168200.3235	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003403.U00096.4166659_4168200.3238	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003403.U00096.4166659_4168200.3238	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003405.U00096.4166659_4168200.3231	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003405.U00096.4166659_4168200.3231	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003408.U00096.4166659_4168200.3241	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003408.U00096.4166659_4168200.3241	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsB.3003410.U00096.4166659_4168200.3242	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsB.3003410.U00096.4166659_4168200.3242	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.18	1542	418	1	rrsC.3003333.U00096.3941808_3943349.3229	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsC.3003333.U00096.3941808_3943349.3229	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	91	241	340	490	151	151	98.68	1544	490	1	rrsD.3003512.AE006468.3570463_3572006.3227	rrsB+.l6.c30.ctg.1
+[choose ref nucmer]	306	691	418	32	386	387	90.75	1544	418	1	rrsD.3003512.AE006468.3570463_3572006.3227	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	855	1240	32	418	386	387	90.75	1542	418	1	rrsH.3003372.U00096.223771_225312.3228	rrsB+.l15.c17.ctg.1
+[choose ref nucmer]	1305	1455	490	340	151	151	98.68	1542	490	1	rrsH.3003372.U00096.223771_225312.3228	rrsB+.l6.c30.ctg.1
+Closest cluster ref sequence is rrsH.3003372.U00096.223771_225312.3228 to assembly rrsB+.l15.c17
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	Escherichia_coli_16S.3003223.U00096.4166659_4168200.3234	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	858	1242	2	387	385	386	91.52	1551	387	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrnB.3003377.U00096.4166659_4168200.3239	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrnB.3003406.U00096.4166659_4168200.3237	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrnB.3003411.U00096.4166659_4168200.3236	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003376.U00096.4166659_4168200.3240	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003396.U00096.4166659_4168200.3233	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003397.U00096.4166659_4168200.3230	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003399.U00096.4166659_4168200.3232	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003402.U00096.4166659_4168200.3235	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003403.U00096.4166659_4168200.3238	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003405.U00096.4166659_4168200.3231	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003408.U00096.4166659_4168200.3241	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsB.3003410.U00096.4166659_4168200.3242	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.18	1542	387	1	rrsC.3003333.U00096.3941808_3943349.3229	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	306	691	387	1	386	387	90.75	1544	387	1	rrsD.3003512.AE006468.3570463_3572006.3227	rrsB+.l15.c17.ctg.1:32-418
+[choose ref nucmer]	855	1240	1	387	386	387	90.75	1542	387	1	rrsH.3003372.U00096.223771_225312.3228	rrsB+.l15.c17.ctg.1:32-418
+Closest reference is rrsH.3003372.U00096.223771_225312.3228 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c17\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/Assembly/debug_best_assembly.fa
+Closest reference sequence: rrsH.3003372.U00096.223771_225312.3228
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+rrsB+ detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rrsB+/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END rrsB+ ______________________________

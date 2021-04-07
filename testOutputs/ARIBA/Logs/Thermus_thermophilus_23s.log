@@ -1,0 +1,83 @@
+Getting reads for Thermus_thermophilus_23s from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Thermus_thermophilus_23s from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________ LOG FILE START Thermus_thermophilus_23s ___________________
+
+Using 652 from a total of 652 for assembly.
+Assembling reads:
+Thermus_thermophilus_23s detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	14	323.786	864
+6	17	4	575.75	777
+6	30	2	833.5	1233
+15	4	11	360.091	864
+15	17	2	551	621
+15	30	1	805	805
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1887	1969	719	801	83	83	98.80	2893	805	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l15.c30.ctg.1
+[choose ref nucmer]	1887	1969	263	345	83	83	97.59	2893	349	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.13
+[choose ref nucmer]	1887	1995	232	340	109	109	92.73	2893	344	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.9
+[choose ref nucmer]	2397	2588	13	204	192	192	92.19	2893	204	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l15.c4.ctg.11
+[choose ref nucmer]	2397	2605	13	221	209	209	92.34	2893	238	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.14
+Closest cluster ref sequence is Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116 to assembly Thermus_thermophilus_23s.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	900	1008	109	1	109	109	96.33	2996	109	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	926	1008	83	1	83	83	98.80	2996	83	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1893	1974	2	83	82	82	98.78	2900	83	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1893	2000	2	109	108	108	92.59	2900	109	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	2413	2621	1	209	209	209	93.78	2900	209	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+[choose ref nucmer]	1888	1970	1	83	83	83	98.80	2904	83	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	109	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	1888	1970	1	83	83	83	98.80	2904	83	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	109	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	1888	1970	1	83	83	83	98.80	2904	83	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	109	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	1888	1970	1	83	83	83	98.80	2904	83	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	109	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	1888	1970	1	83	83	83	98.80	2904	83	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	109	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	903	997	95	1	95	95	96.84	3156	109	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	915	997	83	1	83	83	100.00	3156	83	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1891	1973	1	83	83	83	97.59	2910	83	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1891	1999	1	109	109	109	93.58	2910	109	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	1916	1998	1	83	83	83	98.80	2926	83	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1916	2024	1	109	109	109	92.66	2926	109	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	2436	2644	1	209	209	209	92.34	2926	209	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+[choose ref nucmer]	1891	1973	1	83	83	83	98.80	2904	83	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1891	1999	1	109	109	109	93.58	2904	109	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	2411	2619	1	209	209	209	93.78	2904	209	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+[choose ref nucmer]	286	494	209	1	209	209	93.78	2904	209	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+[choose ref nucmer]	906	1014	109	1	109	109	93.58	2904	109	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	932	1014	83	1	83	83	98.80	2904	83	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	2652	2860	1	209	209	209	91.39	3149	209	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+[choose ref nucmer]	1887	1969	1	83	83	83	97.59	2893	83	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.13:263-345
+[choose ref nucmer]	1887	1995	1	109	109	109	92.73	2893	109	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.9:232-340
+[choose ref nucmer]	2397	2605	1	209	209	209	92.34	2893	209	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.14:13-221
+Closest reference is Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/Assembly/debug_best_assembly.fa
+Closest reference sequence: Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Thermus_thermophilus_23s detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+____________________ LOG FILE END Thermus_thermophilus_23s ____________________

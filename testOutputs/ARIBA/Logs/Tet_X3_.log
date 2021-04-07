@@ -1,0 +1,37 @@
+Getting reads for Tet_X3_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Tet_X3_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________________ LOG FILE START Tet_X3_ ____________________________
+
+Using 520 from a total of 634 for assembly.
+Assembling reads:
+Tet_X3_ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	1668	1668
+6	17	3	697.333	1317
+6	30	3	695.667	1312
+15	4	3	718.333	1380
+15	17	3	628.333	1110
+15	30	3	626.667	1105
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	770	308	1077	770	770	93.90	1167	1110	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l15.c17.ctg.1
+[choose ref nucmer]	1	770	303	1072	770	770	93.90	1167	1105	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l15.c30.ctg.1
+[choose ref nucmer]	1	804	308	1111	804	804	92.91	1167	1380	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l15.c4.ctg.1
+[choose ref nucmer]	1	804	308	1111	804	804	92.91	1167	1317	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l6.c17.ctg.1
+[choose ref nucmer]	1	804	303	1106	804	804	92.91	1167	1312	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l6.c30.ctg.1
+[choose ref nucmer]	1	804	659	1462	804	804	92.91	1167	1668	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l6.c4.ctg.1
+Closest cluster ref sequence is Tet_X3_.3004719.MK134375.1.6173_7340.5596 to assembly Tet_X3_.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	804	1	804	804	804	92.91	1167	804	1	Tet_X3_.3004719.MK134375.1.6173_7340.5596	Tet_X3_.l15.c4.ctg.1:308-1111
+[choose ref nucmer]	8	795	17	804	788	788	97.72	1158	804	1	Tet_X4_.3004720.MK134376.1.324_1482.5831	Tet_X3_.l15.c4.ctg.1:308-1111
+[choose ref nucmer]	1	804	1	804	804	804	94.78	1167	804	1	Tet_X5_.3005057.NZ_CP040912.1.84797_85964.6093	Tet_X3_.l15.c4.ctg.1:308-1111
+[choose ref nucmer]	1	804	1	804	804	804	100.00	1167	804	1	tetX.3000205.M37699.585_1752.79	Tet_X3_.l15.c4.ctg.1:308-1111
+Closest reference is tetX.3000205.M37699.585_1752.79 and does not belong to cluster
+Closest reference tetX.3000205.M37699.585_1752.79 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+____________________________ LOG FILE END Tet_X3_ _____________________________

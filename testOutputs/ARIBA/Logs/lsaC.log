@@ -1,0 +1,22 @@
+Getting reads for lsaC from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for lsaC from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________________ LOG FILE START lsaC _____________________________
+
+Using 6 from a total of 6 for assembly.
+Assembling reads:
+lsaC detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	0	0	0
+6	17	0	0	0
+6	30	0	0	0
+15	4	0	0	0
+15	17	0	0	0
+15	30	0	0	0
+Finished running assemblies
+
+Assembly failed
+
+   ... not deleting anything because --noclean used
+Finished
+______________________________ LOG FILE END lsaC ______________________________

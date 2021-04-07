@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+553	C	T	211	181	181	0	0	855	391	1	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l15.c30.ctg.1

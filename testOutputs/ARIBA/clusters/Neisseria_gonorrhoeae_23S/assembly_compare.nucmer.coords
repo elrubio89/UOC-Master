@@ -1,0 +1,6 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1892	1985	52	145	94	94	96.81	2910	835	1	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1	
+1899	2813	200	1110	915	911	90.10	2910	1112	1	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.2	

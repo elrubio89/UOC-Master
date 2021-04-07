@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmF/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmF/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	801	291	1091	801	801	99.88	801	1416	1	1	ErmF.3000498.M17124.1181_1982.593	ErmF.l15.c30.ctg.1	[CONTAINED]

@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	1974	288	2261	1974	1974	97.37	1974	2708	1	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c17.ctg.1	[CONTAINED]

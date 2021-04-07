@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet_44_/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet_44_/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1473	T	C	247	42	42	0	0	1923	288	1	1	tet_44_.3000556.FN594949.25244_27167.410	tet_44_.l15.c4.ctg.1

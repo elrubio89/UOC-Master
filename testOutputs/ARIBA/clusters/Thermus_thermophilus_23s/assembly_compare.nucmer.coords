@@ -1,0 +1,7 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Thermus_thermophilus_23s/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1887	1969	263	345	83	83	97.59	2893	349	1	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.13	
+1887	1995	232	340	109	109	92.73	2893	344	1	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.9	
+2397	2605	13	221	209	209	92.34	2893	238	1	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Thermus_thermophilus_23s.l6.c4.ctg.14	

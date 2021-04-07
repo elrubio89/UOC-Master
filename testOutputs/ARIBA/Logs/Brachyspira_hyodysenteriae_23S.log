@@ -1,0 +1,85 @@
+Getting reads for Brachyspira_hyodysenteriae_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Brachyspira_hyodysenteriae_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+________________ LOG FILE START Brachyspira_hyodysenteriae_23S ________________
+
+Using 658 from a total of 658 for assembly.
+Assembling reads:
+Brachyspira_hyodysenteriae_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	15	395.333	1446
+6	17	6	607.5	951
+6	30	5	571.2	951
+15	4	9	509.333	1446
+15	17	3	805.333	951
+15	30	3	893	1173
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	974	970	1	974	970	95.17	2996	1007	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.2
+[choose ref nucmer]	20	841	818	1	822	818	97.08	2996	818	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c4.ctg.3
+[choose ref nucmer]	223	1385	4	1166	1163	1163	96.47	2996	1173	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c30.ctg.3
+[choose ref nucmer]	223	756	4	537	534	534	95.51	2996	537	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c30.ctg.3
+[choose ref nucmer]	295	464	171	2	170	170	92.94	2996	171	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7
+[choose ref nucmer]	353	756	404	1	404	404	98.51	2996	404	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c17.ctg.6
+[choose ref nucmer]	483	1385	1	903	903	903	97.45	2996	910	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c17.ctg.2
+[choose ref nucmer]	642	1385	1	744	744	744	97.45	2996	751	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c17.ctg.2
+[choose ref nucmer]	831	1056	1	226	226	226	99.56	2996	226	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.8
+[choose ref nucmer]	831	1079	1	249	249	249	99.60	2996	249	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c4.ctg.13
+[choose ref nucmer]	900	1046	147	1	147	147	91.16	2996	179	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c4.ctg.8
+[choose ref nucmer]	922	1069	1	148	148	148	91.22	2996	526	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c17.ctg.5
+[choose ref nucmer]	929	1385	1	457	457	457	96.72	2996	464	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c30.ctg.5
+[choose ref nucmer]	1105	2551	1446	1	1447	1446	95.37	2996	1446	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.1
+[choose ref nucmer]	1105	2551	1446	1	1447	1446	95.37	2996	1446	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c4.ctg.1
+[choose ref nucmer]	1217	2167	1	951	951	951	95.27	2996	951	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c17.ctg.3
+[choose ref nucmer]	1217	2167	1	951	951	951	95.27	2996	951	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c30.ctg.1
+[choose ref nucmer]	1217	2167	1	951	951	951	95.27	2996	951	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c17.ctg.3
+[choose ref nucmer]	1217	2167	1	951	951	951	95.27	2996	951	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c30.ctg.1
+[choose ref nucmer]	2077	2632	555	1	556	555	95.86	2996	555	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c17.ctg.1
+[choose ref nucmer]	2077	2632	555	1	556	555	95.86	2996	555	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c30.ctg.2
+[choose ref nucmer]	2077	2551	474	1	475	474	96.63	2996	474	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c17.ctg.1
+[choose ref nucmer]	2077	2551	474	1	475	474	96.63	2996	474	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l6.c30.ctg.2
+Closest cluster ref sequence is Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183 to assembly Brachyspira_hyodysenteriae_23S.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	974	970	1	974	970	95.17	2996	970	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.2:1-970
+[choose ref nucmer]	295	464	170	1	170	170	92.94	2996	170	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	831	1056	1	226	226	226	99.56	2996	226	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.8:1-226
+[choose ref nucmer]	1105	2551	1446	1	1447	1446	95.37	2996	1446	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.1:1-1446
+[choose ref nucmer]	2448	2617	1	170	170	170	91.76	2912	170	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2483	2652	1	170	170	170	90.59	2940	170	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2437	2606	1	170	170	170	95.88	2900	170	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2520	2689	1	170	170	170	91.76	2975	170	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	286	455	170	1	170	170	92.35	2886	170	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	280	449	170	1	170	170	92.94	2884	170	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	1879	1985	190	84	107	107	93.46	2910	226	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.8:1-226
+[choose ref nucmer]	2460	2629	1	170	170	170	96.47	2926	170	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2435	2604	1	170	170	170	95.88	2904	170	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	301	470	170	1	170	170	95.88	2904	170	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2676	2845	1	170	170	170	91.76	3149	170	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+[choose ref nucmer]	2421	2590	1	170	170	170	90.59	2893	170	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7:2-171
+Closest reference is Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Brachyspira_hyodysenteriae_23S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_________________ LOG FILE END Brachyspira_hyodysenteriae_23S _________________

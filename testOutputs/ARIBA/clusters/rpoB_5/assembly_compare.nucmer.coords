@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rpoB_5/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/rpoB_5/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+2219	2529	1	311	311	311	99.04	3561	311	1	1	rpoB.3004480.NC_008618.1.1667063_1670624.5874	rpoB_5.l15.c4.ctg.1	[CONTAINS]

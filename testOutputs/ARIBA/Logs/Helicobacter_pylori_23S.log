@@ -1,0 +1,55 @@
+Getting reads for Helicobacter_pylori_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Helicobacter_pylori_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________ LOG FILE START Helicobacter_pylori_23S ____________________
+
+Using 294 from a total of 294 for assembly.
+Assembling reads:
+Helicobacter_pylori_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	6	359	671
+6	17	0	0	0
+6	30	1	374	374
+15	4	6	243	296
+15	17	1	331	331
+15	30	1	459	459
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	2475	2757	3	286	283	284	91.90	2975	296	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.2
+[choose ref nucmer]	2522	2786	278	14	265	265	92.48	2975	278	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.1
+[choose ref nucmer]	2522	2689	168	1	168	168	92.26	2975	168	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.6
+[choose ref nucmer]	2522	2689	168	1	168	168	92.26	2975	168	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l6.c4.ctg.6
+[choose ref nucmer]	2528	2786	272	14	259	259	91.92	2975	272	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l6.c4.ctg.3
+[choose ref nucmer]	2532	2704	377	205	173	173	98.27	2975	377	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l6.c4.ctg.5
+Closest cluster ref sequence is Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113 to assembly Helicobacter_pylori_23S.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	295	462	1	168	168	168	92.26	2996	168	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2403	2685	1	284	283	284	90.14	2912	284	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	2450	2617	168	1	168	168	92.26	2912	168	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2392	2674	1	284	283	284	91.90	2900	284	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	2439	2703	265	1	265	265	92.83	2900	265	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	2439	2606	168	1	168	168	94.05	2900	168	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2475	2757	1	284	283	284	91.90	2975	284	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	2522	2786	265	1	265	265	92.48	2975	265	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	2522	2689	168	1	168	168	92.26	2975	168	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	286	453	1	168	168	168	94.05	2886	168	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	280	447	1	168	168	168	94.64	2884	168	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2415	2697	1	284	283	284	92.96	2926	284	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	2462	2726	265	1	265	265	94.34	2926	265	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	2462	2629	168	1	168	168	95.83	2926	168	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2390	2670	1	282	281	282	92.20	2904	284	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	2437	2701	265	1	265	265	91.32	2904	265	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	2437	2604	168	1	168	168	95.24	2904	168	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	204	468	1	265	265	265	91.32	2904	265	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	235	515	282	1	281	282	92.20	2904	284	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Helicobacter_pylori_23S.l15.c4.ctg.2:3-286
+[choose ref nucmer]	301	468	1	168	168	168	95.24	2904	168	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+[choose ref nucmer]	2678	2942	265	1	265	265	90.23	3149	265	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Helicobacter_pylori_23S.l15.c4.ctg.1:14-278
+[choose ref nucmer]	2423	2590	168	1	168	168	90.48	2893	168	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Helicobacter_pylori_23S.l15.c4.ctg.6:1-168
+Closest reference is Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 and does not belong to cluster
+Closest reference Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+____________________ LOG FILE END Helicobacter_pylori_23S _____________________

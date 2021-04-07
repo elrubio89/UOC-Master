@@ -1,0 +1,147 @@
+Getting reads for Staphylococcus_aureus_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Staphylococcus_aureus_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Staphylococcus_aureus_23S ___________________
+
+Using 1156 from a total of 1156 for assembly.
+Assembling reads:
+Staphylococcus_aureus_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	28	387.607	1087
+6	17	7	512.143	875
+6	30	7	461	674
+15	4	22	336.636	668
+15	17	6	425.5	675
+15	30	3	527.667	581
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1709	2013	296	4	305	293	90.16	2926	356	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c30.ctg.1
+[choose ref nucmer]	1778	2006	31	257	229	227	91.27	2926	260	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.27
+[choose ref nucmer]	1786	2013	231	4	228	228	92.54	2926	231	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.19
+[choose ref nucmer]	1786	2013	231	4	228	228	93.42	2926	231	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.9
+[choose ref nucmer]	1786	2013	231	4	228	228	92.54	2926	231	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.21
+[choose ref nucmer]	1786	2013	231	4	228	228	93.42	2926	231	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.9
+[choose ref nucmer]	1793	2038	542	297	246	246	90.69	2926	542	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.28
+[choose ref nucmer]	1839	2013	178	4	175	175	93.14	2926	178	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.8
+[choose ref nucmer]	1845	2116	277	3	272	275	90.91	2926	279	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.19
+[choose ref nucmer]	1925	2121	208	12	197	197	94.42	2926	209	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.18
+[choose ref nucmer]	2256	2704	457	9	449	449	92.20	2926	457	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.15
+[choose ref nucmer]	2348	2649	304	2	302	303	91.09	2926	399	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.17
+[choose ref nucmer]	2361	2704	1	344	344	344	94.49	2926	350	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c17.ctg.7
+[choose ref nucmer]	2371	2697	327	1	327	327	94.50	2926	330	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.18
+[choose ref nucmer]	2417	2769	357	5	353	353	94.90	2926	357	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.17
+[choose ref nucmer]	2417	2689	1	273	273	273	97.45	2926	273	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.20
+[choose ref nucmer]	2436	2642	207	1	207	207	93.72	2926	496	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c30.ctg.7
+[choose ref nucmer]	2443	2646	207	4	204	204	96.57	2926	217	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c17.ctg.1
+[choose ref nucmer]	2443	2704	266	5	262	262	96.56	2926	271	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.10
+[choose ref nucmer]	2443	2581	22	160	139	139	94.96	2926	160	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.22
+[choose ref nucmer]	2443	2704	266	5	262	262	96.56	2926	271	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.10
+[choose ref nucmer]	2443	2581	22	160	139	139	94.96	2926	160	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.24
+[choose ref nucmer]	2443	2644	202	1	202	202	97.03	2926	451	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.26
+[choose ref nucmer]	2443	2646	207	4	204	204	96.57	2926	217	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.5
+[choose ref nucmer]	2446	2646	1	201	201	201	95.52	2926	203	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.1
+[choose ref nucmer]	2446	2704	262	4	259	259	96.53	2926	262	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.12
+[choose ref nucmer]	2446	2687	1	242	242	242	94.21	2926	242	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.1
+[choose ref nucmer]	2446	2725	295	16	280	280	95.71	2926	295	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.11
+[choose ref nucmer]	2490	2641	345	496	152	152	98.03	2926	496	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c30.ctg.7
+[choose ref nucmer]	2519	2803	1	284	285	284	90.56	2926	647	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.7
+[choose ref nucmer]	2531	2818	1	288	288	288	94.44	2926	508	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.22
+[choose ref nucmer]	2553	2704	152	1	152	152	92.76	2926	325	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c4.ctg.25
+[choose ref nucmer]	2605	2818	1	214	214	214	92.06	2926	434	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l6.c17.ctg.6
+Closest cluster ref sequence is Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128 to assembly Staphylococcus_aureus_23S.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	278	478	201	1	201	201	92.04	2996	201	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	914	1079	4	169	166	166	91.57	2996	175	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	2434	2632	1	199	199	199	91.96	2912	201	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	1182	1356	84	258	175	175	90.29	3403	259	1	Chlamydomonas_reinhardtii_23S.3004132.NC_005353.1.148590_151993.4139	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	1821	1989	169	1	169	169	92.90	2900	175	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1901	2097	197	1	197	197	91.88	2900	197	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.18:12-208
+[choose ref nucmer]	2394	2738	353	9	345	345	94.20	2900	353	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.17:5-357
+[choose ref nucmer]	2420	2681	262	1	262	262	94.66	2900	262	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	2420	2558	1	139	139	139	94.96	2900	139	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.22:22-160
+[choose ref nucmer]	2423	2681	259	1	259	259	94.59	2900	259	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	2423	2623	1	201	201	201	95.02	2900	201	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	1817	1982	169	4	166	166	90.42	2904	175	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1817	1982	169	4	166	166	90.42	2904	175	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1817	1982	169	4	166	166	90.42	2904	175	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1817	1982	169	4	166	166	90.42	2904	175	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1817	1982	169	4	166	166	90.42	2904	175	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	2477	2813	353	17	337	337	90.80	2975	353	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Staphylococcus_aureus_23S.l15.c4.ctg.17:5-357
+[choose ref nucmer]	2503	2764	262	1	262	262	91.60	2975	262	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	2506	2764	259	1	259	259	91.12	2975	259	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	2506	2704	1	199	199	199	91.96	2975	201	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2639	2838	2	201	200	200	91.50	3112	201	1	Mycobacterium_avium_23S.3004164.NG_041979.1.0_3112.4157	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2626	2825	2	201	200	200	91.50	3103	201	1	Mycobacterium_intracellulare_23S.3004166.NR_076151.1.0_3103.4177	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2626	2825	2	201	200	200	91.50	3103	201	1	Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2626	2825	2	201	200	200	91.50	3118	201	1	Mycobacterium_kansasii_23S.3004168.NZ_CP019883.1.5018387_5021505.4178	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2657	2856	2	201	200	200	91.50	3138	201	1	Mycobacterium_tuberculosis_23S.3004937.AL123456.3.1473657_1476795.6024	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2631	2830	2	201	200	200	91.50	3112	201	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2632	2831	2	201	200	200	91.50	3113	201	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2644	2843	2	201	200	200	91.50	3162	201	1	Mycolicibacterium_smegmatis_23S.3004169.AB011184.1.0_3162.4161	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	271	468	199	2	198	198	93.43	2886	201	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	265	462	199	2	198	198	93.43	2884	201	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	1816	1970	175	21	155	155	91.03	2905	175	1	Mycoplasma_pneumoniae_23S.3004179.NR_077056.1.0_2905.4169	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1892	1985	97	4	94	94	96.81	2910	228	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Staphylococcus_aureus_23S.l15.c4.ctg.19:4-231
+[choose ref nucmer]	1892	1985	97	4	94	94	96.81	2910	175	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1892	1985	97	4	94	94	96.81	2910	228	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Staphylococcus_aureus_23S.l15.c4.ctg.9:4-231
+[choose ref nucmer]	1786	2013	228	1	228	228	92.54	2926	228	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.19:4-231
+[choose ref nucmer]	1786	2013	228	1	228	228	93.42	2926	228	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.9:4-231
+[choose ref nucmer]	1839	2013	175	1	175	175	93.14	2926	175	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1925	2121	197	1	197	197	94.42	2926	197	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.18:12-208
+[choose ref nucmer]	2256	2704	449	1	449	449	92.20	2926	449	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.15:9-457
+[choose ref nucmer]	2417	2769	353	1	353	353	94.90	2926	353	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.17:5-357
+[choose ref nucmer]	2443	2704	262	1	262	262	96.56	2926	262	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	2443	2581	1	139	139	139	94.96	2926	139	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.22:22-160
+[choose ref nucmer]	2446	2704	259	1	259	259	96.53	2926	259	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	2446	2646	1	201	201	201	95.52	2926	201	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	1761	1988	228	1	228	228	92.98	2904	228	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.19:4-231
+[choose ref nucmer]	1761	1988	228	1	228	228	91.67	2904	228	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.9:4-231
+[choose ref nucmer]	1816	1988	173	1	173	173	94.80	2904	175	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	1900	2083	197	14	184	184	95.65	2904	197	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.18:12-208
+[choose ref nucmer]	2231	2670	449	10	440	440	91.38	2904	449	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.15:9-457
+[choose ref nucmer]	2392	2744	353	1	353	353	94.07	2904	353	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.17:5-357
+[choose ref nucmer]	2418	2670	262	10	253	253	94.49	2904	262	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	2418	2556	1	139	139	139	94.96	2904	139	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.22:22-160
+[choose ref nucmer]	2421	2670	259	10	250	250	94.42	2904	259	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	2421	2621	1	201	201	201	95.02	2904	201	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	161	513	1	353	353	353	94.07	2904	353	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.17:5-357
+[choose ref nucmer]	235	487	10	262	253	253	94.49	2904	262	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	235	484	10	259	250	250	94.42	2904	259	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	235	674	10	449	440	440	91.38	2904	449	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.15:9-457
+[choose ref nucmer]	284	484	201	1	201	201	95.02	2904	201	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	349	487	139	1	139	139	94.96	2904	139	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.22:22-160
+[choose ref nucmer]	822	1005	14	197	184	184	95.65	2904	197	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.18:12-208
+[choose ref nucmer]	917	1144	1	228	228	228	92.98	2904	228	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.19:4-231
+[choose ref nucmer]	917	1089	1	173	173	173	94.80	2904	175	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.8:4-178
+[choose ref nucmer]	917	1144	1	228	228	228	91.67	2904	228	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Staphylococcus_aureus_23S.l15.c4.ctg.9:4-231
+[choose ref nucmer]	2659	2920	262	1	262	262	90.46	3149	262	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Staphylococcus_aureus_23S.l15.c4.ctg.10:5-266
+[choose ref nucmer]	2663	2920	258	1	258	258	90.73	3149	259	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Staphylococcus_aureus_23S.l15.c4.ctg.12:4-262
+[choose ref nucmer]	2663	2862	2	201	200	200	91.50	3149	201	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+[choose ref nucmer]	2407	2607	1	201	201	201	90.05	2893	201	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Staphylococcus_aureus_23S.l15.c4.ctg.1:1-201
+Closest reference is Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Staphylococcus_aureus_23S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Staphylococcus_aureus_23S ____________________

@@ -1,0 +1,121 @@
+Getting reads for CfxA- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for CfxA- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START CfxA- _____________________________
+
+Using 468 from a total of 2864 for assembly.
+Assembling reads:
+CfxA- detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	5	493.6	870
+6	17	1	1709	1709
+6	30	1	1553	1553
+15	4	6	469	969
+15	17	1	1664	1664
+15	30	1	1553	1553
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	966	52	1017	966	966	99.79	966	1664	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c17.ctg.1
+[choose ref nucmer]	1	774	196	969	774	774	100.00	966	969	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c4.ctg.1
+[choose ref nucmer]	1	966	97	1062	966	966	99.79	966	1709	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c17.ctg.1
+[choose ref nucmer]	1	774	97	870	774	774	100.00	966	870	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c4.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.78	966	1553	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c30.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.78	966	1553	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c30.ctg.1
+[choose ref nucmer]	630	923	1	294	294	294	99.32	966	294	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c4.ctg.2
+[choose ref nucmer]	630	923	1	294	294	294	99.32	966	294	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c4.ctg.2
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c4.ctg.5
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c4.ctg.5
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c4.ctg.4
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c4.ctg.4
+[choose ref nucmer]	778	966	1	189	189	189	99.47	966	836	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l15.c4.ctg.3
+[choose ref nucmer]	778	966	1	189	189	189	99.47	966	836	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c4.ctg.3
+[choose ref nucmer]	1	966	52	1017	966	966	99.90	966	1664	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c17.ctg.1
+[choose ref nucmer]	1	774	196	969	774	774	100.00	966	969	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c4.ctg.1
+[choose ref nucmer]	1	966	97	1062	966	966	99.90	966	1709	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c17.ctg.1
+[choose ref nucmer]	1	774	97	870	774	774	100.00	966	870	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c4.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.89	966	1553	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c30.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.89	966	1553	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c30.ctg.1
+[choose ref nucmer]	630	923	1	294	294	294	99.66	966	294	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c4.ctg.2
+[choose ref nucmer]	630	923	1	294	294	294	99.66	966	294	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c4.ctg.2
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c4.ctg.5
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c4.ctg.5
+[choose ref nucmer]	673	894	1	222	222	222	100.00	966	222	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c4.ctg.4
+[choose ref nucmer]	673	894	1	222	222	222	100.00	966	222	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c4.ctg.4
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l15.c4.ctg.3
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c4.ctg.3
+[choose ref nucmer]	1	966	52	1017	966	966	99.90	966	1664	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c17.ctg.1
+[choose ref nucmer]	1	774	196	969	774	774	100.00	966	969	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c4.ctg.1
+[choose ref nucmer]	1	966	97	1062	966	966	99.90	966	1709	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c17.ctg.1
+[choose ref nucmer]	1	774	97	870	774	774	100.00	966	870	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c4.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.89	966	1553	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c30.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.89	966	1553	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c30.ctg.1
+[choose ref nucmer]	630	923	1	294	294	294	99.66	966	294	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c4.ctg.2
+[choose ref nucmer]	630	923	1	294	294	294	99.66	966	294	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c4.ctg.2
+[choose ref nucmer]	636	881	246	1	246	246	100.00	966	246	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c4.ctg.5
+[choose ref nucmer]	636	881	246	1	246	246	100.00	966	246	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c4.ctg.5
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c4.ctg.4
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c4.ctg.4
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l15.c4.ctg.3
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c4.ctg.3
+[choose ref nucmer]	1	966	52	1017	966	966	100.00	966	1664	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c17.ctg.1
+[choose ref nucmer]	1	774	196	969	774	774	100.00	966	969	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c4.ctg.1
+[choose ref nucmer]	1	966	97	1062	966	966	100.00	966	1709	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c17.ctg.1
+[choose ref nucmer]	1	774	97	870	774	774	100.00	966	870	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c4.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	100.00	966	1553	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c30.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	100.00	966	1553	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c30.ctg.1
+[choose ref nucmer]	630	923	1	294	294	294	100.00	966	294	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c4.ctg.2
+[choose ref nucmer]	630	923	1	294	294	294	100.00	966	294	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c4.ctg.2
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c4.ctg.5
+[choose ref nucmer]	636	881	246	1	246	246	99.59	966	246	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c4.ctg.5
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c4.ctg.4
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c4.ctg.4
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l15.c4.ctg.3
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c4.ctg.3
+[choose ref nucmer]	1	966	52	1017	966	966	99.79	966	1664	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c17.ctg.1
+[choose ref nucmer]	1	774	196	969	774	774	100.00	966	969	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c4.ctg.1
+[choose ref nucmer]	1	966	97	1062	966	966	99.79	966	1709	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c17.ctg.1
+[choose ref nucmer]	1	774	97	870	774	774	100.00	966	870	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c4.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.78	966	1553	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c30.ctg.1
+[choose ref nucmer]	61	966	1553	648	906	906	99.78	966	1553	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c30.ctg.1
+[choose ref nucmer]	630	923	1	294	294	294	99.32	966	294	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c4.ctg.2
+[choose ref nucmer]	630	923	1	294	294	294	99.32	966	294	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c4.ctg.2
+[choose ref nucmer]	636	881	246	1	246	246	99.19	966	246	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c4.ctg.5
+[choose ref nucmer]	636	881	246	1	246	246	99.19	966	246	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c4.ctg.5
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c4.ctg.4
+[choose ref nucmer]	673	894	1	222	222	222	99.55	966	222	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c4.ctg.4
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l15.c4.ctg.3
+[choose ref nucmer]	778	966	1	189	189	189	100.00	966	836	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c4.ctg.3
+Closest cluster ref sequence is CfxA4.3003005.AY769933.0_966.1592 to assembly CfxA-.l6.c17
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	966	1	966	966	966	99.79	966	966	1	CfxA.3003001.U38243.149_1115.1354	CfxA-.l6.c17.ctg.1:97-1062
+[choose ref nucmer]	1	966	1	966	966	966	99.90	966	966	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA-.l6.c17.ctg.1:97-1062
+[choose ref nucmer]	1	966	1	966	966	966	99.90	966	966	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA-.l6.c17.ctg.1:97-1062
+[choose ref nucmer]	1	966	1	966	966	966	100.00	966	966	1	CfxA4.3003005.AY769933.0_966.1592	CfxA-.l6.c17.ctg.1:97-1062
+[choose ref nucmer]	1	966	1	966	966	966	99.79	966	966	1	CfxA5.3003096.AY769934.27_993.1669	CfxA-.l6.c17.ctg.1:97-1062
+Closest reference is CfxA4.3003005.AY769933.0_966.1592 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c17\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/Assembly/debug_best_assembly.fa
+Closest reference sequence: CfxA4.3003005.AY769933.0_966.1592
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+CfxA- detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA-/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END CfxA- ______________________________

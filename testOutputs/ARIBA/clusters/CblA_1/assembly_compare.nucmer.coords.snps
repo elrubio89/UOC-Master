@@ -1,0 +1,6 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CblA_1/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CblA_1/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+447	C	T	978	246	445	0	0	891	1636	1	1	CblA_1.3002999.GQ343019.132_1023.1188	CblA_1.l6.c17.ctg.1
+693	G	A	1224	199	199	0	0	891	1636	1	1	CblA_1.3002999.GQ343019.132_1023.1188	CblA_1.l6.c17.ctg.1

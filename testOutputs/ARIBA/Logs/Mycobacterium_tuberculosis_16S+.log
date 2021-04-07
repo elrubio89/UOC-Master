@@ -1,0 +1,24 @@
+Getting reads for Mycobacterium_tuberculosis_16S+ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Mycobacterium_tuberculosis_16S+ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_______________ LOG FILE START Mycobacterium_tuberculosis_16S+ ________________
+
+Using 598 from a total of 2408 for assembly.
+Assembling reads:
+Mycobacterium_tuberculosis_16S+ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	16	419.062	959
+6	17	8	581.25	919
+6	30	2	415.5	437
+15	4	16	320.75	598
+15	17	4	476.75	610
+15	30	3	651	716
+Finished running assemblies
+Looking for closest match from sequences within cluster
+Could not find match to reference sequences
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+________________ LOG FILE END Mycobacterium_tuberculosis_16S+ _________________

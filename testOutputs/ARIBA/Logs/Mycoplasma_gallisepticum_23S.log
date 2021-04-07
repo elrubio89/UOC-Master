@@ -1,0 +1,24 @@
+Getting reads for Mycoplasma_gallisepticum_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Mycoplasma_gallisepticum_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_________________ LOG FILE START Mycoplasma_gallisepticum_23S _________________
+
+Using 44 from a total of 44 for assembly.
+Assembling reads:
+Mycoplasma_gallisepticum_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	281	281
+6	17	0	0	0
+6	30	0	0	0
+15	4	1	281	281
+15	17	0	0	0
+15	30	0	0	0
+Finished running assemblies
+Looking for closest match from sequences within cluster
+Could not find match to reference sequences
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+__________________ LOG FILE END Mycoplasma_gallisepticum_23S __________________

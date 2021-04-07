@@ -1,0 +1,63 @@
+Getting reads for Neisseria_gonorrhoeae_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Neisseria_gonorrhoeae_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Neisseria_gonorrhoeae_23S ___________________
+
+Using 442 from a total of 442 for assembly.
+Assembling reads:
+Neisseria_gonorrhoeae_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	3	745	1112
+6	17	2	571	753
+6	30	1	859	859
+15	4	3	517.667	839
+15	17	2	444.5	500
+15	30	1	808	808
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1892	1985	52	145	94	94	96.81	2910	835	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1
+[choose ref nucmer]	1899	2813	913	3	915	911	90.10	2910	1112	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.2
+[choose ref nucmer]	1900	2710	808	1	811	808	90.31	2910	808	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l15.c30.ctg.1
+[choose ref nucmer]	1900	2740	1	838	841	838	90.30	2910	839	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l15.c4.ctg.3
+Closest cluster ref sequence is Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918 to assembly Neisseria_gonorrhoeae_23S.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	914	1007	94	1	94	94	94.68	2996	94	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1893	1986	1	94	94	94	98.94	2900	94	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1889	1982	1	94	94	94	96.81	2904	94	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1889	1982	1	94	94	94	96.81	2904	94	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1889	1982	1	94	94	94	96.81	2904	94	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1889	1982	1	94	94	94	96.81	2904	94	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1889	1982	1	94	94	94	96.81	2904	94	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	903	996	94	1	94	94	96.81	3156	94	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1892	1985	1	94	94	94	96.81	2910	94	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1899	2813	911	1	915	911	90.10	2910	911	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Neisseria_gonorrhoeae_23S.l6.c4.ctg.2:3-913
+[choose ref nucmer]	1917	2010	1	94	94	94	98.94	2926	94	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	1892	1985	1	94	94	94	100.00	2904	94	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+[choose ref nucmer]	920	1013	94	1	94	94	100.00	2904	94	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Neisseria_gonorrhoeae_23S.l6.c4.ctg.1:52-145
+Closest reference is Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Neisseria_gonorrhoeae_23S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_gonorrhoeae_23S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Neisseria_gonorrhoeae_23S ____________________

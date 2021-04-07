@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Pasteurella_multocida_16S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+560	1401	1	842	842	842	90.68	1551	842	1	1	Pasteurella_multocida_16S.3003493.NC_002663.1.341427_342977.3252	Pasteurella_multocida_16S.l6.c17.ctg.2	[CONTAINS]

@@ -1,0 +1,8 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Brachyspira_hyodysenteriae_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	974	38	1007	974	970	95.17	2996	1007	1	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.2	[CONTAINS]
+295	464	1	170	170	170	92.94	2996	171	1	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.7	[CONTAINS]
+831	1056	1	226	226	226	99.56	2996	226	1	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.8	[CONTAINS]
+1105	2551	1	1446	1447	1446	95.37	2996	1446	1	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Brachyspira_hyodysenteriae_23S.l15.c4.ctg.1	[CONTAINS]

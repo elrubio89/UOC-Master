@@ -1,0 +1,64 @@
+Getting reads for ErmB from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for ErmB from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________________ LOG FILE START ErmB _____________________________
+
+Using 142 from a total of 142 for assembly.
+Assembling reads:
+ErmB detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	4	423.75	937
+6	17	1	840	840
+6	30	2	732.5	1050
+15	4	1	1050	1050
+15	17	1	1052	1052
+15	30	1	1046	1046
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	671	382	1052	671	671	99.70	747	1052	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c17.ctg.1
+[choose ref nucmer]	1	588	459	1046	588	588	99.66	747	1046	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c30.ctg.1
+[choose ref nucmer]	1	290	761	1050	290	290	100.00	747	1050	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c4.ctg.1
+[choose ref nucmer]	1	290	761	1050	290	290	100.00	747	1050	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c30.ctg.1
+[choose ref nucmer]	1	671	267	937	671	671	99.70	747	937	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c4.ctg.1
+[choose ref nucmer]	117	671	286	840	555	555	99.64	747	840	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c17.ctg.1
+[choose ref nucmer]	154	747	1	593	594	593	99.49	747	1050	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c4.ctg.1
+[choose ref nucmer]	154	747	1	593	594	593	99.33	747	1050	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c30.ctg.1
+[choose ref nucmer]	155	569	415	1	415	415	99.28	747	415	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c30.ctg.2
+[choose ref nucmer]	456	747	1	291	292	291	99.32	747	1046	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c30.ctg.1
+[choose ref nucmer]	533	747	1	214	215	214	99.53	747	1052	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c17.ctg.1
+[choose ref nucmer]	533	742	1	209	210	209	99.52	747	209	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c4.ctg.2
+[choose ref nucmer]	549	747	1	198	199	198	98.49	747	840	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c17.ctg.1
+[choose ref nucmer]	549	747	330	133	199	198	98.49	747	330	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c4.ctg.3
+[choose ref nucmer]	633	747	1	114	115	114	99.13	747	219	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c4.ctg.4
+[choose ref nucmer]	648	747	1	99	100	99	99.00	747	937	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l6.c4.ctg.1
+Closest cluster ref sequence is ErmB.3000375.AF242872.1.2131_2878.5828 to assembly ErmB.l15.c17
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	671	1	671	671	671	99.70	747	671	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c17.ctg.1:382-1052
+[choose ref nucmer]	533	747	1	214	215	214	99.53	747	214	1	ErmB.3000375.AF242872.1.2131_2878.5828	ErmB.l15.c17.ctg.1:1-214
+Closest reference is ErmB.3000375.AF242872.1.2131_2878.5828 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c17\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/Assembly/debug_best_assembly.fa
+Closest reference sequence: ErmB.3000375.AF242872.1.2131_2878.5828
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+ErmB detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmB/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+______________________________ LOG FILE END ErmB ______________________________

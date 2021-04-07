@@ -1,0 +1,44 @@
+Getting reads for Myco- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Myco- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START Myco- _____________________________
+
+Using 630 from a total of 630 for assembly.
+Assembling reads:
+Myco- detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	10	407.8	905
+6	17	4	546.75	824
+6	30	6	485	732
+15	4	9	340.222	541
+15	17	3	356.667	415
+15	30	3	386.333	415
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	2639	2780	142	1	142	142	92.96	3112	589	1	Mycobacterium_avium_23S.3004164.NG_041979.1.0_3112.4157	Myco-.l6.c4.ctg.5
+[choose ref nucmer]	2626	2767	142	1	142	142	92.96	3103	589	1	Mycobacterium_intracellulare_23S.3004166.NR_076151.1.0_3103.4177	Myco-.l6.c4.ctg.5
+[choose ref nucmer]	2626	2767	142	1	142	142	92.96	3103	589	1	Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159	Myco-.l6.c4.ctg.5
+Closest cluster ref sequence is Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159 to assembly Myco-.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	2424	2565	142	1	142	142	96.48	2900	142	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2639	2780	142	1	142	142	92.96	3112	142	1	Mycobacterium_avium_23S.3004164.NG_041979.1.0_3112.4157	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2626	2767	142	1	142	142	92.96	3103	142	1	Mycobacterium_intracellulare_23S.3004166.NR_076151.1.0_3103.4177	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2626	2767	142	1	142	142	92.96	3103	142	1	Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2626	2767	142	1	142	142	92.96	3118	142	1	Mycobacterium_kansasii_23S.3004168.NZ_CP019883.1.5018387_5021505.4178	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2657	2798	142	1	142	142	92.96	3138	142	1	Mycobacterium_tuberculosis_23S.3004937.AL123456.3.1473657_1476795.6024	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2631	2772	142	1	142	142	92.96	3112	142	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2632	2773	142	1	142	142	92.96	3113	142	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2644	2785	142	1	142	142	92.96	3162	142	1	Mycolicibacterium_smegmatis_23S.3004169.AB011184.1.0_3162.4161	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	321	462	1	142	142	142	90.85	2884	142	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2447	2588	142	1	142	142	93.66	2926	142	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2422	2563	142	1	142	142	93.66	2904	142	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	342	483	1	142	142	142	93.66	2904	142	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Myco-.l6.c4.ctg.5:1-142
+[choose ref nucmer]	2663	2804	142	1	142	142	91.55	3149	142	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Myco-.l6.c4.ctg.5:1-142
+Closest reference is Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166 and does not belong to cluster
+Closest reference Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END Myco- ______________________________

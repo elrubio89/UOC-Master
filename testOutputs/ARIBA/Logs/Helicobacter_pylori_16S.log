@@ -1,0 +1,24 @@
+Getting reads for Helicobacter_pylori_16S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Helicobacter_pylori_16S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________ LOG FILE START Helicobacter_pylori_16S ____________________
+
+Using 280 from a total of 280 for assembly.
+Assembling reads:
+Helicobacter_pylori_16S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	5	416.8	641
+6	17	1	491	491
+6	30	3	499.333	662
+15	4	5	320.8	495
+15	17	0	0	0
+15	30	1	800	800
+Finished running assemblies
+Looking for closest match from sequences within cluster
+Could not find match to reference sequences
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+____________________ LOG FILE END Helicobacter_pylori_16S _____________________

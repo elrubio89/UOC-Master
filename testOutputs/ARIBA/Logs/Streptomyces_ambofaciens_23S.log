@@ -1,0 +1,24 @@
+Getting reads for Streptomyces_ambofaciens_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Streptomyces_ambofaciens_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_________________ LOG FILE START Streptomyces_ambofaciens_23S _________________
+
+Using 296 from a total of 296 for assembly.
+Assembling reads:
+Streptomyces_ambofaciens_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	4	351.25	740
+6	17	2	402	415
+6	30	2	552.5	690
+15	4	2	381	423
+15	17	2	402	415
+15	30	1	415	415
+Finished running assemblies
+Looking for closest match from sequences within cluster
+Could not find match to reference sequences
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+__________________ LOG FILE END Streptomyces_ambofaciens_23S __________________

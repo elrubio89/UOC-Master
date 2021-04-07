@@ -1,0 +1,54 @@
+Getting reads for Chlamydia_trachomatis_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Chlamydia_trachomatis_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Chlamydia_trachomatis_23S ___________________
+
+Using 516 from a total of 516 for assembly.
+Assembling reads:
+Chlamydia_trachomatis_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	17	260.882	712
+6	17	1	675	675
+6	30	3	566.333	613
+15	4	16	250.812	542
+15	17	0	0	0
+15	30	0	0	0
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1939	2129	200	10	191	191	90.10	2940	249	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l15.c4.ctg.13
+[choose ref nucmer]	1953	2129	7	183	177	177	91.01	2940	190	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l15.c4.ctg.5
+[choose ref nucmer]	1953	2129	7	183	177	177	91.01	2940	190	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.5
+[choose ref nucmer]	1957	2129	1	173	173	173	90.23	2940	675	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c17.ctg.1
+[choose ref nucmer]	1957	2129	1	173	173	173	92.53	2940	177	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.11
+[choose ref nucmer]	1962	2130	175	7	169	169	91.76	2940	175	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l15.c4.ctg.4
+[choose ref nucmer]	1962	2130	172	4	169	169	91.76	2940	172	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.4
+[choose ref nucmer]	1981	2129	158	10	149	149	90.67	2940	158	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.14
+[choose ref nucmer]	2470	2650	181	1	181	181	91.16	2940	181	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l15.c4.ctg.15
+[choose ref nucmer]	2495	2739	5	249	245	245	90.20	2940	272	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.2
+[choose ref nucmer]	2586	2732	10	156	147	147	92.52	2940	174	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l15.c4.ctg.8
+[choose ref nucmer]	2586	2732	10	156	147	147	92.52	2940	174	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.8
+Closest cluster ref sequence is Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165 to assembly Chlamydia_trachomatis_23S.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	208	452	245	1	245	245	90.20	2996	245	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	817	984	2	169	168	168	90.48	2996	169	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Chlamydia_trachomatis_23S.l6.c4.ctg.4:4-172
+[choose ref nucmer]	2460	2704	1	245	245	245	90.65	2912	245	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	1953	2129	1	177	177	177	91.01	2940	177	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.5:7-183
+[choose ref nucmer]	1957	2129	1	173	173	173	92.53	2940	173	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.11:1-173
+[choose ref nucmer]	1962	2130	169	1	169	169	91.76	2940	169	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.4:4-172
+[choose ref nucmer]	1981	2129	149	1	149	149	90.67	2940	149	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.14:10-158
+[choose ref nucmer]	2495	2739	1	245	245	245	90.20	2940	245	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	2586	2732	1	147	147	147	92.52	2940	147	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Chlamydia_trachomatis_23S.l6.c4.ctg.8:10-156
+[choose ref nucmer]	2449	2693	1	245	245	245	92.65	2900	245	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	2532	2765	1	234	234	234	94.04	2975	245	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	2472	2716	1	245	245	245	94.69	2926	245	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	2447	2691	1	245	245	245	91.02	2904	245	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	214	458	245	1	245	245	91.02	2904	245	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+[choose ref nucmer]	2688	2932	1	245	245	245	91.06	3149	245	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Chlamydia_trachomatis_23S.l6.c4.ctg.2:5-249
+Closest reference is Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 and does not belong to cluster
+Closest reference Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Chlamydia_trachomatis_23S ____________________

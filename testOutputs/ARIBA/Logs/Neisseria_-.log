@@ -1,0 +1,50 @@
+Getting reads for Neisseria_- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Neisseria_- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_________________________ LOG FILE START Neisseria_- __________________________
+
+Using 608 from a total of 608 for assembly.
+Assembling reads:
+Neisseria_- detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	15	440	1588
+6	17	8	519.75	778
+6	30	8	620.5	1355
+15	4	15	404.333	1588
+15	17	3	484.667	579
+15	30	4	608.75	1061
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	483	825	52	394	343	343	90.43	1551	394	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+[choose ref nucmer]	481	819	56	394	339	339	90.91	1544	394	1	Neisseria_meningitidis_16S.3003497.NC_003112.60970_62514.4137	Neisseria_-.l6.c30.ctg.8
+Closest cluster ref sequence is Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136 to assembly Neisseria_-.l6.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	483	825	1	343	343	343	90.43	1551	343	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8:52-394
+[choose ref nucmer]	481	819	5	343	339	339	90.91	1544	343	1	Neisseria_meningitidis_16S.3003497.NC_003112.60970_62514.4137	Neisseria_-.l6.c30.ctg.8:52-394
+Closest reference is Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/Assembly/debug_best_assembly.fa
+Closest reference sequence: Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Neisseria_- detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+__________________________ LOG FILE END Neisseria_- ___________________________

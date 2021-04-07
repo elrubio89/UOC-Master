@@ -1,0 +1,17 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	211	915	1125	211	211	93.93	2900	1432	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2	
+393	732	47	386	340	340	91.76	2900	386	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.3	
+731	1563	3	835	833	833	94.24	2900	1018	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18	
+1636	2556	1	921	921	921	90.03	2900	921	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.16	[CONTAINS]
+1821	2003	21	203	183	183	94.54	2900	203	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.17	
+1893	2076	835	1018	184	184	90.76	2900	1018	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18	
+1916	2094	1	179	179	179	91.06	2900	627	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.15	
+2325	2586	1171	1432	262	262	90.84	2900	1432	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2	
+2420	2682	11	273	263	263	95.06	2900	274	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.10	[CONTAINS]
+2420	2682	6	268	263	263	95.06	2900	269	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.19	[CONTAINS]
+2423	2702	1	280	280	280	93.93	2900	295	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.1	
+2423	2699	1	277	277	277	92.06	2900	277	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.9	[CONTAINS]
+2433	2738	1	306	306	306	92.48	2900	306	1	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.13	[CONTAINS]

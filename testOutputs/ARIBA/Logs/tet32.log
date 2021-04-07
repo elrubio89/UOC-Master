@@ -1,0 +1,53 @@
+Getting reads for tet32 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for tet32 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START tet32 _____________________________
+
+Using 34 from a total of 34 for assembly.
+Assembling reads:
+tet32 detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	667	667
+6	17	1	667	667
+6	30	1	667	667
+15	4	1	368	368
+15	17	1	368	368
+15	30	1	368	368
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1331	1698	368	1	368	368	99.46	1920	368	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l15.c17.ctg.1
+[choose ref nucmer]	1331	1698	368	1	368	368	99.46	1920	368	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l15.c30.ctg.1
+[choose ref nucmer]	1331	1698	1	368	368	368	99.46	1920	368	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l15.c4.ctg.1
+[choose ref nucmer]	1331	1920	667	78	590	590	98.81	1920	667	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l6.c17.ctg.1
+[choose ref nucmer]	1331	1920	667	78	590	590	98.81	1920	667	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l6.c30.ctg.1
+[choose ref nucmer]	1331	1920	667	78	590	590	98.81	1920	667	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l6.c4.ctg.1
+Closest cluster ref sequence is tet32.3000196.EU722333.1.1932_3852.5146 to assembly tet32.l6.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1331	1920	590	1	590	590	98.81	1920	590	1	tet32.3000196.EU722333.1.1932_3852.5146	tet32.l6.c30.ctg.1:78-667
+Closest reference is tet32.3000196.EU722333.1.1932_3852.5146 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/Assembly/debug_best_assembly.fa
+Closest reference sequence: tet32.3000196.EU722333.1.1932_3852.5146
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+tet32 detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet32/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END tet32 ______________________________

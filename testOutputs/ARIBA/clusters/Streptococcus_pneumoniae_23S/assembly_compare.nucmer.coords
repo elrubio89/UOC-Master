@@ -1,0 +1,13 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Streptococcus_pneumoniae_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Streptococcus_pneumoniae_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+180	534	1	356	355	356	91.01	2904	358	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.6	[CONTAINS]
+210	493	4	287	284	284	90.53	2904	287	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.17	[CONTAINS]
+225	644	755	336	420	420	99.52	2904	755	1	-1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.10	
+264	487	1	224	224	224	95.09	2904	229	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.3	[CONTAINS]
+284	431	294	441	148	148	91.22	2904	441	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.8	
+285	626	1	342	342	342	91.28	2904	755	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.10	
+292	515	1	224	224	224	92.86	2904	229	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.23	[CONTAINS]
+822	1144	6	319	323	314	90.12	2904	319	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.12	[CONTAINS]
+921	1213	1	294	293	294	93.94	2904	480	1	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Streptococcus_pneumoniae_23S.l6.c4.ctg.1	

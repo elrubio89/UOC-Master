@@ -1,0 +1,79 @@
+Getting reads for ErmG from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for ErmG from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________________ LOG FILE START ErmG _____________________________
+
+Using 400 from a total of 868 for assembly.
+Assembling reads:
+ErmG detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	14	270.5	410
+6	17	2	479.5	698
+6	30	1	656	656
+15	4	14	272.5	410
+15	17	2	486.5	698
+15	30	1	768	768
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	256	256	1	256	256	100.00	735	275	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c17.ctg.2
+[choose ref nucmer]	1	651	651	1	651	651	99.23	735	768	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1
+[choose ref nucmer]	1	148	148	1	148	148	100.00	735	368	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.3
+[choose ref nucmer]	1	121	121	1	121	121	100.00	735	410	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.6
+[choose ref nucmer]	1	256	256	1	256	256	100.00	735	261	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c17.ctg.2
+[choose ref nucmer]	1	651	651	1	651	651	99.23	735	656	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c30.ctg.1
+[choose ref nucmer]	1	148	148	1	148	148	100.00	735	340	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.3
+[choose ref nucmer]	1	121	121	1	121	121	100.00	735	410	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.6
+[choose ref nucmer]	2	256	255	1	255	255	100.00	735	255	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.5
+[choose ref nucmer]	2	256	255	1	255	255	100.00	735	255	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.5
+[choose ref nucmer]	122	379	258	1	258	258	100.00	735	258	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.14
+[choose ref nucmer]	122	379	258	1	258	258	100.00	735	258	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.14
+[choose ref nucmer]	129	379	251	1	251	251	99.60	735	251	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.1
+[choose ref nucmer]	129	379	251	1	251	251	99.60	735	251	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.1
+[choose ref nucmer]	231	403	173	1	173	173	98.84	735	173	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.2
+[choose ref nucmer]	231	396	1	166	166	166	100.00	735	166	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.8
+[choose ref nucmer]	231	403	173	1	173	173	98.84	735	173	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.2
+[choose ref nucmer]	231	396	1	166	166	166	100.00	735	166	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.8
+[choose ref nucmer]	259	605	347	1	347	347	99.71	735	347	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.13
+[choose ref nucmer]	259	605	347	1	347	347	99.71	735	347	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.13
+[choose ref nucmer]	260	735	1	476	476	476	98.95	735	698	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c17.ctg.1
+[choose ref nucmer]	260	625	366	1	366	366	98.91	735	366	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.12
+[choose ref nucmer]	260	735	1	476	476	476	98.95	735	698	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c17.ctg.1
+[choose ref nucmer]	260	625	366	1	366	366	98.91	735	366	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.12
+[choose ref nucmer]	480	651	172	1	172	172	98.84	735	172	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.11
+[choose ref nucmer]	480	651	172	1	172	172	98.84	735	172	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.11
+[choose ref nucmer]	515	735	272	52	221	221	99.55	735	275	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.7
+[choose ref nucmer]	515	735	272	52	221	221	99.55	735	275	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.7
+[choose ref nucmer]	516	735	1	220	220	220	99.09	735	266	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.10
+[choose ref nucmer]	516	735	1	220	220	220	99.09	735	266	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.10
+[choose ref nucmer]	654	735	337	256	82	82	100.00	735	337	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c4.ctg.9
+[choose ref nucmer]	654	735	337	256	82	82	100.00	735	337	1	ErmG.3000522.L42817.201_936.590	ErmG.l6.c4.ctg.9
+Closest cluster ref sequence is ErmG.3000522.L42817.201_936.590 to assembly ErmG.l15.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	651	651	1	651	651	99.23	735	651	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1:1-651
+Closest reference is ErmG.3000522.L42817.201_936.590 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/Assembly/debug_best_assembly.fa
+Closest reference sequence: ErmG.3000522.L42817.201_936.590
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+ErmG detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+______________________________ LOG FILE END ErmG ______________________________

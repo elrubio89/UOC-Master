@@ -1,0 +1,54 @@
+Getting reads for Mycobacteroides_- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Mycobacteroides_- from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+______________________ LOG FILE START Mycobacteroides_- _______________________
+
+Using 608 from a total of 608 for assembly.
+Assembling reads:
+Mycobacteroides_- detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	9	424.667	1341
+6	17	3	542.667	824
+6	30	6	461.333	732
+15	4	8	342.375	605
+15	17	3	356.667	415
+15	30	3	386.333	415
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	2646	2829	1	184	184	184	92.93	3112	187	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Mycobacteroides_-.l6.c4.ctg.7
+[choose ref nucmer]	2700	2829	2	131	130	130	96.15	3112	364	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Mycobacteroides_-.l6.c30.ctg.4
+[choose ref nucmer]	2647	2830	1	184	184	184	92.93	3113	187	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Mycobacteroides_-.l6.c4.ctg.7
+[choose ref nucmer]	2701	2830	2	131	130	130	96.15	3113	364	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Mycobacteroides_-.l6.c30.ctg.4
+Closest cluster ref sequence is Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156 to assembly Mycobacteroides_-.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	279	462	184	1	184	184	92.39	2996	184	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2450	2632	1	183	183	183	91.80	2912	184	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2485	2668	1	184	184	184	91.30	2940	184	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2439	2622	1	184	184	184	91.85	2900	184	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2434	2616	1	183	183	183	91.80	2904	184	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2434	2616	1	183	183	183	91.80	2904	184	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2434	2616	1	183	183	183	91.80	2904	184	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2434	2616	1	183	183	183	91.80	2904	184	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2434	2616	1	183	183	183	91.80	2904	184	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2522	2704	1	183	183	183	91.80	2975	184	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2654	2837	1	184	184	184	92.93	3112	184	1	Mycobacterium_avium_23S.3004164.NG_041979.1.0_3112.4157	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2641	2824	1	184	184	184	92.93	3103	184	1	Mycobacterium_intracellulare_23S.3004166.NR_076151.1.0_3103.4177	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2641	2824	1	184	184	184	92.93	3103	184	1	Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2641	2824	1	184	184	184	92.93	3118	184	1	Mycobacterium_kansasii_23S.3004168.NZ_CP019883.1.5018387_5021505.4178	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2672	2855	1	184	184	184	92.93	3138	184	1	Mycobacterium_tuberculosis_23S.3004937.AL123456.3.1473657_1476795.6024	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2646	2829	1	184	184	184	92.93	3112	184	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2647	2830	1	184	184	184	92.93	3113	184	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2659	2842	1	184	184	184	92.93	3162	184	1	Mycolicibacterium_smegmatis_23S.3004169.AB011184.1.0_3162.4161	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2462	2645	1	184	184	184	91.30	2926	184	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2437	2620	1	184	184	184	91.85	2904	184	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	285	468	184	1	184	184	91.85	2904	184	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2678	2861	1	184	184	184	92.39	3149	184	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Mycobacteroides_-.l6.c4.ctg.7:1-184
+[choose ref nucmer]	2423	2606	1	184	184	184	90.76	2893	184	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Mycobacteroides_-.l6.c4.ctg.7:1-184
+Closest reference is Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116 and does not belong to cluster
+Closest reference Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+_______________________ LOG FILE END Mycobacteroides_- ________________________

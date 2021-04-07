@@ -1,0 +1,53 @@
+Getting reads for Mef_En2_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Mef_En2_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________________ LOG FILE START Mef_En2_ ___________________________
+
+Using 148 from a total of 148 for assembly.
+Assembling reads:
+Mef_En2_ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	1470	1470
+6	17	1	1288	1288
+6	30	1	1288	1288
+15	4	1	1706	1706
+15	17	1	1433	1433
+15	30	1	1433	1433
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	1206	1466	261	1206	1206	99.83	1206	1706	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l15.c4.ctg.1
+[choose ref nucmer]	1	1112	1112	1	1112	1112	99.82	1206	1288	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l6.c17.ctg.1
+[choose ref nucmer]	1	1112	1112	1	1112	1112	99.73	1206	1288	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l6.c30.ctg.1
+[choose ref nucmer]	1	1206	1294	89	1206	1206	99.83	1206	1470	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l6.c4.ctg.1
+[choose ref nucmer]	34	1206	1433	261	1173	1173	99.83	1206	1433	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l15.c17.ctg.1
+[choose ref nucmer]	34	1206	1433	261	1173	1173	99.74	1206	1433	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l15.c30.ctg.1
+Closest cluster ref sequence is Mef_En2_.3004659.AF251288.1.794_2000.5539 to assembly Mef_En2_.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	1206	1206	1	1206	1206	99.83	1206	1206	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l15.c4.ctg.1:261-1466
+Closest reference is Mef_En2_.3004659.AF251288.1.794_2000.5539 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/Assembly/debug_best_assembly.fa
+Closest reference sequence: Mef_En2_.3004659.AF251288.1.794_2000.5539
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Mef_En2_ detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+____________________________ LOG FILE END Mef_En2_ ____________________________

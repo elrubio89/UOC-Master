@@ -1,0 +1,6 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mycoplasma_hominis_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mycoplasma_hominis_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+248	462	145	359	215	215	91.63	2884	362	1	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Mycoplasma_hominis_23S.l6.c4.ctg.6	
+290	462	1	173	173	173	93.06	2884	174	1	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Mycoplasma_hominis_23S.l6.c4.ctg.4	[CONTAINS]

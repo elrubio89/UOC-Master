@@ -1,0 +1,37 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Neisseria_-/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+486	A	C	55	4	55	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+553	G	A	122	16	122	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+569	T	A	138	16	138	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+585	G	T	154	7	154	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+592	A	G	161	6	161	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+598	A	G	167	1	167	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+599	C	G	168	1	168	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+600	T	A	169	1	169	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+604	.	A	174	3	174	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+607	G	.	176	3	176	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+627	C	T	196	5	196	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+632	C	T	201	5	194	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+639	T	A	208	3	187	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+642	G	A	211	3	184	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+645	C	.	213	2	182	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+647	.	T	216	1	179	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+648	A	G	217	1	178	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+653	G	T	222	1	173	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+654	G	C	223	1	172	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+660	C	G	229	5	166	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+665	G	A	234	5	161	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+676	A	G	245	11	150	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+712	G	T	281	8	114	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+720	G	A	289	4	106	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+724	T	C	293	4	102	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+744	T	C	313	7	82	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+751	A	G	320	1	75	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+752	T	C	321	1	74	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+755	C	A	324	3	71	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+763	T	C	332	6	63	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+769	T	C	338	1	57	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+770	C	A	339	1	56	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8
+783	T	G	352	13	43	0	0	1551	394	1	1	Neisseria_gonorrhoeae_16S.3003495.CP020418.383737_385288.4136	Neisseria_-.l6.c30.ctg.8

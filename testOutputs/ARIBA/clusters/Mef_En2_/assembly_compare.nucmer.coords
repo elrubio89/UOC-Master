@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Mef_En2_/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	1206	241	1446	1206	1206	99.83	1206	1706	1	1	Mef_En2_.3004659.AF251288.1.794_2000.5539	Mef_En2_.l15.c4.ctg.1	[CONTAINED]

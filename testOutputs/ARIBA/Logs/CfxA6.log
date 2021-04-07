@@ -1,0 +1,74 @@
+Getting reads for CfxA6 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for CfxA6 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START CfxA6 _____________________________
+
+Using 482 from a total of 582 for assembly.
+Assembling reads:
+CfxA6 detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	3	877.667	1751
+6	17	2	1169	1611
+6	30	4	638.25	768
+15	4	3	872.333	1827
+15	17	2	1242.5	1758
+15	30	4	614.75	854
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	996	680	1675	996	996	99.70	996	1758	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c17.ctg.1
+[choose ref nucmer]	1	175	680	854	175	175	99.43	996	854	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c30.ctg.2
+[choose ref nucmer]	1	996	680	1675	996	996	99.70	996	1827	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c4.ctg.1
+[choose ref nucmer]	1	996	594	1589	996	996	99.70	996	1611	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c17.ctg.1
+[choose ref nucmer]	1	175	594	768	175	175	99.43	996	768	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c30.ctg.2
+[choose ref nucmer]	1	996	594	1589	996	996	99.70	996	1751	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.1
+[choose ref nucmer]	47	555	1	509	509	509	100.00	996	509	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c30.ctg.1
+[choose ref nucmer]	47	555	1	509	509	509	100.00	996	509	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c30.ctg.1
+[choose ref nucmer]	69	309	1	241	241	241	91.29	996	241	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c4.ctg.3
+[choose ref nucmer]	69	371	1	303	303	303	91.42	996	303	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.3
+[choose ref nucmer]	496	977	545	64	482	482	90.46	996	549	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c4.ctg.2
+[choose ref nucmer]	496	977	575	94	482	482	90.46	996	579	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.2
+[choose ref nucmer]	631	996	1	366	366	366	99.73	996	518	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l15.c30.ctg.3
+[choose ref nucmer]	698	977	698	419	280	280	98.57	996	698	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c30.ctg.3
+[choose ref nucmer]	708	977	1	270	270	270	92.59	996	698	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c30.ctg.3
+Closest cluster ref sequence is CfxA6.3003097.GQ342996.797_1793.1744 to assembly CfxA6.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	38	338	3	303	301	301	99.00	966	303	1	CfxA.3003001.U38243.149_1115.1354	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	463	944	482	1	482	482	99.59	966	482	1	CfxA.3003001.U38243.149_1115.1354	CfxA6.l6.c4.ctg.2:94-575
+[choose ref nucmer]	38	338	3	303	301	301	99.00	966	303	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	463	944	482	1	482	482	99.79	966	482	1	CfxA2.3003002.AF118110.1.71_1037.4470	CfxA6.l6.c4.ctg.2:94-575
+[choose ref nucmer]	38	338	3	303	301	301	99.00	966	303	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	463	944	482	1	482	482	99.79	966	482	1	CfxA3.3003003.AF472622.52_1018.1514	CfxA6.l6.c4.ctg.2:94-575
+[choose ref nucmer]	38	338	3	303	301	301	99.00	966	303	1	CfxA4.3003005.AY769933.0_966.1592	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	463	944	482	1	482	482	100.00	966	482	1	CfxA4.3003005.AY769933.0_966.1592	CfxA6.l6.c4.ctg.2:94-575
+[choose ref nucmer]	38	338	3	303	301	301	99.00	966	303	1	CfxA5.3003096.AY769934.27_993.1669	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	463	944	482	1	482	482	99.59	966	482	1	CfxA5.3003096.AY769934.27_993.1669	CfxA6.l6.c4.ctg.2:94-575
+[choose ref nucmer]	1	996	1	996	996	996	99.70	996	996	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.1:594-1589
+[choose ref nucmer]	69	371	1	303	303	303	91.42	996	303	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.3:1-303
+[choose ref nucmer]	496	977	482	1	482	482	90.46	996	482	1	CfxA6.3003097.GQ342996.797_1793.1744	CfxA6.l6.c4.ctg.2:94-575
+Closest reference is CfxA6.3003097.GQ342996.797_1793.1744 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/Assembly/debug_best_assembly.fa
+Closest reference sequence: CfxA6.3003097.GQ342996.797_1793.1744
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+CfxA6 detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/CfxA6/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END CfxA6 ______________________________

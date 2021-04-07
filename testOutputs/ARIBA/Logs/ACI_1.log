@@ -1,0 +1,53 @@
+Getting reads for ACI_1 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for ACI_1 from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+____________________________ LOG FILE START ACI_1 _____________________________
+
+Using 18 from a total of 18 for assembly.
+Assembling reads:
+ACI_1 detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	335	335
+6	17	1	391	391
+6	30	1	391	391
+15	4	1	335	335
+15	17	1	391	391
+15	30	1	391	391
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	343	733	391	1	391	391	99.74	855	391	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l15.c17.ctg.1
+[choose ref nucmer]	343	733	391	1	391	391	99.74	855	391	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l15.c30.ctg.1
+[choose ref nucmer]	343	677	1	335	335	335	99.70	855	335	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l15.c4.ctg.1
+[choose ref nucmer]	343	733	391	1	391	391	99.74	855	391	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l6.c17.ctg.1
+[choose ref nucmer]	343	733	391	1	391	391	99.74	855	391	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l6.c30.ctg.1
+[choose ref nucmer]	343	677	1	335	335	335	99.70	855	335	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l6.c4.ctg.1
+Closest cluster ref sequence is ACI_1.3004359.AJ007350.1.239_1094.4259 to assembly ACI_1.l15.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	343	733	391	1	391	391	99.74	855	391	1	ACI_1.3004359.AJ007350.1.239_1094.4259	ACI_1.l15.c30.ctg.1:1-391
+Closest reference is ACI_1.3004359.AJ007350.1.239_1094.4259 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/Assembly/debug_best_assembly.fa
+Closest reference sequence: ACI_1.3004359.AJ007350.1.239_1094.4259
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+ACI_1 detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ACI_1/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+_____________________________ LOG FILE END ACI_1 ______________________________

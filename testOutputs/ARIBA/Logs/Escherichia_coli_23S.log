@@ -1,0 +1,187 @@
+Getting reads for Escherichia_coli_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Escherichia_coli_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________ LOG FILE START Escherichia_coli_23S _____________________
+
+Using 1150 from a total of 1250 for assembly.
+Assembling reads:
+Escherichia_coli_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	21	485.905	1237
+6	17	8	559.5	960
+6	30	9	500.556	849
+15	4	19	381.789	1025
+15	17	3	488.333	850
+15	30	3	452.333	606
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	366	814	446	1	449	446	95.10	2904	458	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l15.c4.ctg.13
+[choose ref nucmer]	366	503	139	2	138	138	94.20	2904	538	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	503	456	593	138	138	94.20	2904	594	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	366	594	227	2	229	226	92.58	2904	1237	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c4.ctg.17
+[choose ref nucmer]	391	586	1	192	196	192	91.37	2904	195	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l15.c4.ctg.11
+[choose ref nucmer]	481	634	91	242	154	152	94.81	2904	386	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	975	1126	235	386	152	152	94.12	2904	386	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	987	1405	542	124	419	419	90.95	2904	542	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c4.ctg.15
+[choose ref nucmer]	1002	1271	412	144	270	269	95.93	2904	412	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	1868	2016	20	169	149	150	90.13	2904	169	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l15.c4.ctg.12
+[choose ref nucmer]	1883	2121	383	145	239	239	99.58	2904	383	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	1889	1962	75	2	74	74	98.65	2904	383	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	2223	2619	6	402	397	397	92.70	2904	402	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.4
+[choose ref nucmer]	2241	2616	2	378	376	377	91.27	2904	378	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.6
+[choose ref nucmer]	2262	2619	1	358	358	358	92.18	2904	358	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l15.c17.ctg.2
+[choose ref nucmer]	2269	2419	151	1	151	151	98.01	2904	412	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	2402	2772	507	137	371	371	91.91	2904	508	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.5
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	594	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	2490	2882	1	393	393	393	97.96	2904	393	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l15.c30.ctg.1
+[choose ref nucmer]	2490	2883	538	145	394	394	97.97	2904	538	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	814	446	1	449	446	95.10	2904	458	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l15.c4.ctg.13
+[choose ref nucmer]	366	503	139	2	138	138	94.20	2904	538	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	503	456	593	138	138	94.20	2904	594	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	366	594	227	2	229	226	92.58	2904	1237	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c4.ctg.17
+[choose ref nucmer]	391	586	1	192	196	192	91.37	2904	195	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l15.c4.ctg.11
+[choose ref nucmer]	481	634	91	242	154	152	94.81	2904	386	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	975	1126	235	386	152	152	94.12	2904	386	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	987	1405	542	124	419	419	90.95	2904	542	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c4.ctg.15
+[choose ref nucmer]	1002	1271	412	144	270	269	95.93	2904	412	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	1868	2016	20	169	149	150	90.13	2904	169	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l15.c4.ctg.12
+[choose ref nucmer]	1883	2121	383	145	239	239	99.58	2904	383	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	1889	1962	75	2	74	74	98.65	2904	383	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	2223	2619	6	402	397	397	92.70	2904	402	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.4
+[choose ref nucmer]	2241	2616	2	378	376	377	91.27	2904	378	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.6
+[choose ref nucmer]	2262	2619	1	358	358	358	92.18	2904	358	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l15.c17.ctg.2
+[choose ref nucmer]	2269	2419	151	1	151	151	98.01	2904	412	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	2402	2772	507	137	371	371	91.91	2904	508	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.5
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	594	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	2490	2882	1	393	393	393	97.96	2904	393	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l15.c30.ctg.1
+[choose ref nucmer]	2490	2883	538	145	394	394	97.97	2904	538	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	814	446	1	449	446	95.10	2904	458	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l15.c4.ctg.13
+[choose ref nucmer]	366	503	139	2	138	138	94.20	2904	538	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	503	456	593	138	138	94.20	2904	594	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	366	594	227	2	229	226	92.58	2904	1237	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c4.ctg.17
+[choose ref nucmer]	391	586	1	192	196	192	91.37	2904	195	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l15.c4.ctg.11
+[choose ref nucmer]	481	634	91	242	154	152	94.81	2904	386	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	975	1126	235	386	152	152	94.12	2904	386	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	987	1405	542	124	419	419	90.95	2904	542	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c4.ctg.15
+[choose ref nucmer]	1002	1271	412	144	270	269	95.93	2904	412	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	1868	2016	20	169	149	150	90.13	2904	169	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l15.c4.ctg.12
+[choose ref nucmer]	1883	2121	383	145	239	239	99.58	2904	383	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	1889	1962	75	2	74	74	98.65	2904	383	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	2223	2619	6	402	397	397	92.70	2904	402	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.4
+[choose ref nucmer]	2241	2616	2	378	376	377	91.27	2904	378	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.6
+[choose ref nucmer]	2262	2619	1	358	358	358	92.18	2904	358	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l15.c17.ctg.2
+[choose ref nucmer]	2269	2419	151	1	151	151	98.01	2904	412	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	2402	2772	507	137	371	371	91.91	2904	508	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.5
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	594	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	2490	2882	1	393	393	393	97.96	2904	393	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l15.c30.ctg.1
+[choose ref nucmer]	2490	2883	538	145	394	394	97.97	2904	538	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	814	446	1	449	446	95.10	2904	458	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l15.c4.ctg.13
+[choose ref nucmer]	366	503	139	2	138	138	94.20	2904	538	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	503	456	593	138	138	94.20	2904	594	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	366	594	227	2	229	226	92.58	2904	1237	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c4.ctg.17
+[choose ref nucmer]	391	586	1	192	196	192	91.37	2904	195	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l15.c4.ctg.11
+[choose ref nucmer]	481	634	91	242	154	152	94.81	2904	386	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	975	1126	235	386	152	152	94.12	2904	386	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	987	1405	542	124	419	419	90.95	2904	542	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c4.ctg.15
+[choose ref nucmer]	1002	1271	412	144	270	269	95.93	2904	412	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	1868	2016	20	169	149	150	90.13	2904	169	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l15.c4.ctg.12
+[choose ref nucmer]	1883	2121	383	145	239	239	99.58	2904	383	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	1889	1962	75	2	74	74	98.65	2904	383	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	2223	2619	6	402	397	397	92.70	2904	402	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.4
+[choose ref nucmer]	2241	2616	2	378	376	377	91.27	2904	378	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.6
+[choose ref nucmer]	2262	2619	1	358	358	358	92.18	2904	358	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l15.c17.ctg.2
+[choose ref nucmer]	2269	2419	151	1	151	151	98.01	2904	412	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	2402	2772	507	137	371	371	91.91	2904	508	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.5
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	594	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	2490	2882	1	393	393	393	97.96	2904	393	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l15.c30.ctg.1
+[choose ref nucmer]	2490	2883	538	145	394	394	97.97	2904	538	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	814	446	1	449	446	95.10	2904	458	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l15.c4.ctg.13
+[choose ref nucmer]	366	503	139	2	138	138	94.20	2904	538	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.8
+[choose ref nucmer]	366	503	456	593	138	138	94.20	2904	594	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	366	594	227	2	229	226	92.58	2904	1237	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c4.ctg.17
+[choose ref nucmer]	391	586	1	192	196	192	91.37	2904	195	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l15.c4.ctg.11
+[choose ref nucmer]	481	634	91	242	154	152	94.81	2904	386	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	975	1126	235	386	152	152	94.12	2904	386	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8
+[choose ref nucmer]	987	1405	542	124	419	419	90.95	2904	542	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c4.ctg.15
+[choose ref nucmer]	1002	1271	412	144	270	269	95.93	2904	412	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	1868	2016	20	169	149	150	90.13	2904	169	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l15.c4.ctg.12
+[choose ref nucmer]	1883	2121	383	145	239	239	99.58	2904	383	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	1889	1962	75	2	74	74	98.65	2904	383	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4
+[choose ref nucmer]	2223	2619	6	402	397	397	92.70	2904	402	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.4
+[choose ref nucmer]	2241	2616	2	378	376	377	91.27	2904	378	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.6
+[choose ref nucmer]	2262	2619	1	358	358	358	92.18	2904	358	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l15.c17.ctg.2
+[choose ref nucmer]	2269	2419	151	1	151	151	98.01	2904	412	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.7
+[choose ref nucmer]	2402	2772	507	137	371	371	91.91	2904	508	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.5
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	594	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3
+[choose ref nucmer]	2490	2882	1	393	393	393	97.96	2904	393	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l15.c30.ctg.1
+[choose ref nucmer]	2490	2883	538	145	394	394	97.97	2904	538	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c17.ctg.8
+Closest cluster ref sequence is Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164 to assembly Escherichia_coli_23S.l6.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	934	1007	1	74	74	74	98.65	2996	74	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	1893	1966	74	1	74	74	100.00	2900	74	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	366	503	1	138	138	138	94.20	2904	138	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	481	634	1	152	154	152	94.81	2904	296	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	975	1126	145	296	152	152	94.12	2904	296	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	1883	2121	239	1	239	239	99.58	2904	239	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1889	1962	74	1	74	74	98.65	2904	74	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	450	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Escherichia_coli_23S.l6.c30.ctg.3:1-450
+[choose ref nucmer]	366	503	1	138	138	138	94.20	2904	138	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	481	634	1	152	154	152	94.81	2904	296	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	975	1126	145	296	152	152	94.12	2904	296	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	1883	2121	239	1	239	239	99.58	2904	239	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1889	1962	74	1	74	74	98.65	2904	74	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	450	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Escherichia_coli_23S.l6.c30.ctg.3:1-450
+[choose ref nucmer]	366	503	1	138	138	138	94.20	2904	138	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	481	634	1	152	154	152	94.81	2904	296	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	975	1126	145	296	152	152	94.12	2904	296	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	1883	2121	239	1	239	239	99.58	2904	239	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1889	1962	74	1	74	74	98.65	2904	74	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	450	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Escherichia_coli_23S.l6.c30.ctg.3:1-450
+[choose ref nucmer]	366	503	1	138	138	138	94.20	2904	138	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	481	634	1	152	154	152	94.81	2904	296	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	975	1126	145	296	152	152	94.12	2904	296	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	1883	2121	239	1	239	239	99.58	2904	239	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1889	1962	74	1	74	74	98.65	2904	74	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	450	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Escherichia_coli_23S.l6.c30.ctg.3:1-450
+[choose ref nucmer]	366	503	1	138	138	138	94.20	2904	138	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	481	634	1	152	154	152	94.81	2904	296	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	975	1126	145	296	152	152	94.12	2904	296	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.8:91-386
+[choose ref nucmer]	1883	2121	239	1	239	239	99.58	2904	239	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1889	1962	74	1	74	74	98.65	2904	74	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2434	2883	1	450	450	450	96.00	2904	450	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Escherichia_coli_23S.l6.c30.ctg.3:1-450
+[choose ref nucmer]	764	1002	1	239	239	239	91.29	3156	239	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	923	996	1	74	74	74	100.00	3156	74	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	2678	2812	138	4	135	135	91.85	3156	138	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	379	515	1	138	137	138	92.75	2910	138	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Escherichia_coli_23S.l6.c30.ctg.3:456-593
+[choose ref nucmer]	1887	2089	238	36	203	203	92.12	2910	239	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Escherichia_coli_23S.l6.c30.ctg.4:145-383
+[choose ref nucmer]	1892	1965	74	1	74	74	98.65	2910	74	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	1917	1990	74	1	74	74	100.00	2926	74	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	1892	1965	74	1	74	74	100.00	2904	74	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+[choose ref nucmer]	940	1013	1	74	74	74	100.00	2904	74	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Escherichia_coli_23S.l6.c30.ctg.4:2-75
+Closest reference is Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Escherichia_coli_23S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Escherichia_coli_23S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+______________________ LOG FILE END Escherichia_coli_23S ______________________

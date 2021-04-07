@@ -1,0 +1,66 @@
+Getting reads for Mycoplasma_fermentans_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Mycoplasma_fermentans_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Mycoplasma_fermentans_23S ___________________
+
+Using 200 from a total of 200 for assembly.
+Assembling reads:
+Mycoplasma_fermentans_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	7	262.429	362
+6	17	0	0	0
+6	30	0	0	0
+15	4	3	265.667	385
+15	17	1	307	307
+15	30	0	0	0
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	254	468	145	359	215	215	91.63	2886	362	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Mycoplasma_fermentans_23S.l6.c4.ctg.2
+[choose ref nucmer]	296	468	1	173	173	173	92.49	2886	174	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Mycoplasma_fermentans_23S.l6.c4.ctg.1
+Closest cluster ref sequence is Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167 to assembly Mycoplasma_fermentans_23S.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	263	477	1	215	215	215	91.63	2996	215	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	305	477	1	173	173	173	91.91	2996	173	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2435	2607	173	1	173	173	91.33	2912	173	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2435	2649	215	1	215	215	91.63	2912	215	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2470	2642	173	1	173	173	90.17	2940	173	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	1184	1356	1	173	173	173	90.17	3403	173	1	Chlamydomonas_reinhardtii_23S.3004132.NC_005353.1.148590_151993.4139	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2424	2596	173	1	173	173	95.95	2900	173	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2424	2638	215	1	215	215	94.88	2900	215	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2419	2627	215	7	209	209	90.43	2904	215	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2419	2627	215	7	209	209	90.43	2904	215	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2419	2627	215	7	209	209	90.43	2904	215	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2419	2627	215	7	209	209	90.43	2904	215	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2419	2627	215	7	209	209	90.43	2904	215	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2507	2679	173	1	173	173	91.33	2975	173	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2507	2721	215	1	215	215	92.09	2975	215	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2639	2848	215	6	210	210	90.95	3112	215	1	Mycobacterium_avium_23S.3004164.NG_041979.1.0_3112.4157	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2626	2835	215	6	210	210	90.95	3103	215	1	Mycobacterium_intracellulare_23S.3004166.NR_076151.1.0_3103.4177	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2626	2835	215	6	210	210	90.95	3103	215	1	Mycobacterium_intracellulare_23S.3004167.NR_076151.1.0_3103.4159	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2626	2835	215	6	210	210	90.95	3118	215	1	Mycobacterium_kansasii_23S.3004168.NZ_CP019883.1.5018387_5021505.4178	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2657	2866	215	6	210	210	90.95	3138	215	1	Mycobacterium_tuberculosis_23S.3004937.AL123456.3.1473657_1476795.6024	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2631	2840	215	6	210	210	90.95	3112	215	1	Mycobacteroides_abscessus_23S.3004163.NC_010397.1.1464207_1467319.4156	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2632	2841	215	6	210	210	90.95	3113	215	1	Mycobacteroides_chelonae_23S.3004165.GU143889.1.0_3113.4158	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2644	2853	215	6	210	210	90.95	3162	215	1	Mycolicibacterium_smegmatis_23S.3004169.AB011184.1.0_3162.4161	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	254	468	1	215	215	215	91.63	2886	215	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	296	468	1	173	173	173	92.49	2886	173	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	248	462	1	215	215	215	91.63	2884	215	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	290	462	1	173	173	173	93.06	2884	173	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2447	2619	173	1	173	173	96.53	2926	173	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2447	2661	215	1	215	215	96.28	2926	215	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2422	2594	173	1	173	173	95.95	2904	173	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2422	2636	215	1	215	215	95.35	2904	215	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	269	483	1	215	215	215	95.35	2904	215	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	311	483	1	173	173	173	95.95	2904	173	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2663	2835	173	1	173	173	91.91	3149	173	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2663	2876	215	2	214	214	92.06	3149	215	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+[choose ref nucmer]	2408	2580	173	1	173	173	90.17	2893	173	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Mycoplasma_fermentans_23S.l6.c4.ctg.1:1-173
+[choose ref nucmer]	2408	2621	215	2	214	214	90.19	2893	215	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Mycoplasma_fermentans_23S.l6.c4.ctg.2:145-359
+Closest reference is Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166 and does not belong to cluster
+Closest reference Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Mycoplasma_fermentans_23S ____________________

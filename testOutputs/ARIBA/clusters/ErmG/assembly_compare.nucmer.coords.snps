@@ -1,0 +1,9 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/ErmG/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+258	G	A	375	123	258	0	0	735	768	1	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1
+381	G	A	498	96	271	0	0	735	768	1	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1
+477	T	C	594	37	175	0	0	735	768	1	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1
+514	A	G	631	37	138	0	0	735	768	1	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1
+609	C	T	726	43	43	0	0	735	768	1	1	ErmG.3000522.L42817.201_936.590	ErmG.l15.c30.ctg.1

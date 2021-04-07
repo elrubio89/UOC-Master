@@ -1,0 +1,54 @@
+Getting reads for Moraxella_catarrhalis_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Moraxella_catarrhalis_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+__________________ LOG FILE START Moraxella_catarrhalis_23S ___________________
+
+Using 1040 from a total of 1040 for assembly.
+Assembling reads:
+Moraxella_catarrhalis_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	15	404.867	1006
+6	17	7	509.714	734
+6	30	8	496.5	781
+15	4	21	334.81	524
+15	17	4	540.75	662
+15	30	2	541	559
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	199	344	146	1	146	146	94.52	3156	380	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l6.c17.ctg.6
+[choose ref nucmer]	212	659	1	448	448	448	91.07	3156	511	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l15.c4.ctg.16
+[choose ref nucmer]	212	606	395	1	395	395	90.63	3156	395	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l6.c4.ctg.13
+[choose ref nucmer]	217	647	432	2	431	431	91.18	3156	432	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l6.c30.ctg.1
+[choose ref nucmer]	336	659	388	64	324	325	91.69	3156	388	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l6.c30.ctg.8
+[choose ref nucmer]	869	997	8	136	129	129	90.84	3156	359	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l6.c30.ctg.4
+[choose ref nucmer]	903	997	260	166	95	95	96.84	3156	278	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l15.c4.ctg.15
+Closest cluster ref sequence is Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678 to assembly Moraxella_catarrhalis_23S.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	914	1008	95	1	95	95	96.84	2996	95	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	1893	1986	2	95	94	94	94.68	2900	95	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	95	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2229	2676	448	1	448	448	90.20	2904	448	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	95	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2229	2676	448	1	448	448	90.20	2904	448	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	95	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2229	2676	448	1	448	448	90.20	2904	448	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	95	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2229	2676	448	1	448	448	90.20	2904	448	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	1888	1982	1	95	95	95	98.95	2904	95	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2229	2676	448	1	448	448	90.20	2904	448	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	212	659	1	448	448	448	91.07	3156	448	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	903	997	95	1	95	95	96.84	3156	95	1	Moraxella_catarrhalis_23S.3004138.CP002005.1.317713_320869.5678	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	1891	1985	1	95	95	95	96.84	2910	95	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	2236	2682	445	1	447	445	93.10	2910	448	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Moraxella_catarrhalis_23S.l15.c4.ctg.16:1-448
+[choose ref nucmer]	1916	2010	1	95	95	95	94.74	2926	95	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	1891	1985	1	95	95	95	95.79	2904	95	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	920	1014	95	1	95	95	95.79	2904	95	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+[choose ref nucmer]	1887	1969	1	83	83	83	98.80	2893	95	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Moraxella_catarrhalis_23S.l15.c4.ctg.15:166-260
+Closest reference is Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164 and does not belong to cluster
+Closest reference Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+___________________ LOG FILE END Moraxella_catarrhalis_23S ____________________

@@ -1,0 +1,53 @@
+Getting reads for APH_3___IIIa from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for APH_3___IIIa from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_________________________ LOG FILE START APH_3___IIIa _________________________
+
+Using 40 from a total of 40 for assembly.
+Assembling reads:
+APH_3___IIIa detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	1	945	945
+6	17	1	843	843
+6	30	1	843	843
+15	4	1	945	945
+15	17	1	843	843
+15	30	1	843	843
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	795	859	65	795	795	100.00	795	945	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l15.c4.ctg.1
+[choose ref nucmer]	1	795	859	65	795	795	100.00	795	945	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l6.c4.ctg.1
+[choose ref nucmer]	17	795	843	65	779	779	99.87	795	843	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l15.c17.ctg.1
+[choose ref nucmer]	17	795	843	65	779	779	99.87	795	843	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l15.c30.ctg.1
+[choose ref nucmer]	17	795	843	65	779	779	99.87	795	843	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l6.c17.ctg.1
+[choose ref nucmer]	17	795	843	65	779	779	99.87	795	843	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l6.c30.ctg.1
+Closest cluster ref sequence is APH_3___IIIa.3002647.CP004067.52914_53709.233 to assembly APH_3___IIIa.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	795	795	1	795	795	100.00	795	795	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l15.c4.ctg.1:65-859
+Closest reference is APH_3___IIIa.3002647.CP004067.52914_53709.233 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/Assembly/debug_best_assembly.fa
+Closest reference sequence: APH_3___IIIa.3002647.CP004067.52914_53709.233
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+APH_3___IIIa detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+__________________________ LOG FILE END APH_3___IIIa __________________________

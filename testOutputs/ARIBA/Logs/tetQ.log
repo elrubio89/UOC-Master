@@ -1,0 +1,88 @@
+Getting reads for tetQ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for tetQ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________________ LOG FILE START tetQ _____________________________
+
+Using 824 from a total of 5788 for assembly.
+Assembling reads:
+tetQ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	13	544	1162
+6	17	1	2376	2376
+6	30	4	807	1285
+15	4	18	441.167	1295
+15	17	1	2708	2708
+15	30	4	797.75	1189
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	1974	288	2261	1974	1974	97.37	1974	2708	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c17.ctg.1
+[choose ref nucmer]	1	902	902	1	902	902	97.67	1974	1189	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c30.ctg.2
+[choose ref nucmer]	1	176	196	371	176	176	99.43	1974	371	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.8
+[choose ref nucmer]	1	1974	89	2062	1974	1974	97.37	1974	2376	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c17.ctg.1
+[choose ref nucmer]	1	902	902	1	902	902	97.67	1974	990	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c30.ctg.2
+[choose ref nucmer]	1	176	196	371	176	176	99.43	1974	371	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.8
+[choose ref nucmer]	27	214	188	1	188	188	99.47	1974	188	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.17
+[choose ref nucmer]	27	364	338	1	338	338	99.41	1974	338	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.6
+[choose ref nucmer]	33	364	332	1	332	332	100.00	1974	332	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.10
+[choose ref nucmer]	33	364	332	1	332	332	100.00	1974	332	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.10
+[choose ref nucmer]	68	364	297	1	297	297	99.33	1974	297	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.6
+[choose ref nucmer]	90	348	1	259	259	259	98.84	1974	259	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.14
+[choose ref nucmer]	225	387	1	163	163	163	99.39	1974	163	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.15
+[choose ref nucmer]	229	984	1	756	756	756	99.74	1974	756	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.7
+[choose ref nucmer]	255	576	322	1	322	322	96.89	1974	322	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.12
+[choose ref nucmer]	255	576	322	1	322	322	96.89	1974	322	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.12
+[choose ref nucmer]	255	984	1	730	730	730	99.73	1974	730	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.7
+[choose ref nucmer]	272	1005	734	1	734	734	97.28	1974	734	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.5
+[choose ref nucmer]	272	1005	734	1	734	734	97.28	1974	734	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.5
+[choose ref nucmer]	465	1229	765	1	765	765	96.60	1974	765	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.4
+[choose ref nucmer]	465	978	514	1	514	514	96.30	1974	514	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.4
+[choose ref nucmer]	723	1107	388	4	385	385	91.95	1974	388	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.11
+[choose ref nucmer]	773	1688	1	916	916	916	97.60	1974	916	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c30.ctg.3
+[choose ref nucmer]	773	1974	1	1202	1202	1202	97.09	1974	1285	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c30.ctg.3
+[choose ref nucmer]	784	1163	1	380	380	380	97.37	1974	380	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c30.ctg.1
+[choose ref nucmer]	784	979	1	196	196	196	91.33	1974	196	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.16
+[choose ref nucmer]	784	1163	1	380	380	380	97.37	1974	380	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c30.ctg.1
+[choose ref nucmer]	858	1229	1	372	372	372	97.58	1974	372	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.2
+[choose ref nucmer]	858	1229	1	372	372	372	97.58	1974	372	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.2
+[choose ref nucmer]	951	1229	279	1	279	279	97.49	1974	279	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.13
+[choose ref nucmer]	1099	1258	160	1	160	160	96.88	1974	160	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.11
+[choose ref nucmer]	1101	1813	1	713	713	713	98.74	1974	713	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.9
+[choose ref nucmer]	1101	1813	1	713	713	713	98.74	1974	713	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.9
+[choose ref nucmer]	1121	1416	1	296	296	296	98.65	1974	296	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.13
+[choose ref nucmer]	1121	1937	817	1	817	817	97.55	1974	817	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.1
+[choose ref nucmer]	1127	1974	1	848	848	848	97.41	1974	1295	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.3
+[choose ref nucmer]	1127	1974	1	848	848	848	97.41	1974	1162	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c4.ctg.3
+[choose ref nucmer]	1410	1937	528	1	528	528	96.97	1974	528	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.1
+[choose ref nucmer]	1716	1974	706	448	259	259	96.14	1974	706	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c30.ctg.4
+[choose ref nucmer]	1716	1974	573	315	259	259	96.14	1974	573	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l6.c30.ctg.4
+[choose ref nucmer]	1867	1974	4	111	108	108	97.22	1974	194	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c4.ctg.18
+Closest cluster ref sequence is tetQ.3000191.Z21523.0_1974.476 to assembly tetQ.l15.c17
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	1974	1	1974	1974	1974	97.37	1974	1974	1	tetQ.3000191.Z21523.0_1974.476	tetQ.l15.c17.ctg.1:288-2261
+Closest reference is tetQ.3000191.Z21523.0_1974.476 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c17\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/Assembly/debug_best_assembly.fa
+Closest reference sequence: tetQ.3000191.Z21523.0_1974.476
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+tetQ detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetQ/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+______________________________ LOG FILE END tetQ ______________________________

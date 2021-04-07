@@ -1,0 +1,73 @@
+Getting reads for mel from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for mel from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_____________________________ LOG FILE START mel ______________________________
+
+Using 542 from a total of 648 for assembly.
+Assembling reads:
+mel detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	10	372.9	916
+6	17	1	1613	1613
+6	30	1	1346	1346
+15	4	13	345.615	657
+15	17	1	1827	1827
+15	30	1	1605	1605
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	1215	1408	194	1215	1215	94.32	1218	1827	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c17.ctg.1
+[choose ref nucmer]	1	1215	1408	194	1215	1215	94.32	1218	1605	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c30.ctg.1
+[choose ref nucmer]	1	192	192	1	192	192	95.83	1218	611	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.2
+[choose ref nucmer]	1	1194	1194	1	1194	1194	94.64	1218	1613	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c17.ctg.1
+[choose ref nucmer]	1	1149	1149	1	1149	1149	94.60	1218	1346	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c30.ctg.1
+[choose ref nucmer]	1	719	719	1	719	719	95.41	1218	916	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.2
+[choose ref nucmer]	63	719	657	1	657	657	95.13	1218	657	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.3
+[choose ref nucmer]	212	709	498	1	498	498	96.18	1218	498	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.4
+[choose ref nucmer]	212	709	498	1	498	498	96.18	1218	498	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.3
+[choose ref nucmer]	604	861	3	260	258	258	92.25	1218	260	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.8
+[choose ref nucmer]	604	861	3	260	258	258	92.25	1218	260	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.6
+[choose ref nucmer]	605	869	1	265	265	265	91.70	1218	265	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.6
+[choose ref nucmer]	605	869	1	265	265	265	91.70	1218	265	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.4
+[choose ref nucmer]	727	896	170	1	170	170	91.18	1218	171	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.12
+[choose ref nucmer]	727	894	168	1	168	168	91.07	1218	168	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.13
+[choose ref nucmer]	727	896	170	1	170	170	91.18	1218	171	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.10
+[choose ref nucmer]	750	1046	297	1	297	297	96.30	1218	297	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.1
+[choose ref nucmer]	750	1044	1	295	295	295	95.59	1218	295	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.11
+[choose ref nucmer]	750	1046	297	1	297	297	96.30	1218	297	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.1
+[choose ref nucmer]	750	1044	1	295	295	295	95.59	1218	295	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.8
+[choose ref nucmer]	902	1066	165	1	165	165	97.58	1218	165	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.7
+[choose ref nucmer]	902	1066	165	1	165	165	97.58	1218	165	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.5
+[choose ref nucmer]	921	1215	594	300	295	295	93.90	1218	594	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.9
+[choose ref nucmer]	921	1215	552	258	295	295	93.90	1218	552	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.7
+[choose ref nucmer]	937	1218	302	21	282	282	96.81	1218	304	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c4.ctg.10
+[choose ref nucmer]	937	1218	308	27	282	282	97.16	1218	310	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l6.c4.ctg.9
+Closest cluster ref sequence is mel.3000616.AF227521.1.3269_4487.5180 to assembly mel.l15.c30
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	1	1215	1215	1	1215	1215	94.32	1218	1215	1	mel.3000616.AF227521.1.3269_4487.5180	mel.l15.c30.ctg.1:194-1408
+Closest reference is mel.3000616.AF227521.1.3269_4487.5180 and belongs to cluster
+Writing best assembly (contigs matching  \.l15\.c30\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/Assembly/debug_best_assembly.fa
+Closest reference sequence: mel.3000616.AF227521.1.3269_4487.5180
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+mel detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/mel/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+______________________________ LOG FILE END mel _______________________________

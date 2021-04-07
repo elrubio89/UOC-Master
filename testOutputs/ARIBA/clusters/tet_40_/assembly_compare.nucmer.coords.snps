@@ -1,0 +1,8 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet_40_/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tet_40_/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+160	G	A	89	3	89	0	0	1221	1296	1	1	tet_40_.3000567.AM419751.14210_15431.5150	tet_40_.l6.c4.ctg.1
+163	T	G	92	3	92	0	0	1221	1296	1	1	tet_40_.3000567.AM419751.14210_15431.5150	tet_40_.l6.c4.ctg.1
+264	G	T	193	101	193	0	0	1221	1296	1	1	tet_40_.3000567.AM419751.14210_15431.5150	tet_40_.l6.c4.ctg.1
+490	C	A	419	226	419	0	0	1221	1296	1	1	tet_40_.3000567.AM419751.14210_15431.5150	tet_40_.l6.c4.ctg.1

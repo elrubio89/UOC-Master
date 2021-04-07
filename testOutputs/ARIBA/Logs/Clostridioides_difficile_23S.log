@@ -1,0 +1,154 @@
+Getting reads for Clostridioides_difficile_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Clostridioides_difficile_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+_________________ LOG FILE START Clostridioides_difficile_23S _________________
+
+Using 1092 from a total of 1092 for assembly.
+Assembling reads:
+Clostridioides_difficile_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	19	554.684	1432
+6	17	14	489.571	809
+6	30	14	501.857	722
+15	4	30	300.833	693
+15	17	5	484.2	580
+15	30	4	522.25	597
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	1	211	9	219	211	211	93.93	2900	225	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.26
+[choose ref nucmer]	1	211	219	429	211	211	94.86	2900	722	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.8
+[choose ref nucmer]	1	211	518	308	211	211	93.93	2900	1432	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2
+[choose ref nucmer]	393	733	225	565	341	341	91.50	2900	809	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.10
+[choose ref nucmer]	393	732	47	386	340	340	91.76	2900	386	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.3
+[choose ref nucmer]	411	614	1	204	204	204	97.55	2900	204	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.5
+[choose ref nucmer]	731	1563	3	835	833	833	94.24	2900	1018	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18
+[choose ref nucmer]	800	1379	580	1	580	580	96.56	2900	580	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c17.ctg.4
+[choose ref nucmer]	800	1379	580	1	580	580	96.56	2900	580	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c30.ctg.4
+[choose ref nucmer]	800	1272	478	6	473	473	95.36	2900	478	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.13
+[choose ref nucmer]	800	1272	1	473	473	473	95.36	2900	478	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.12
+[choose ref nucmer]	835	1527	1	693	693	693	94.24	2900	693	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.23
+[choose ref nucmer]	849	1272	429	6	424	424	94.82	2900	429	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.11
+[choose ref nucmer]	849	1272	1	424	424	424	94.82	2900	429	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.10
+[choose ref nucmer]	1275	1792	7	524	518	518	92.69	2900	524	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.3
+[choose ref nucmer]	1275	1654	529	150	380	380	92.15	2900	535	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.5
+[choose ref nucmer]	1636	2556	1	921	921	921	90.03	2900	921	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.16
+[choose ref nucmer]	1661	2003	344	1	343	344	96.52	2900	344	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c17.ctg.2
+[choose ref nucmer]	1661	2197	1	538	537	538	94.99	2900	541	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.20
+[choose ref nucmer]	1661	2003	344	1	343	344	96.52	2900	344	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.5
+[choose ref nucmer]	1681	2085	396	1	405	396	90.12	2900	396	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.7
+[choose ref nucmer]	1821	2000	181	4	180	178	91.67	2900	206	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.19
+[choose ref nucmer]	1821	2003	183	1	183	183	94.54	2900	203	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.17
+[choose ref nucmer]	1878	1998	367	487	121	121	94.21	2900	487	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.4
+[choose ref nucmer]	1893	2076	835	1018	184	184	90.76	2900	1018	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18
+[choose ref nucmer]	1916	2094	1	179	179	179	91.06	2900	467	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.8
+[choose ref nucmer]	1916	2094	1	179	179	179	91.06	2900	467	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.1
+[choose ref nucmer]	1916	2094	627	449	179	179	91.06	2900	627	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.15
+[choose ref nucmer]	1926	2476	551	1	551	551	95.28	2900	551	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c17.ctg.1
+[choose ref nucmer]	1926	2522	597	1	597	597	95.64	2900	597	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c30.ctg.2
+[choose ref nucmer]	1926	2583	658	1	658	658	95.14	2900	658	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.1
+[choose ref nucmer]	1926	2522	597	1	597	597	95.64	2900	597	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.3
+[choose ref nucmer]	2214	2827	614	1	614	614	97.72	2900	614	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.4
+[choose ref nucmer]	2325	2586	262	1	262	262	90.84	2900	1432	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2
+[choose ref nucmer]	2380	2627	10	258	248	249	94.78	2900	258	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.21
+[choose ref nucmer]	2401	2687	1	288	287	288	93.40	2900	288	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.14
+[choose ref nucmer]	2420	2682	264	2	263	263	95.06	2900	274	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.11
+[choose ref nucmer]	2420	2682	6	268	263	263	95.06	2900	269	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.25
+[choose ref nucmer]	2420	2556	21	157	137	137	94.89	2900	157	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.30
+[choose ref nucmer]	2420	2682	264	2	263	263	95.06	2900	274	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.10
+[choose ref nucmer]	2420	2682	6	268	263	263	95.06	2900	269	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.19
+[choose ref nucmer]	2423	2681	1	259	259	259	94.59	2900	259	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.1
+[choose ref nucmer]	2423	2692	1	270	270	270	94.07	2900	270	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.10
+[choose ref nucmer]	2423	2702	1	280	280	280	93.93	2900	295	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.1
+[choose ref nucmer]	2423	2699	1	277	277	277	92.06	2900	277	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.9
+[choose ref nucmer]	2425	2794	1	370	370	370	92.16	2900	520	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c17.ctg.9
+[choose ref nucmer]	2433	2738	1	306	306	306	92.48	2900	318	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.15
+[choose ref nucmer]	2433	2738	1	306	306	306	92.48	2900	306	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.13
+[choose ref nucmer]	2471	2682	1	212	212	212	94.81	2900	219	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l15.c4.ctg.27
+[choose ref nucmer]	2498	2644	1	147	147	147	91.84	2900	483	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.4
+[choose ref nucmer]	2667	2882	1	216	216	216	98.15	2900	722	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.8
+[choose ref nucmer]	2674	2827	1	154	154	154	98.05	2900	535	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c30.ctg.5
+Closest cluster ref sequence is Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 to assembly Clostridioides_difficile_23S.l6.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	2362	2597	236	1	236	236	90.68	2912	262	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	2394	2632	239	1	239	239	90.79	2940	262	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	1182	1356	176	2	175	175	90.29	3403	280	1	Chlamydomonas_reinhardtii_23S.3004132.NC_005353.1.148590_151993.4139	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	1194	1454	1	261	261	261	90.42	3403	262	1	Chlamydomonas_reinhardtii_23S.3004132.NC_005353.1.148590_151993.4139	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	1	211	211	1	211	211	93.93	2900	211	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2:308-518
+[choose ref nucmer]	393	732	1	340	340	340	91.76	2900	340	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.3:47-386
+[choose ref nucmer]	731	1563	1	833	833	833	94.24	2900	1016	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18:3-1018
+[choose ref nucmer]	1636	2556	1	921	921	921	90.03	2900	921	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.16:1-921
+[choose ref nucmer]	1821	2003	183	1	183	183	94.54	2900	183	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1893	2076	833	1016	184	184	90.76	2900	1016	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.18:3-1018
+[choose ref nucmer]	1916	2094	179	1	179	179	91.06	2900	179	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.15:449-627
+[choose ref nucmer]	2325	2586	262	1	262	262	90.84	2900	262	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	2420	2682	263	1	263	263	95.06	2900	263	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.10:2-264
+[choose ref nucmer]	2420	2682	1	263	263	263	95.06	2900	263	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.19:6-268
+[choose ref nucmer]	2423	2702	1	280	280	280	93.93	2900	280	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	2423	2699	1	277	277	277	92.06	2900	277	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.9:1-277
+[choose ref nucmer]	2433	2738	1	306	306	306	92.48	2900	306	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Clostridioides_difficile_23S.l6.c4.ctg.13:1-306
+[choose ref nucmer]	1817	1982	183	18	166	166	90.42	2904	183	1	Escherichia_coli_23S.3004131.AE014075.1.237159_240063.4149	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1817	1982	183	18	166	166	90.42	2904	183	1	Escherichia_coli_23S.3004149.AE014075.1.237159_240063.4153	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1817	1982	183	18	166	166	90.42	2904	183	1	Escherichia_coli_23S.3004150.AE014075.237159_240063.4193	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1817	1982	183	18	166	166	90.42	2904	183	1	Escherichia_coli_23S.3004160.AE014075.1.237159_240063.4154	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1817	1982	183	18	166	166	90.42	2904	183	1	Escherichia_coli_23S.3004173.AE014075.1.237159_240063.4164	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	2503	2765	263	1	263	263	90.87	2975	263	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Clostridioides_difficile_23S.l6.c4.ctg.10:2-264
+[choose ref nucmer]	2503	2765	1	263	263	263	90.49	2975	263	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Clostridioides_difficile_23S.l6.c4.ctg.19:6-268
+[choose ref nucmer]	2506	2785	1	280	280	280	90.39	2975	280	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	2516	2813	1	298	298	298	90.27	2975	306	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Clostridioides_difficile_23S.l6.c4.ctg.13:1-306
+[choose ref nucmer]	193	462	271	2	270	270	90.04	2884	277	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Clostridioides_difficile_23S.l6.c4.ctg.9:1-277
+[choose ref nucmer]	1822	1970	183	35	149	149	91.28	2905	183	1	Mycoplasma_pneumoniae_23S.3004179.NR_077056.1.0_2905.4169	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1892	1985	259	352	94	94	97.87	2910	921	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Clostridioides_difficile_23S.l6.c4.ctg.16:1-921
+[choose ref nucmer]	1892	1985	111	18	94	94	96.81	2910	183	1	Neisseria_gonorrhoeae_23S.3004836.NR_103957.0_2910.5918	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1845	2027	183	1	183	183	92.90	2926	183	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1940	2116	179	3	177	177	94.35	2926	179	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.15:449-627
+[choose ref nucmer]	2348	2609	262	1	262	262	91.60	2926	262	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	2443	2704	263	2	262	262	95.42	2926	263	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.10:2-264
+[choose ref nucmer]	2443	2704	1	262	262	262	95.42	2926	263	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.19:6-268
+[choose ref nucmer]	2446	2725	1	280	280	280	95.71	2926	280	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	2446	2722	1	277	277	277	92.06	2926	277	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.9:1-277
+[choose ref nucmer]	2456	2756	1	301	301	301	92.69	2926	306	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Clostridioides_difficile_23S.l6.c4.ctg.13:1-306
+[choose ref nucmer]	1820	2002	183	1	183	183	94.54	2904	183	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+[choose ref nucmer]	1891	2075	832	1016	185	185	91.40	2904	1016	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.18:3-1018
+[choose ref nucmer]	1915	2083	179	11	169	169	95.27	2904	179	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.15:449-627
+[choose ref nucmer]	2323	2584	262	1	262	262	90.84	2904	262	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	2418	2670	263	11	253	253	94.09	2904	263	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.10:2-264
+[choose ref nucmer]	2418	2670	1	253	253	253	94.09	2904	263	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.19:6-268
+[choose ref nucmer]	2421	2700	1	280	280	280	92.88	2904	280	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	2421	2697	1	277	277	277	92.06	2904	277	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.9:1-277
+[choose ref nucmer]	2431	2736	1	306	306	306	91.21	2904	306	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Clostridioides_difficile_23S.l6.c4.ctg.13:1-306
+[choose ref nucmer]	169	474	306	1	306	306	91.21	2904	306	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.13:1-306
+[choose ref nucmer]	205	484	280	1	280	280	92.88	2904	280	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.1:1-280
+[choose ref nucmer]	208	484	277	1	277	277	92.06	2904	277	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.9:1-277
+[choose ref nucmer]	235	487	11	263	253	253	94.09	2904	263	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.10:2-264
+[choose ref nucmer]	235	487	253	1	253	253	94.09	2904	263	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.19:6-268
+[choose ref nucmer]	321	582	1	262	262	262	90.84	2904	262	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.2:1-262
+[choose ref nucmer]	822	990	11	179	169	169	95.27	2904	179	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.15:449-627
+[choose ref nucmer]	830	1014	1016	832	185	185	91.40	2904	1016	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.18:3-1018
+[choose ref nucmer]	903	1085	1	183	183	183	94.54	2904	183	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Clostridioides_difficile_23S.l6.c4.ctg.17:1-183
+Closest reference is Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518 and belongs to cluster
+Writing best assembly (contigs matching  \.l6\.c4\.ctg\.[0-9]+$) to fasta file /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/Assembly/debug_best_assembly.fa
+Closest reference sequence: Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/reads_for_assembly_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/reads_for_assembly_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.bam
+Scaffolding graph is OK: True
+
+Assembly was successful
+
+Mapping reads to assembly:
+Clostridioides_difficile_23S detected 1 threads available to it
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2-build -q /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.map_index
+syscall: /home/erubio/miniconda3/envs/ariba2/bin/bowtie2 --threads 1 --reorder --very-sensitive-local -X 1000 -x /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.map_index -1 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/reads_1.fq -2 /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/reads_2.fq --score-min G,1,10  > /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.sam
+Converting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.sam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.bam
+Sorting /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.unsorted.bam -> /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.bam
+Indexing /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Clostridioides_difficile_23S/assembly.reads_mapped.bam
+
+Making and checking scaffold graph
+Comparing assembly against reference sequence
+
+Calling variants with samtools:
+   ... not deleting anything because --noclean used
+Finished
+__________________ LOG FILE END Clostridioides_difficile_23S __________________

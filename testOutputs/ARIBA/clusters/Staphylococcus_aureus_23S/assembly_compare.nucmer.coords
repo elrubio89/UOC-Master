@@ -1,0 +1,14 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/Staphylococcus_aureus_23S/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1786	2013	1	228	228	228	92.54	2926	231	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.19	[CONTAINS]
+1786	2013	1	228	228	228	93.42	2926	231	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.9	[CONTAINS]
+1839	2013	1	175	175	175	93.14	2926	178	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.8	[CONTAINS]
+1925	2121	2	198	197	197	94.42	2926	209	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.18	
+2256	2704	1	449	449	449	92.20	2926	457	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.15	[CONTAINS]
+2417	2769	1	353	353	353	94.90	2926	357	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.17	[CONTAINS]
+2443	2704	6	267	262	262	96.56	2926	271	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.10	[CONTAINS]
+2443	2581	22	160	139	139	94.96	2926	160	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.22	
+2446	2646	1	201	201	201	95.52	2926	203	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.1	[CONTAINS]
+2446	2704	1	259	259	259	96.53	2926	262	1	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Staphylococcus_aureus_23S.l15.c4.ctg.12	[CONTAINS]

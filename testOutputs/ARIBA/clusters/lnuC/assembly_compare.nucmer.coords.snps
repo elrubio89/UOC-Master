@@ -1,0 +1,16 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/lnuC/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/lnuC/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+24	C	A	47	7	24	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+31	T	C	54	2	31	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+33	C	T	56	2	33	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+75	T	C	98	42	75	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+123	T	C	146	9	123	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+132	C	T	155	9	132	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+150	C	A	173	18	150	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+171	A	G	194	3	171	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+174	A	G	197	3	174	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+188	G	A	211	14	188	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+334	C	T	357	9	162	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1
+343	A	G	366	9	153	0	0	495	562	1	1	lnuC.3002837.AY928180.0_495.110	lnuC.l6.c4.ctg.1

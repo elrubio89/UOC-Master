@@ -1,0 +1,24 @@
+Getting reads for Erm_35_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Erm_35_ from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________________ LOG FILE START Erm_35_ ____________________________
+
+Using 108 from a total of 108 for assembly.
+Assembling reads:
+Erm_35_ detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	3	341.333	460
+6	17	1	460	460
+6	30	1	460	460
+15	4	3	350.667	460
+15	17	1	460	460
+15	30	1	460	460
+Finished running assemblies
+Looking for closest match from sequences within cluster
+Could not find match to reference sequences
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+____________________________ LOG FILE END Erm_35_ _____________________________

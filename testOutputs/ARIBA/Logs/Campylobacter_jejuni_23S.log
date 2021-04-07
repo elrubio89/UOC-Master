@@ -1,0 +1,61 @@
+Getting reads for Campylobacter_jejuni_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Campylobacter_jejuni_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+___________________ LOG FILE START Campylobacter_jejuni_23S ___________________
+
+Using 282 from a total of 282 for assembly.
+Assembling reads:
+Campylobacter_jejuni_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	6	354.333	614
+6	17	2	458	548
+6	30	1	643	643
+15	4	5	235.8	341
+15	17	0	0	0
+15	30	1	341	341
+Finished running assemblies
+Looking for closest match from sequences within cluster
+[choose ref nucmer]	2450	2617	1	168	168	168	92.26	2912	168	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.1
+[choose ref nucmer]	2450	2617	1	168	168	168	92.26	2912	168	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l6.c4.ctg.2
+[choose ref nucmer]	2456	2643	214	27	188	188	94.68	2912	214	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.2
+[choose ref nucmer]	2460	2645	1	186	186	186	90.86	2912	190	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.4
+[choose ref nucmer]	2460	2645	4	189	186	186	90.86	2912	193	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l6.c4.ctg.4
+[choose ref nucmer]	2460	2632	4	176	173	173	96.53	2912	380	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l6.c4.ctg.6
+Closest cluster ref sequence is Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105 to assembly Campylobacter_jejuni_23S.l15.c4
+Checking for a better match to a ref sequence outside the cluster
+[choose ref nucmer]	268	452	185	1	185	185	90.27	2996	186	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	269	452	1	184	184	184	94.57	2996	188	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	295	462	168	1	168	168	92.26	2996	168	1	Brachyspira_hyodysenteriae_23S.3004133.NZ_CP015910.2.2512812_2515808.4183	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2450	2617	1	168	168	168	92.26	2912	168	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2456	2643	188	1	188	188	94.68	2912	188	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2460	2645	1	186	186	186	90.86	2912	186	1	Campylobacter_jejuni_23S.3004546.NR_076226.1.0_2912.5105	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	2495	2678	184	1	184	184	91.85	2940	188	1	Chlamydia_trachomatis_23S.3004174.NR_076160.1.0_2940.4165	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2439	2606	1	168	168	168	94.05	2900	168	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2445	2626	188	7	182	182	95.60	2900	188	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2449	2634	1	186	186	186	93.01	2900	186	1	Clostridioides_difficile_23S.3004654.NR_076234.1.0_2900.5518	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	2522	2689	1	168	168	168	92.26	2975	168	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2528	2715	188	1	188	188	94.68	2975	188	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2532	2717	1	186	186	186	90.86	2975	186	1	Helicobacter_pylori_23S.3004134.AB162858.1.0_2975.4113	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	286	453	168	1	168	168	94.05	2886	168	1	Mycoplasma_fermentans_23S.3004177.NC_021002.1.901870_904756.4167	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	280	447	168	1	168	168	94.64	2884	168	1	Mycoplasma_hominis_23S.3004176.CP011538.1.333282_336166.4166	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2462	2629	1	168	168	168	95.83	2926	168	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2468	2655	188	1	188	188	96.28	2926	188	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2472	2657	1	186	186	186	93.01	2926	186	1	Staphylococcus_aureus_23S.3004058.NZ_CP009828.1.497113_500039.4128	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	2437	2604	1	168	168	168	95.24	2904	168	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2443	2630	188	1	188	188	95.21	2904	188	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2447	2632	1	186	186	186	93.55	2904	186	1	Streptococcus_pneumoniae_23S.3004170.NZ_CP018138.1.1692408_1695312.5408	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	273	458	186	1	186	186	93.55	2904	186	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+[choose ref nucmer]	275	462	1	188	188	188	95.21	2904	188	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	301	468	168	1	168	168	95.24	2904	168	1	Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2684	2860	188	12	177	177	93.79	3149	188	1	Streptomyces_ambofaciens_23S.3004171.NZ_CP012949.1.4334992_4338141.4163	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2423	2590	1	168	168	168	90.48	2893	168	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Campylobacter_jejuni_23S.l15.c4.ctg.1:1-168
+[choose ref nucmer]	2429	2605	188	12	177	177	92.09	2893	188	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Campylobacter_jejuni_23S.l15.c4.ctg.2:27-214
+[choose ref nucmer]	2433	2605	1	173	173	173	94.22	2893	186	1	Thermus_thermophilus_23s.3005083.AE017221.1.1534489_1537382.6116	Campylobacter_jejuni_23S.l15.c4.ctg.4:1-186
+Closest reference is Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171 and does not belong to cluster
+Closest reference Streptococcus_pneumoniae_23S.3004181.NZ_CP018138.1.1692408_1695312.4171 was not in cluster
+
+Could not get closest reference sequence
+
+   ... not deleting anything because --noclean used
+Finished
+____________________ LOG FILE END Campylobacter_jejuni_23S ____________________

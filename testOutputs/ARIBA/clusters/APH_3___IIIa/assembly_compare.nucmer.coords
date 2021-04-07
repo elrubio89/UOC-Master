@@ -1,0 +1,5 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/APH_3___IIIa/assembly.fa
+NUCMER
+
+[S1]	[E1]	[S2]	[E2]	[LEN 1]	[LEN 2]	[% IDY]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+1	795	87	881	795	795	100.00	795	945	1	1	APH_3___IIIa.3002647.CP004067.52914_53709.233	APH_3___IIIa.l15.c4.ctg.1	[CONTAINED]

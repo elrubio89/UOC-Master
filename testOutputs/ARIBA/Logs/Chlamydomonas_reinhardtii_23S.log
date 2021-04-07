@@ -1,0 +1,22 @@
+Getting reads for Chlamydomonas_reinhardtii_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+Finished getting reads for Chlamydomonas_reinhardtii_23S from /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/read_store.gz
+________________ LOG FILE START Chlamydomonas_reinhardtii_23S _________________
+
+Using 100 from a total of 100 for assembly.
+Assembling reads:
+Chlamydomonas_reinhardtii_23S detected 1 threads available to it
+Fermilite assembly stats:
+Overlap	Min_count	Contig_number	Mean_length	Longest
+6	4	0	0	0
+6	17	0	0	0
+6	30	0	0	0
+15	4	0	0	0
+15	17	0	0	0
+15	30	0	0	0
+Finished running assemblies
+
+Assembly failed
+
+   ... not deleting anything because --noclean used
+Finished
+_________________ LOG FILE END Chlamydomonas_reinhardtii_23S __________________

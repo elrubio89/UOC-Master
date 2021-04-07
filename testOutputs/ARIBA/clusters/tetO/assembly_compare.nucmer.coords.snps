@@ -1,0 +1,8 @@
+/home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetO/reference.fa /home/erubio/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results2/clusters/tetO/assembly.fa
+NUCMER
+
+[P1]	[SUB]	[SUB]	[P2]	[BUFF]	[DIST]	[R]	[Q]	[LEN R]	[LEN Q]	[FRM]	[TAGS]
+680	C	T	1099	204	680	0	0	1920	2735	1	1	tetO.3000190.M18896.2.206_2126.4234	tetO.l6.c17.ctg.1
+884	A	G	1303	152	884	0	0	1920	2735	1	1	tetO.3000190.M18896.2.206_2126.4234	tetO.l6.c17.ctg.1
+1036	A	C	1455	75	885	0	0	1920	2735	1	1	tetO.3000190.M18896.2.206_2126.4234	tetO.l6.c17.ctg.1
+1111	T	G	1530	75	810	0	0	1920	2735	1	1	tetO.3000190.M18896.2.206_2126.4234	tetO.l6.c17.ctg.1
