@@ -1,12 +1,33 @@
-$ samtools view filtered_RTC_149-FR.bam | wc -l                  
-12426 ##nº de seqüències mapejades
+# Groot BAM file analysis
 
-$ samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq | wc -l
-4891 ##nº de seqüències úniques mapejades 
+Store as a text file to see the structure:
 
-$samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq -c >qname.txt
+```
+samtools view filtered_RTC_149-FR.bam | head -n20> bamfile.txt
+```
 
-$ sort -nr qname.txt | head -n20
+## Mapped sequences
+
+Nº of mapped sequences: 
+
+```bash
+samtools view filtered_RTC_149-FR.bam | wc -l                  
+12426 
+```
+
+Nº of _unique_ mapped sequences
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq | wc -l
+4891 
+```
+
+The same sequence is mapped several times: 
+
+```
+samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq -c >qname.txt
+
+sort -nr qname.txt | head -n20
     130 ST-E00129:1006:HCW33CCX2:1:1109:3204:11084 1:N:0:TAAGGCGA+AGAGGATA
     107 ST-E00129:1006:HCW33CCX2:1:1222:16762:36996 2:N:0:TAAGGCGA+AGAGGATA
     106 ST-E00129:1006:HCW33CCX2:1:1109:3265:11224 2:N:0:TAAGGCGA+AGAGGATA
@@ -27,10 +48,17 @@ $ sort -nr qname.txt | head -n20
      45 ST-E00129:1006:HCW33CCX2:1:1211:24951:23583 2:N:0:TAAGGCGA+AGAGGATA
      45 ST-E00129:1006:HCW33CCX2:1:1123:21734:27538 1:N:0:TAAGGCGA+AGAGGATA
      44 ST-E00129:1006:HCW33CCX2:1:2111:2788:21403 1:N:0:TAAGGCGA+AGAGGATA
+```
 
-##Extrec la seqüència que més cops està repetida per veure amb quines seqüències de referència ha mapejat:
+ 
+
+Check to which reference sequence are the 2 most repeated sequence mapped 
+
+**1st most repeated sequence**
+
+```bash
 samtools view filtered_RTC_149-FR.bam | grep 'ST-E00129:1006:HCW33CCX2:1:1109:3204:11084 1:N:0:TAAGGCGA+AGAGGATA'> subset1.txt
-$ cut -f3 subset1.txt | head               
+cut -f3 subset1.txt | head               
 TEM-101.3000964.AF495873.0-861.842
 TEM-106.3000969.AY101578.214-1075.1153
 TEM-129.3000993.AJ746225.0-861.1796
@@ -41,8 +69,16 @@ TEM-6.3000878.X57972.339-1200.1002
 TEM-121.3000983.AY271267.0-861.1154
 TEM-2.3000874.X54606.214-1075.1724
 TEM-209.3001386.KF240808.0-861.1001
+```
 
+```bash
+cut -f3 subset1.txt | grep TEM | wc -l
+130
+```
 
+**2nd most repeated sequence:** 
+
+```bash
 samtools view filtered_RTC_149-FR.bam | grep 'ST-E00129:1006:HCW33CCX2:1:1222:16762:36996 2:N:0:TAAGGCGA+AGAGGATA'> subset2.txt
 cut -f3 subset2.txt | head -n20
 TEM-156.3001022.AM941159.208-1069.1400
@@ -65,17 +101,38 @@ TEM-30.3000900.AJ437107.208-1069.930
 TEM-214.3001391.KP050491.0-861.2126
 TEM-6.3000878.X57972.339-1200.1002
 TEM-85.3000952.AJ277414.0-861.1405
+```
+
+```bash
+cut -f3 subset2.txt | grep TEM | wc -l
+107
+```
+
+> Sequences are repeatedly mapped to TEM beta-lactamases
 
 
-##Una sola seqüència ha mapejat amb 130 TEMs 
 
+### Sequences mapped to TEM beta-lactamase family
 
+Nº of sequences mapped to TEM beta-lactamase family
+
+```bash
 samtools view filtered_RTC_149-FR.bam | grep TEM | wc -l 
 1644
+```
 
+Nº of _unique_ sequences mapped to TEM beta-lactamase family
+
+```bash
 samtools view filtered_RTC_149-FR.bam | grep TEM | cut -f1 | sort| uniq| wc -l
 31
+```
 
+
+
+Unique sequences mapped to TEM beta-lactamase family and number of times each sequence is mapped
+
+```bash
 samtools view filtered_RTC_149-FR.bam | grep TEM | cut -f1 | sort| uniq -c| sort -nr
 
     130 ST-E00129:1006:HCW33CCX2:1:1109:3204:11084 1:N:0:TAAGGCGA+AGAGGATA
@@ -109,29 +166,116 @@ samtools view filtered_RTC_149-FR.bam | grep TEM | cut -f1 | sort| uniq -c| sort
       1 ST-E00129:1006:HCW33CCX2:1:2115:32502:71014 1:N:0:TAAGGCGA+AGAGGATA
       1 ST-E00129:1006:HCW33CCX2:1:1218:15747:24374 2:N:0:TAAGGCGA+AGAGGATA
       1 ST-E00129:1006:HCW33CCX2:1:1115:21521:72561 1:N:0:TAAGGCGA+AGAGGATA
+```
 
 
-##Els flags em surten diferents segons com els obtingui:
+
+## Reference sequences
+
+Nº sequences mapped to reference sequences (same values as groot-report-0)
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | head -n20
+	1573 CfxA4.3003005.AY769933.0-966.1592
+   1409 CfxA3.3003003.AF472622.52-1018.1514
+   1387 CfxA2.3003002.AF118110.1.71-1037.4470
+   1353 CfxA5.3003096.AY769934.27-993.1669
+   1304 *CfxA.3003001.U38243.149-1115.1354
+    712 *tetX.3000205.M37699.585-1752.79
+    482 *tetQ.3000191.Z21523.0-1974.476
+    444 tetW.3000194.AJ222769.3.3686-5606.5145
+    308 *tetO.3000190.M18896.2.206-2126.4234
+    299 *tet(W/N/W).3004442.KU736867.1.19653-21573.4270
+    285 *ErmF.3000498.M17124.1181-1982.593
+    191 *CblA-1.3002999.GQ343019.132-1023.1188
+    180 *Tet(X3).3004719.MK134375.1.6173-7340.5596
+    147 *ErmG.3000522.L42817.201-936.590
+    145 *Tet(X4).3004720.MK134376.1.324-1482.5597
+    145 *CfxA6.3003097.GQ342996.797-1793.1744
+     81 *aadS.3004683.M72415.1.1120-1984.5568
+     66 *Mef(En2).3004659.AF251288.1.794-2000.5539
+     49 *ErmB.3000375.AF242872.1.2131-2878.5430
+     40 *tetM.3000186.AM990992.1.1001760-1003680.5141
+
+```
+
+## Flags
+
+```bash
+samtools view -f 0 filtered_RTC_149-FR.bam| wc -l                   
+12426
+```
+
+See how flags are distributed in bam file: 
+
+```bash
 samtools view filtered_RTC_149-FR.bam | cut -f2| sort | uniq -c
    2612 0
    2612 16
    3744 256
    3458 272
+```
 
-$ samtools view -f 0 filtered_RTC_149-FR.bam| wc -l                   
+Using samtools view -f
+
+```bash
+samtools view -f 0 filtered_RTC_149-FR.bam| wc -l 
 12426
 
-$ samtools view -f 16 filtered_RTC_149-FR.bam| wc -l 
+samtools view -f 16 filtered_RTC_149-FR.bam| wc -l 
 6070
 
-$ samtools view -f 256 filtered_RTC_149-FR.bam| wc -l 
+samtools view -f 256 filtered_RTC_149-FR.bam| wc -l 
 7202
 
-$ samtools view -f 272 filtered_RTC_149-FR.bam| wc -l 
+samtools view -f 272 filtered_RTC_149-FR.bam| wc -l 
 3458
+```
 
-##La qualitat de mapeig és 30 per a totes les seqüències?
-$ samtools view filtered_RTC_149-FR.bam | cut -f5| sort | uniq -c
+> Different results are obtained. Why?
+>
+
+**Flag meaning**
+
+| Flag | Meaning                                     |
+| ---- | ------------------------------------------- |
+| 0    | ?                                           |
+| 16   | read reverse strand                         |
+| 256  | not primary alignment                       |
+| 272  | read reverse strand + not primary alignment |
+
+https://broadinstitute.github.io/picard/explain-flags.html
+
+## Quality
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f5| sort | uniq -c
 12426 30
+```
+
+All mapped sequences have 30 as mapping quality value
 
 
+
+## CIGAR
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f6| sort | uniq | wc -l
+82
+```
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f6| sort | uniq -c | head
+20 100M
+     40 101M
+     15 102M
+     32 103M
+     12 104M
+     40 105M
+     35 106M
+    160 107M
+     27 108M
+      7 109M
+```
+
+All are matched. Different nº of matched bases is because of different sequence length (after filtering)

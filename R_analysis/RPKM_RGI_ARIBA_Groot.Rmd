@@ -6,6 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/testOutputs")
+
 ```
 
 ## How to calculate RPKM (Reads per Kilobase per Milion)
@@ -165,7 +166,7 @@ groot_report<-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gen
 Calculate RPKM:
 
 ```{r}
-otalNumReads<-	17072992
+totalNumReads<-	17072992
 groot_report<-groot_report%>%mutate(RPKM=read.count /(gene.length/1000 * totalNumReads/1000000))
 ```
 
@@ -178,6 +179,7 @@ AMR_family_Groot<-groot_report%>%
             sum_RPKM_groot=sum(RPKM))%>%arrange(desc(sum_RPKM_groot))
 kable(head(AMR_family_Groot))
 ```
+
 
 # ARIBA vs RGI vs GROOT
 
