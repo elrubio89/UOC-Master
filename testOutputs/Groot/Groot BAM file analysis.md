@@ -168,8 +168,6 @@ samtools view filtered_RTC_149-FR.bam | grep TEM | cut -f1 | sort| uniq -c| sort
       1 ST-E00129:1006:HCW33CCX2:1:1115:21521:72561 1:N:0:TAAGGCGA+AGAGGATA
 ```
 
-
-
 ## Reference sequences
 
 Nº sequences mapped to reference sequences (same values as groot-report-0)
@@ -198,6 +196,59 @@ samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | hea
      40 *tetM.3000186.AM990992.1.1001760-1003680.5141
 
 ```
+
+### Search for cluster containing TEM sequences
+
+Search in folder card.90:
+
+```bash
+grep -Ril "TEM"
+cluster-560.msa
+```
+
+```bash
+grep "^>" cluster-560.msa | tail 
+>TEM-87.3000954.AF250872.0-861.1575
+>TEM-88.3000955.AY027590.112-973.1652
+>TEM-90.3000957.AF351241.89-950.1804
+>TEM-91.3000958.AB049569.0-861.1888
+>TEM-92.3000959.AF143804.0-861.1961
+>TEM-93.3000960.AJ318093.0-861.2039
+>TEM-94.3000961.AJ318094.0-861.852
+>TEM-95.3000962.AJ308558.181-1042.933
+>TEM-96.3000963.AY092401.0-861.1004
+>consensus
+```
+
+```bash
+grep "^>" cluster-560.msa | wc -l
+149
+```
+
+**There are 148 reference sequences clustered in the TEM cluster**
+
+Nº of different TEM reference sequences which are mapped: 
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | grep TEM | wc -l
+147
+```
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | grep TEM | head 
+     30 TEM-82.3000949.AF427128.208-1069.1162
+     25 TEM-40.3000910.FR717535.0-861.1247
+     24 TEM-171.3001037.GQ149347.5269-6130.1244
+     24 *TEM-1.3000873.AL513383.161910-162771.1951
+     23 TEM-168.3001034.FJ919776.208-1069.999
+     22 TEM-219.3003157.KM114268.0-861.1649
+     21 TEM-150.3001017.AM183304.208-1069.926
+     20 TEM-90.3000957.AF351241.89-950.1804
+     20 TEM-73.3000939.AJ012256.208-1069.3324
+     20 TEM-54.3000923.AF104442.193-1054.1959
+```
+
+> Sequences map repeatedly to all the reference sequences in the cluster. 
 
 ## Flags
 
@@ -254,8 +305,6 @@ samtools view filtered_RTC_149-FR.bam | cut -f5| sort | uniq -c
 ```
 
 All mapped sequences have 30 as mapping quality value
-
-
 
 ## CIGAR
 
