@@ -25,9 +25,8 @@ samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq | wc -l
 The same sequence is mapped several times: 
 
 ```
-samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq -c >qname.txt
+samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq -c | sort -nr | head -n20
 
-sort -nr qname.txt | head -n20
     130 ST-E00129:1006:HCW33CCX2:1:1109:3204:11084 1:N:0:TAAGGCGA+AGAGGATA
     107 ST-E00129:1006:HCW33CCX2:1:1222:16762:36996 2:N:0:TAAGGCGA+AGAGGATA
     106 ST-E00129:1006:HCW33CCX2:1:1109:3265:11224 2:N:0:TAAGGCGA+AGAGGATA
@@ -249,6 +248,33 @@ samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | gre
 ```
 
 > Sequences map repeatedly to all the reference sequences in the cluster. 
+
+### Search for cluster containing CFX sequences
+
+```bash
+grep -Ril "cfx"
+cluster-183.msa
+cluster-182.msa
+```
+
+```bash
+grep "^>" cluster-182.msa        
+>*CfxA.3003001.U38243.149-1115.1354
+>CfxA2.3003002.AF118110.1.71-1037.4470
+>CfxA3.3003003.AF472622.52-1018.1514
+>CfxA4.3003005.AY769933.0-966.1592
+>CfxA5.3003096.AY769934.27-993.1669
+>consensus
+
+grep "^>" cluster-183.msa
+>*CfxA6.3003097.GQ342996.797-1793.1744
+>consensus
+```
+
+```bash
+samtools view filtered_RTC_149-FR.bam | cut -f3| sort | uniq -c | sort -nr | grep -i  CFX | wc -l
+6
+```
 
 ## Flags
 

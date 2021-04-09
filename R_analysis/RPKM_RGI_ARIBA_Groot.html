@@ -352,6 +352,7 @@ pre code {
 </div>
 
 
+<p>[TOC]</p>
 <div id="how-to-calculate-rpkm-reads-per-kilobase-per-milion" class="section level2">
 <h2>How to calculate RPKM (Reads per Kilobase per Milion)</h2>
 <ol style="list-style-type: decimal">
@@ -367,8 +368,7 @@ totalNumReads - total number of mapped reads of a sample (mapping stats)</p>
 <div id="rgi" class="section level1">
 <h1>RGI</h1>
 <pre class="r"><code>library(readr)
-setwd(&quot;~/Documentos/UOCMaster/RTC/RGI_analysis&quot;)
-gene_mapping_data &lt;- read_delim(&quot;RTC_149_RGI_output.gene_mapping_data.txt&quot;, &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
+gene_mapping_data &lt;- read_delim(&quot;RGI/RTC_149_RGI_output.gene_mapping_data.txt&quot;, &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
 <pre><code>## 
 ## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
@@ -387,7 +387,7 @@ gene_mapping_data &lt;- read_delim(&quot;RTC_149_RGI_output.gene_mapping_data.tx
 ##   `Resistance Mechanism` = col_character()
 ## )
 ## ℹ Use `spec()` for the full column specifications.</code></pre>
-<pre class="r"><code>allele_mapping_data &lt;- read_delim(&quot;RTC_149_RGI_output.allele_mapping_data.txt&quot;, &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
+<pre class="r"><code>allele_mapping_data &lt;- read_delim(&quot;RGI/RTC_149_RGI_output.allele_mapping_data.txt&quot;, &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
 <pre><code>## 
 ## ── Column specification ────────────────────────────────────────────────────────
 ## cols(
@@ -411,7 +411,7 @@ gene_mapping_data &lt;- read_delim(&quot;RTC_149_RGI_output.gene_mapping_data.tx
 <pre><code>## The following objects are masked from 'package:base':
 ## 
 ##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>totalMapReads&lt;-19968 ##value obtained from *overall_mapping_stats.txt
+<pre class="r"><code>RGIMapReads&lt;-19968 ##value obtained from *overall_mapping_stats.txt
 totalNumReads&lt;- 17072992
 
 allele_mapping_data&lt;-allele_mapping_data%&gt;%mutate(RPKM=`All Mapped Reads` /(`Reference Length`/1000 * totalNumReads/1000000))
@@ -522,7 +522,7 @@ kable(head(AMR_family_RGI))</code></pre>
 </div>
 <div id="ariba" class="section level1">
 <h1>ARIBA</h1>
-<pre class="r"><code>report &lt;- read_delim(&quot;~/Documentos/UOCMaster/RTC/ariba_analysis/ariba_results/report.tsv&quot;, 
+<pre class="r"><code>report &lt;- read_delim(&quot;ARIBA/report.tsv&quot;, 
     &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
 <pre><code>## 
 ## ── Column specification ────────────────────────────────────────────────────────
@@ -541,14 +541,15 @@ kable(head(AMR_family_RGI))</code></pre>
 ## ℹ Use `spec()` for the full column specifications.</code></pre>
 <p>Select only coding sequences and remove contig and variant data</p>
 <pre class="r"><code>report&lt;-report%&gt;% filter(gene==1)%&gt;%select(c(1:8,31))%&gt;%unique()</code></pre>
-<p>ARIBA does not generate the nº of mapped reads, I will use the nº reads per sample (once filtered)</p>
-<pre class="r"><code>totalNumReads&lt;- 17072992
+<p>I will use the total nº of reads instead mapped reads</p>
+<pre class="r"><code>AribaMapReds&lt;-5803 ##obtained from minimap.properPairs
+totalNumReads&lt;- 17072992
 report&lt;-report%&gt;%mutate(RPKM=reads /(ref_len/1000 * totalNumReads/1000000))</code></pre>
 <div id="obtain-amr-gene-family" class="section level3">
 <h3>Obtain AMR gene family</h3>
 <p>Import CARD data aro index:</p>
 <pre class="r"><code>library(readr)
-aro_index &lt;- read_delim(&quot;~/Documentos/UOCMaster/CARD_data/aro_index.tsv&quot;, 
+aro_index &lt;- read_delim(&quot;aro_index.tsv&quot;, 
     &quot;\t&quot;, escape_double = FALSE, trim_ws = TRUE)</code></pre>
 <pre><code>## 
 ## ── Column specification ────────────────────────────────────────────────────────
@@ -575,9 +576,7 @@ y$`Model Sequence ID`&lt;-ifelse(str_detect(y$`Model Sequence ID`, &quot;_&quot;
 y&lt;-select(y, -X)
 report&lt;-cbind(report,y)
 
-report&lt;-merge(report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by=&quot;Model Sequence ID&quot;)
-str(report$rp)</code></pre>
-<pre><code>##  NULL</code></pre>
+report&lt;-merge(report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by=&quot;Model Sequence ID&quot;)</code></pre>
 <p>Mapping quality?</p>
 </div>
 <div id="rpkm-sum-per-amr-gene-family-1" class="section level3">
@@ -637,7 +636,7 @@ kable(head(AMR_family_ARIBA))</code></pre>
 <h1>GROOT</h1>
 <p>Get groot report:</p>
 <pre class="r"><code>library(readr)
-groot_report &lt;- read_delim(&quot;~/Documentos/UOCMaster/groot/filtered_RTC_149-report-0&quot;, 
+groot_report &lt;- read_delim(&quot;Groot/filtered_RTC_149-report-0&quot;, 
     &quot;\t&quot;, escape_double = FALSE, col_names = FALSE, 
     trim_ws = TRUE)</code></pre>
 <pre><code>## 
@@ -651,14 +650,14 @@ groot_report &lt;- read_delim(&quot;~/Documentos/UOCMaster/groot/filtered_RTC_14
 <pre class="r"><code>names(groot_report)&lt;-c(&quot;AMR.gene&quot;, &quot;read.count&quot;, &quot;gene.length&quot;, &quot;coverage.cigar&quot;)
 head(groot_report)</code></pre>
 <pre><code>## # A tibble: 6 x 4
-##   AMR.gene                      read.count gene.length coverage.cigar           
-##   &lt;chr&gt;                              &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;                    
-## 1 TEM-30.3000900.AJ437107.208-…         13         861 45D152M44D152M18D303M147D
-## 2 TEM-188.3001048.JN211012.213…          8         861 241D227M32D200M161D      
-## 3 TEM-147.3001014.DQ279850.0-8…          9         861 17D180M44D152M107D165M36…
-## 4 TEM-96.3000963.AY092401.0-86…         18         861 17D180M44D235M24D307M54D 
-## 5 TEM-149.3001016.DQ369751.0-8…          3         861 312D156M80D152M161D      
-## 6 TEM-47.3000916.Y10279.0-861.…         11         861 45D152M44D227M32D200M161D</code></pre>
+##   AMR.gene                         read.count gene.length coverage.cigar        
+##   &lt;chr&gt;                                 &lt;dbl&gt;       &lt;dbl&gt; &lt;chr&gt;                 
+## 1 TEM-30.3000900.AJ437107.208-106…         13         861 45D152M44D152M18D303M…
+## 2 CfxA4.3003005.AY769933.0-966.15…       1573         966 3D961M2D              
+## 3 CfxA3.3003003.AF472622.52-1018.…       1409         966 3D961M2D              
+## 4 CfxA2.3003002.AF118110.1.71-103…       1387         966 3D961M2D              
+## 5 CfxA5.3003096.AY769934.27-993.1…       1353         966 3D772M2D187M2D        
+## 6 CfxA.3003001.U38243.149-1115.13…       1304         966 3D866M97D</code></pre>
 <p>Report: This will report gene, read count, gene length, coverage cigar&quot; Trasform GROOT notation and merge with CARD DB</p>
 <pre class="r"><code>library(stringr)
 library(reshape2)
@@ -672,7 +671,7 @@ y&lt;-select(y, -X)
 groot_report&lt;-cbind(groot_report,y)
 groot_report&lt;-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by=&quot;Model Sequence ID&quot;)</code></pre>
 <p>Calculate RPKM:</p>
-<pre class="r"><code>otalNumReads&lt;-  17072992
+<pre class="r"><code>totalNumReads&lt;- 17072992
 groot_report&lt;-groot_report%&gt;%mutate(RPKM=read.count /(gene.length/1000 * totalNumReads/1000000))</code></pre>
 <pre class="r"><code>library(knitr)
 n_distinct(groot_report$`AMR Gene Family`)</code></pre>
@@ -1120,6 +1119,7 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))</code></pre>
 </tr>
 </tbody>
 </table>
+<pre class="r"><code>##write_tsv(AMR_family, &quot;AMR_family.tsv&quot;)</code></pre>
 </div>
 
 
