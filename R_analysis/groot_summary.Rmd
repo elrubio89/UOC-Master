@@ -21,4 +21,18 @@ msa structure: (clusterXXX.msa)
 Card: 1176 clusters  
 
 ### 2. index:
+_Convert a set of clustered reference sequences to variation graphs and then index them_
+
+#### 2.1 Create variaton graphs
+The MSA is converted to a variation graph by first using the representative sequence (consensus) as the graph backbone; each base of the sequence is a node with edges connecting them in series. 
+
+Graph traversal: a path among a variation graph. 
+
+#### 2.2 Fingerprint graph traversals
+
+1. A sliding window of length _w_ (lenght of query reads) is moved across all graph traversals.  
+2. A MinHash signature is created for each window.  
+
+
+
 

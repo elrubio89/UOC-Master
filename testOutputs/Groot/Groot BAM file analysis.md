@@ -1,5 +1,7 @@
 # Groot BAM file analysis
 
+[TOC]
+
 Store as a text file to see the structure:
 
 ```
