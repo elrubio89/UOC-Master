@@ -4,6 +4,8 @@
 
 Store as a text file to see the structure:
 
+
+
 ```
 samtools view filtered_RTC_149-FR.bam | head -n20> bamfile.txt
 ```
@@ -51,9 +53,7 @@ samtools view filtered_RTC_149-FR.bam | cut -f1| sort | uniq -c | sort -nr | hea
      44 ST-E00129:1006:HCW33CCX2:1:2111:2788:21403 1:N:0:TAAGGCGA+AGAGGATA
 ```
 
- 
-
-Check to which reference sequence are the 2 most repeated sequence mapped 
+ Check to which reference sequence are the 2 most repeated sequence mapped 
 
 **1st most repeated sequence**
 
