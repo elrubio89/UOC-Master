@@ -51,6 +51,9 @@ groot align -i grootIndex$seqlen -f $forward,$reverse -p 8 -g $sample-groot-grap
 ##Multiple FASTQ files can be specified as input
 ##however all are treated as the same sample and paired-end info isn’t used
 
+samtools view -h $sample-FR.bam > $sample-FR.sam
+##Transform BAM file to SAM file (to execute python function)
+
 groot report --bamFile $sample-FR.bam >$sample-report
 groot report --bamFile $sample-FR.bam --lowCov>$sample-lowCov-report
 echo "Report: This will report gene, read count, gene length, coverage cigar"
