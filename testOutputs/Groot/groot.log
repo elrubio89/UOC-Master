@@ -1,7 +1,121 @@
-2021/04/13 17:20:37 i am groot (version 1.1.2)
-2021/04/13 17:20:37 starting the report subcommand
-2021/04/13 17:20:37 checking parameters...
-2021/04/13 17:20:37 terminated
-
-ERROR --> no STDIN found
-
+2021/04/15 12:40:35 i am groot (version 1.1.2)
+2021/04/15 12:40:35 starting the index subcommand
+2021/04/15 12:40:35 checking parameters...
+2021/04/15 12:40:35 	directory containing MSA files: card.90
+2021/04/15 12:40:35 	number of MSA files: 1176
+2021/04/15 12:40:35 	processors: 8
+2021/04/15 12:40:35 	k-mer size: 31
+2021/04/15 12:40:35 	sketch size: 21
+2021/04/15 12:40:35 	graph window size: 151
+2021/04/15 12:40:35 	num. partitions: 8
+2021/04/15 12:40:35 	max. K: 4
+2021/04/15 12:40:35 	max. sketch span: 30
+2021/04/15 12:40:35 initialising indexing pipeline...
+2021/04/15 12:40:35 	initialising the processes
+2021/04/15 12:40:35 	connecting data streams
+2021/04/15 12:40:35 	number of processes added to the indexing pipeline: 3
+2021/04/15 12:40:35 creating graphs, sketching traversals and indexing...
+2021/04/15 12:40:39 	sequence for *mgrB.3003820.NC_000913.3.1908622-1908766.3586 is shorter than window size (144 vs. 151), skipping graph
+2021/04/15 12:40:57 	number of groot graphs built: 1176
+2021/04/15 12:40:57 		graphs sketched: 1175
+2021/04/15 12:40:57 		graph windows processed: 2376611
+2021/04/15 12:40:57 		mean approximate distinct sketches per graph: 28.02%
+2021/04/15 12:40:57 	number of sketches added to the LSH Ensemble index: 472396
+2021/04/15 12:40:57 writing index files in "grootIndex151"...
+2021/04/15 12:40:59 finished in 23.706432099s
+2021/04/15 12:40:59 i am groot (version 1.1.2)
+2021/04/15 12:40:59 starting the sketch subcommand
+2021/04/15 12:40:59 checking parameters...
+2021/04/15 12:40:59 	minimum k-mer coverage: 1
+2021/04/15 12:40:59 	processors: 8
+2021/04/15 12:40:59 	input file: /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R1.fastq
+2021/04/15 12:40:59 	input file: /home/erubio/Documentos/UOCMaster/RTC/fastp_analysis/filtered_RTC_149_R2.fastq
+2021/04/15 12:40:59 loading the index information...
+2021/04/15 12:40:59 	k-mer size: 31
+2021/04/15 12:40:59 	sketch size: 21
+2021/04/15 12:40:59 	window size used in indexing: 151
+2021/04/15 12:40:59 loading the graphs...
+2021/04/15 12:40:59 	number of variation graphs: 1176
+2021/04/15 12:40:59 rebuilding the LSH Ensemble...
+2021/04/15 12:41:02 	containment threshold: 0.99
+2021/04/15 12:41:02 initialising alignment pipeline...
+2021/04/15 12:41:02 	initialising the processes
+2021/04/15 12:41:02 	connecting data streams
+2021/04/15 12:41:02 	number of processes added to the alignment pipeline: 5
+2021/04/15 12:41:02 now streaming reads...
+2021/04/15 12:44:59 	number of reads received from input: 17072992
+2021/04/15 12:44:59 	mean read length: 141
+2021/04/15 12:44:59 	number of reads sketched: 17072992
+2021/04/15 12:44:59 	total number of unmapped reads: 17067926
+2021/04/15 12:44:59 	total number of mapped reads: 5066
+2021/04/15 12:44:59 		mapped to one graph: 4847
+2021/04/15 12:44:59 		mapped to multiple graphs: 219
+2021/04/15 12:44:59 	total number of exact alignments: 12426
+2021/04/15 12:44:59 processing graphs...
+2021/04/15 12:44:59 	total number of k-mers projected onto graphs: 98569
+2021/04/15 12:44:59 	graph 473 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*Mef(En2).3004659.AF251288.1.794-2000.5539]
+2021/04/15 12:44:59 	graph 75 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*tetO.3000190.M18896.2.206-2126.4234]
+2021/04/15 12:44:59 	graph 1066 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*APH(3')-IIIa.3002647.CP004067.52914-53709.233]
+2021/04/15 12:44:59 	graph 265 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*CblA-1.3002999.GQ343019.132-1023.1188]
+2021/04/15 12:44:59 	graph 875 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*dfrF.3002867.AF028812.392-887.677]
+2021/04/15 12:44:59 	graph 29 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*tet(40).3000567.AM419751.14210-15431.5150]
+2021/04/15 12:44:59 	graph 698 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*Tet(X3).3004719.MK134375.1.6173-7340.5596]
+2021/04/15 12:44:59 	graph 728 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*aadS.3004683.M72415.1.1120-1984.5568]
+2021/04/15 12:44:59 	graph 270 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*CfxA6.3003097.GQ342996.797-1793.1744]
+2021/04/15 12:44:59 	graph 18 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*sul2.3000412.AY055428.1.20268-21084.4745]
+2021/04/15 12:44:59 	graph 82 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*tetX.3000205.M37699.585-1752.79]
+2021/04/15 12:44:59 	graph 329 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*ErmF.3000498.M17124.1181-1982.593]
+2021/04/15 12:44:59 	graph 700 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*Tet(X4).3004720.MK134376.1.324-1482.5597]
+2021/04/15 12:44:59 	graph 325 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*ErmB.3000375.AF242872.1.2131-2878.5430]
+2021/04/15 12:44:59 	graph 330 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*ErmG.3000522.L42817.201-936.590]
+2021/04/15 12:44:59 	graph 76 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*tetQ.3000191.Z21523.0-1974.476]
+2021/04/15 12:44:59 	graph 269 has 5 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*CfxA.3003001.U38243.149-1115.1354]
+2021/04/15 12:44:59 	- [CfxA2.3003002.AF118110.1.71-1037.4470]
+2021/04/15 12:44:59 	- [CfxA3.3003003.AF472622.52-1018.1514]
+2021/04/15 12:44:59 	- [CfxA4.3003005.AY769933.0-966.1592]
+2021/04/15 12:44:59 	- [CfxA5.3003096.AY769934.27-993.1669]
+2021/04/15 12:44:59 	graph 74 has 1 remaining paths after weighting and pruning
+2021/04/15 12:44:59 	- [*tetM.3000186.AM990992.1.1001760-1003680.5141]
+2021/04/15 12:44:59 	total number of graphs pruned: 1176
+2021/04/15 12:44:59 	total number of graphs remaining: 18
+2021/04/15 12:44:59 	total number of possible haplotypes found: 22
+2021/04/15 12:44:59 saving graphs...
+2021/04/15 12:44:59 finished in 4m0.392109911s
+2021/04/15 12:45:00 i am groot (version 1.1.2)
+2021/04/15 12:45:00 starting the report subcommand
+2021/04/15 12:45:00 checking parameters...
+2021/04/15 12:45:00 	BAM file: filtered_RTC_149-uniqseq.bam
+2021/04/15 12:45:00 	coverage cutoff: 0.00
+2021/04/15 12:45:00 	processors: 1
+2021/04/15 12:45:00 finished
+2021/04/15 12:45:00 i am groot (version 1.1.2)
+2021/04/15 12:45:00 starting the report subcommand
+2021/04/15 12:45:00 checking parameters...
+2021/04/15 12:45:00 	BAM file: filtered_RTC_149-uniqseq.bam
+2021/04/15 12:45:00 	coverage cutoff: 0.97
+2021/04/15 12:45:00 	processors: 1
+2021/04/15 12:45:00 finished
+2021/04/15 12:45:00 i am groot (version 1.1.2)
+2021/04/15 12:45:00 starting the report subcommand
+2021/04/15 12:45:00 checking parameters...
+2021/04/15 12:45:00 	BAM file: filtered_RTC_149-uniqseq.bam
+2021/04/15 12:45:00 	coverage cutoff: 0.97
+2021/04/15 12:45:00 	processors: 1
+2021/04/15 12:45:00 finished

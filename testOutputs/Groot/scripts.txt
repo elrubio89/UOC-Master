@@ -135,3 +135,4 @@ $ samtools view filtered_RTC_149-FR.bam | cut -f5| sort | uniq -c
 12426 30
 
 
+samtools view -F 256 filtered_RTC_149-FR.bam| cut -f1| sort | uniq | wc -l
