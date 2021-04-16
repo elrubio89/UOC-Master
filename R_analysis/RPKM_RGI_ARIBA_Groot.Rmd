@@ -83,19 +83,22 @@ ggplot(AMR_family_RGI, aes(log(sum_RPKM_RGI), avg_MAPQ))+geom_point()+theme_bw()
 report <- read_delim("ARIBA/report.tsv", 
     "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
-Select only coding sequences and remove contig and variant data
+report1: only coding sequences
+report2: all sequences
+Remove contig and variant data
 
 ```{r}
-report<-report%>% filter(gene==1)%>%select(c(1:8,31))%>%unique()
+report1<-report%>% filter(gene==1)%>%select(c(1:8,31))%>%unique()
+report2<-report%>%select(c(1:8,31))%>%unique()
+dim(report1)
+dim(report2)
 ```
-
-
 I will use the total nº of reads instead mapped reads
 
 ```{r}
 AribaMapReds<-5803 ##obtained from minimap.properPairs
 totalNumReads<-	17072992
-report<-report%>%mutate(RPKM=reads /(ref_len/1000 * totalNumReads/1000000))
+report<-report2%>%mutate(RPKM=reads /(ref_len/1000 * totalNumReads/1000000))
 ```
 
 ### Obtain AMR gene family
@@ -137,11 +140,11 @@ kable(head(AMR_family_ARIBA))
 ```
 
 # GROOT
-Get groot report:
+Get groot report (uniqseq)
 
 ```{r}
 library(readr)
-groot_report <- read_delim("Groot/filtered_RTC_149-report-0", 
+groot_report <- read_delim("Groot/filtered_RTC_149-uniqseq-0report", 
     "\t", escape_double = FALSE, col_names = FALSE, 
     trim_ws = TRUE)
 names(groot_report)<-c("AMR.gene", "read.count", "gene.length", "coverage.cigar")
@@ -194,6 +197,6 @@ kable(arrange(AMR_family,`number of AMR genes per family(ARIBA)`))
 ```
 
 ```{r}
-##write_tsv(AMR_family, "AMR_family.tsv")
+write_tsv(AMR_family, "AMR_family_ARIBAall_groot_uniqseq.tsv")
 ```
 

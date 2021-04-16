@@ -1,0 +1,42 @@
+AMR Gene Family	number of AMR genes per family(ARIBA)	sum RPKM (ARIBA)	number of AMR genes per family (RGI)	sum_RPKM_RGI	number of AMR genes per family (groot)	sum_RPKM_groot
+16s rRNA with mutation conferring resistance to aminoglycoside antibiotics	3	62.513168539693766	NA	NA	1	0.0377640501205875
+23S rRNA with mutation conferring resistance to lincosamide antibiotics	NA	NA	NA	NA	1	0.060508307579577696
+23S rRNA with mutation conferring resistance to linezolid antibiotics	1	23.14056057689955	NA	NA	NA	NA
+23S rRNA with mutation conferring resistance to macrolide antibiotics	4	47.715252793594935	NA	NA	4	0.7612816647882131
+23S rRNA with mutation conferring resistance to macrolide antibiotics;23S rRNA with mutation conferring resistance to streptogramins antibiotics	1	20.935874422533885	NA	NA	1	0.08067774343943693
+23S rRNA with mutation conferring resistance to oxazolidinone antibiotics	1	25.21179482482404	NA	NA	NA	NA
+23S rRNA with mutation conferring resistance to pleuromutilin antibiotics	1	13.200473975991827	NA	NA	NA	NA
+ABC-F ATP-binding cassette ribosomal protection protein	1	31.161480333001823	5	55.17337909980103	2	0.4554283164136977
+ACI beta-lactamase	1	1.2330956155164465	1	1.0960849915701747	1	0.47953718381195143
+ANT(6)	1	14.100676714470477	3	14.743564179973593	1	5.491128912846676
+ANT(9)	NA	NA	1	0.14960930201029682	NA	NA
+antibiotic-resistant isoleucyl-tRNA synthetase (ileS)	NA	NA	1	0.03524190236885151	NA	NA
+APH(2'')	NA	NA	1	0.12929810537975986	1	0.06464905268987993
+APH(2''); AAC(6')	NA	NA	1	0.08135005796809891	NA	NA
+APH(3')	1	2.9470209679009414	1	2.873345443703418	1	1.2524839113579
+ATP-binding cassette (ABC) antibiotic efflux pump	NA	NA	2	0.6260984338520801	NA	NA
+CblA beta-lactamase	1	39.04802782468747	1	39.7054020304903	1	12.555847330833853
+cepA beta-lactamase	NA	NA	1	0.12972766719165274	NA	NA
+CfxA beta-lactamase	2	207.88041498683944	1	28.403911806210914	6	108.99690225886323
+chloramphenicol acetyltransferase (CAT)	NA	NA	3	2.674192640972308	NA	NA
+Erm 23S ribosomal RNA methyltransferase	3	162.78844326131647	5	163.85883157093545	4	32.751179549471736
+General Bacterial Porin with reduced permeability to beta-lactams	NA	NA	1	0.1041280741991666	NA	NA
+glycopeptide resistance gene cluster; van ligase	NA	NA	1	0.11156579378482136	NA	NA
+glycopeptide resistance gene cluster; vanR	NA	NA	2	1.3385744607830052	NA	NA
+glycopeptide resistance gene cluster;vanT	NA	NA	NA	NA	1	0.05476581742592915
+glycopeptide resistance gene cluster; vanT	NA	NA	1	0.4381265394074332	NA	NA
+glycopeptide resistance gene cluster; vanXY	NA	NA	1	0.3062590417622547	NA	NA
+lincosamide nucleotidyltransferase (LNU)	1	2.603201854979165	2	4.017461763127889	2	0.3535649770371811
+Llm 23S ribosomal RNA methyltransferase	NA	NA	1	0.271166859893663	NA	NA
+macrolide phosphotransferase (MPH)	NA	NA	1	0.7941971760953385	NA	NA
+major facilitator superfamily (MFS) antibiotic efflux pump	2	9.970237329349224	3	10.167238805758593	2	4.164846123000606
+multidrug and toxic compound extrusion (MATE) transporter	NA	NA	1	0.08638944209001653	NA	NA
+pmr phosphoethanolamine transferase	NA	NA	2	0.13916513883568402	NA	NA
+resistance-nodulation-cell division (RND) antibiotic efflux pump	NA	NA	14	2.4712763068648327	NA	NA
+rifamycin-resistant beta-subunit of RNA polymerase (rpoB)	1	0.19737840517954913	2	3.737998512880854	NA	NA
+streptothricin acetyltransferase (SAT)	NA	NA	1	1.294409762144336	1	0.10786748017869466
+sulfonamide resistant sul	1	1.4355892582605692	1	1.4355892582605692	1	0.5024562403911992
+TEM beta-lactamase	1	4.353787074529614	1	1.4905232110271847	22	2.108865614225282
+tetracycline inactivation enzyme	1	68.55990489527389	2	49.96357442032472	2	32.021390426928804
+tetracycline-resistant ribosomal protection protein	6	242.51418473519632	7	323.2794718807418	7	41.14645911572326
+trimethoprim resistant dihydrofolate reductase dfr	1	1.41992828453409	1	1.183273570445075	1	0.5916367852225375

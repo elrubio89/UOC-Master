@@ -1,0 +1,11 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR6714079	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714079_fastqc.zip
+FastQC	all_sections	SRR6714075	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714075_fastqc.zip
+FastQC	all_sections	SRR6714072	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714072_fastqc.zip
+FastQC	all_sections	SRR6714074	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714074_fastqc.zip
+FastQC	all_sections	SRR6714078	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714078_fastqc.zip
+FastQC	all_sections	SRR6714076	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714076_fastqc.zip
+FastQC	all_sections	SRR6714077	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714077_fastqc.zip
+FastQC	all_sections	SRR6714073	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714073_fastqc.zip
+FastQC	all_sections	SRR6714088	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714088_fastqc.zip
+FastQC	all_sections	SRR6714098	/home/erubio/Documentos/UOCMaster/PRJNA307231/fastqc/SRR6714098_fastqc.zip
