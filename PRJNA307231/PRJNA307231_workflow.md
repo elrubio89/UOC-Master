@@ -56,6 +56,7 @@ Quality filter (fastp):
 
 ```bash
 cd ..
-ls *.fastq | parallel --gnu "fastp -i {} -o fastp/  -f 10 -q 20 -l 50 " 
+mkdir fastp
+ls *.fastq | parallel --gnu "fastp -i {} -o fastp/filt_{}  -f 10 -q 20 -l 50 -j fastp/{/.}_fastp.json -h fastp/{/.}_fastp.html" 
 ```
 
