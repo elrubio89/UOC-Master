@@ -55,7 +55,7 @@ multiqc .
 - q-: remove sequences with qualiti <=q20
 - l-: minimum sequence length= 50 pb
 - *-f: trim first 10 bp from each sequence*
-- -c: 
+- -c: enable base correction in overlapped regions (only for PE data), default is disabled
 
 
 ```bash
