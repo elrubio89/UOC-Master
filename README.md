@@ -22,4 +22,29 @@ Programa Tablet para visualizar archivos bam
 
 ## 19/3/21
 Aprender lenguaje en bash (generar variables, archivos ejecutables)  
-Analizar secuencias con RGI y ARIBA (archivos bash)  
+Analizar secuencias con RGI y ARIBA (archivos bash) 
+
+## Enlaces útiles:
+Samtools tutorial:  
+http://quinlanlab.org/tutorials/samtools/samtools.html
+
+### Git tutorial:  
+https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners  
+
+### Groot tutorial:  
+https://github.com/will-rowe/groot
+https://groot-documentation.readthedocs.io/en/latest/tutorial.html
+
+### RGI:
+https://github.com/arpcard/rgi
+
+### ARIBA:
+https://github.com/sanger-pathogens/ariba
+https://github.com/sanger-pathogens/pathogen-informatics-training
+
+### Curso UNIX
+https://bioinf.comav.upv.es/courses/unix/index.html
+https://bioinf.comav.upv.es/courses/sequence_analysis/index.html
+
+### fastp:
+https://github.com/OpenGene/fastp
