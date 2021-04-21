@@ -32,7 +32,7 @@ http://quinlanlab.org/tutorials/samtools/samtools.html
 https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners  
 
 ### Groot tutorial:  
-https://github.com/will-rowe/groot
+https://github.com/will-rowe/groot  
 https://groot-documentation.readthedocs.io/en/latest/tutorial.html
 
 ### RGI:
