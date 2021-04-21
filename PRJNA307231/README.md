@@ -63,6 +63,8 @@ mkdir fastp
 ls fastq/*.fastq  | sort | parallel --gnu --max-args=2 "fastp -i {1} -I {2} -o fastp/filt_{1} -O fastp/filt_{2} -q 20 -l 50 -c -f 10 -j fastp/{1/.}_fastp.json -h fastp/{1/.}_fastp.html"
 ```
 
+https://opensource.com/article/18/5/gnu-parallel
+
 Rename html and json files:
 
 ```bash
