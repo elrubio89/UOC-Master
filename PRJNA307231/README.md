@@ -91,6 +91,8 @@ GROOT scpit to analyse multiple samples simoultaneously: `groot_multsamples.sh`
 MYDIR=/home/erubio/Documentos/UOCMaster/bashScripts
 seqlen=$1
 
+MYDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 mkdir groot_analysis
 cd groot_analysis
 
