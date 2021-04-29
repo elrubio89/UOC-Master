@@ -13,7 +13,7 @@ knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/PRJNA307231")
 ## Import metadata file and nº of reads per sample:
 
 Metadata file:
-```{r}
+```{r message=FALSE}
 setwd("~/Documentos/Repos/UOC-Master/PRJNA307231")
 library(readr)
 metadata <- read_delim("samples_metadata.csv", 
@@ -35,7 +35,7 @@ cd ..
 ```
 
 Merge datasets:
-```{r}
+```{r message=FALSE}
 library(readr)
 totalNumReads <- read_delim("totalNumReads.csv", 
     "\t", escape_double = FALSE, col_names = FALSE, 
@@ -87,28 +87,24 @@ RGI_data<-lapply(RGI_data, function(x) subset(x, x$`Average MAPQ (Completely Map
 Calculate RPKM sum per AMR gene family:
 
 ```{r}
+library(dplyr)
+amrfamily<-function(x){x%>%group_by(`AMR Gene Family`)%>%summarise('number of AMR genes per family (RGI)'=n(), sum_RPKM_RGI=sum(RPKM))}
+test<-RGI_data[[1]]
+test2<-amrfamily(test)
 
 ```
 
 ```{r}
-library(knitr)
-n_distinct(allele_mapping_data$`AMR Gene Family`)
-AMR_family_RGI<-allele_mapping_data%>%
-  group_by(`AMR Gene Family`)%>%
-  summarise('number of AMR genes per family (RGI)'=n(),
-            sum_RPKM_RGI=sum(RPKM),
-            avg_MAPQ=mean(`Average MAPQ (Completely Mapped Reads)`),
-            q1_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`, 0.25),
-            p3_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`,0.75),)%>%arrange(desc(sum_RPKM_RGI))
-kable(head(AMR_family_RGI))
-str(AMR_family_RGI$`sum RPKM (RGI)`)
+RGI_summary<-lapply(RGI_data, amrfamily)
+```
+
+
+```{r}
+
 ```
 
 ```{r}
-help("aggregate")
-x<-RGI_data[[1]]
-aggregate(x, by=list('AMR Gene Family'), sum)
-names(x)
+
 ```
 
 
