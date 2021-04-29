@@ -1,0 +1,118 @@
+---
+title: "RPKM_multsamples"
+author: "Elisa Rubio"
+date: "4/27/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/PRJNA307231")
+```
+
+## Import metadata file and nº of reads per sample:
+
+Metadata file:
+```{r}
+setwd("~/Documentos/Repos/UOC-Master/PRJNA307231")
+library(readr)
+metadata <- read_delim("samples_metadata.csv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+```
+Get nº of reads from each sample (from overall_mapping_stats RGI):
+
+```{bash}
+cd RGI_analysis
+for stats in *stats.txt; do
+    sample0=${stats%.*}
+    sample1=${sample0%.*}
+    sample=${sample1#*_}
+    totalseq=$(grep ^Total $stats | sed s/[^0-9]//g)
+    printf "$sample\t$totalseq\n" >> totalNumReads.csv; done
+
+mv totalNumReads.csv ../
+cd ..
+```
+
+Merge datasets:
+```{r}
+library(readr)
+totalNumReads <- read_delim("totalNumReads.csv", 
+    "\t", escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)
+names(totalNumReads)<-c("Run", "totalNumReads")
+metadata<-merge(metadata, totalNumReads, by="Run")
+```
+
+## RGI files
+
+Get files (list of dataframes):
+```{r message=FALSE}
+RGI_files<-list.files("RGI_analysis", "*.data.txt", full.names = TRUE)
+RGI_data <- lapply(RGI_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE))
+```
+
+Assign sample names to each dataframe:
+
+```{r}
+RGI_files
+metadata$Run
+names(RGI_data)<-metadata$Run
+```
+Calculate RPKM for each dataframe:
+
+```{r}
+for (i in 1:length(RGI_data)){
+ RGI_data[[i]]$RPKM<-RGI_data[[i]]$`All Mapped Reads`/(RGI_data[[i]]$`Reference Length`/1000 * metadata$totalNumReads[i]/1000000)
+}
+```
+
+Plots (MAPQ distribution per sample)
+
+```{r}
+library(ggplot2)
+library(gridExtra)
+plots<-function(x){ggplot(x, aes(`Average MAPQ (Completely Mapped Reads)`)) +
+  geom_histogram(bins=50)+theme_bw()}
+RGI_plots<-lapply(RGI_data, plots)
+grid.arrange(grobs = RGI_plots, ncol = 4)
+```
+
+Remove sequences with MAPQ<10:
+
+```{r}
+RGI_data<-lapply(RGI_data, function(x) subset(x, x$`Average MAPQ (Completely Mapped Reads)`>10))
+```
+
+Calculate RPKM sum per AMR gene family:
+
+```{r}
+
+```
+
+```{r}
+library(knitr)
+n_distinct(allele_mapping_data$`AMR Gene Family`)
+AMR_family_RGI<-allele_mapping_data%>%
+  group_by(`AMR Gene Family`)%>%
+  summarise('number of AMR genes per family (RGI)'=n(),
+            sum_RPKM_RGI=sum(RPKM),
+            avg_MAPQ=mean(`Average MAPQ (Completely Mapped Reads)`),
+            q1_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`, 0.25),
+            p3_MAPQ=quantile(`Average MAPQ (Completely Mapped Reads)`,0.75),)%>%arrange(desc(sum_RPKM_RGI))
+kable(head(AMR_family_RGI))
+str(AMR_family_RGI$`sum RPKM (RGI)`)
+```
+
+```{r}
+help("aggregate")
+x<-RGI_data[[1]]
+aggregate(x, by=list('AMR Gene Family'), sum)
+names(x)
+```
+
+
+
+
+
+
