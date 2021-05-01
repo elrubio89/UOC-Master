@@ -21,7 +21,7 @@ metadata <- read_delim("samples_metadata.csv",
 ```
 Get nº of reads from each sample (from overall_mapping_stats RGI):
 
-```{bash}
+```{bash eval=FALSE, include=FALSE}
 cd RGI_analysis
 for stats in *stats.txt; do
     sample0=${stats%.*}
@@ -44,22 +44,22 @@ names(totalNumReads)<-c("Run", "totalNumReads")
 metadata<-merge(metadata, totalNumReads, by="Run")
 ```
 
-## RGI files
+## RGI
 
-Get files (list of dataframes):
+### Get files (list of dataframes):
 ```{r message=FALSE}
 RGI_files<-list.files("RGI_analysis", "*.data.txt", full.names = TRUE)
 RGI_data <- lapply(RGI_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE))
 ```
 
-Assign sample names to each dataframe:
+### Assign sample names to each dataframe:
 
 ```{r}
 RGI_files
 metadata$Run
 names(RGI_data)<-metadata$Run
 ```
-Calculate RPKM for each dataframe:
+### Calculate RPKM for each dataframe:
 
 ```{r}
 for (i in 1:length(RGI_data)){
@@ -67,7 +67,7 @@ for (i in 1:length(RGI_data)){
 }
 ```
 
-Plots (MAPQ distribution per sample)
+### Plots (MAPQ distribution per sample)
 
 ```{r}
 library(ggplot2)
@@ -78,36 +78,159 @@ RGI_plots<-lapply(RGI_data, plots)
 grid.arrange(grobs = RGI_plots, ncol = 4)
 ```
 
-Remove sequences with MAPQ<10:
+### Remove sequences with MAPQ<10:
 
 ```{r}
 RGI_data<-lapply(RGI_data, function(x) subset(x, x$`Average MAPQ (Completely Mapped Reads)`>10))
 ```
 
-Calculate RPKM sum per AMR gene family:
+### Calculate RPKM sum per AMR gene family:
+Create function:
 
-```{r}
+```{r message=FALSE}
 library(dplyr)
-amrfamily<-function(x){x%>%group_by(`AMR Gene Family`)%>%summarise('number of AMR genes per family (RGI)'=n(), sum_RPKM_RGI=sum(RPKM))}
-test<-RGI_data[[1]]
-test2<-amrfamily(test)
+amrfamily<-function(x, pipeline){
+  y<-x%>%group_by(`AMR Gene Family`)%>%summarise(v1=n(), v2=sum(RPKM))
+  names(y)[2:3]<-c(paste('nAMR_genes_perfamily_', pipeline, sep=''),paste('sum_RPKM_', pipeline, sep=''))
+  return(y)}
+```
 
+Apply to RGI data:
+
+```{r}
+RGI_summary<-lapply(RGI_data, function(x) amrfamily (x, 'RGI'))
+```
+
+
+## ARIBA
+### Get all report files (list of dataframes):
+```{r message=FALSE, warning=FALSE}
+ariba_files<-list.files("ariba_analysis", full.names = TRUE)
+ariba_files
+ariba_data <- lapply(ariba_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE))
+```
+### Assign sample names to each dataframe:
+
+```{r}
+ariba_files
+metadata$Run
+names(ariba_data)<-metadata$Run
+```
+### Remove contig and variant data from ariba reports: 
+
+```{r}
+aribasubs<-function(x){x%>%select(c(1:8,31))%>%unique()}
+aribasubs2<-function(x){x%>% filter(gene==1)%>%select(c(1:8,31))%>%unique()} ##Only coding sequences
+ariba_data<-lapply(ariba_data, aribasubs)
+```
+
+### Calculate RPKM (using total number of reads):
+
+```{r}
+for (i in 1:length(ariba_data)){
+ ariba_data[[i]]$RPKM<-ariba_data[[i]]$`reads`/(ariba_data[[i]]$`ref_len`/1000 * metadata$totalNumReads[i]/1000000)}
+```
+
+
+### Obtain AMR gene family
+
+Import CARD data aro index: 
+
+```{r message=FALSE, warning=FALSE}
+aro_index <- read_delim("aro_index.tsv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+```
+
+Trasform ARIBA notation to merge with CARD DB and obtain AMR gene family value: 
+```{r}
+library(stringr)
+library(reshape2)
+aribanotation<-function(x){
+y<-colsplit(x$ref_name, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","v1"))
+y$NCBI<-ifelse(str_detect(y$init_final, "_"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
+y$init_final<-ifelse(str_detect(y$init_final, "_"), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "_"), y$v1, y$`Model Sequence ID`)
+y<-select(y, -v1)
+x<-cbind(x,y)
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+return(x)}
+```
+
+Apply to list of dataframes:
+```{r}
+ariba_data<-lapply(ariba_data, aribanotation)
+```
+
+### Calculate RPKM sum per AMR gene family:
+
+```{r}
+ariba_summary<-lapply(ariba_data, function(x) amrfamily (x, 'ariba'))
+```
+
+## GROOT
+
+### Get files (list of dataframes):
+```{r message=FALSE}
+groot_files<-list.files("groot_analysis", "*.0report", full.names = TRUE)
+groot_data <- lapply(groot_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE, col_names = c("AMR.gene", "read.count", "gene.length", "coverage.cigar")))
+```
+
+### Assign sample names to each dataframe:
+
+```{r}
+groot_files
+metadata$Run
+names(groot_data)<-metadata$Run
+```
+### Calculate RPKM for each dataframe:
+
+```{r}
+for (i in 1:length(groot_data)){
+ groot_data[[i]]$RPKM<-groot_data[[i]]$read.count/(groot_data[[i]]$gene.length/1000 * metadata$totalNumReads[i]/1000000)
+}
+```
+
+
+### Obtain AMR gene family
+
+Trasform GROOT notation to merge with CARD DB and obtain AMR gene family value: 
+
+```{r}
+grootnotation<-function(x){
+y<-colsplit(x$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","v1"))
+y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
+y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$v1, y$`Model Sequence ID`)
+y<-select(y, -v1)
+x<-cbind(x,y)
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID", all.x=TRUE)
+return(x)}
+```
+
+
+```{r}
+y<-colsplit(groot_report$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","X"))
+
+y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
+y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
+y<-select(y, -X)
+groot_report<-cbind(groot_report,y)
+groot_report<-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+```
+
+Apply to list of dataframes:
+
+```{r}
+groot_data<-lapply(groot_data, grootnotation)
 ```
 
 ```{r}
-RGI_summary<-lapply(RGI_data, amrfamily)
+test<-groot_data[[1]]
+dim(test)
 ```
-
-
-```{r}
-
-```
-
-```{r}
-
-```
-
-
+OJO!!!! algunas seq no están en aro term de card!!!!
+Vigilar que no pase lo mismo con ARIBA
 
 
 
