@@ -2,7 +2,10 @@
 title: "RPKM_multsamples"
 author: "Elisa Rubio"
 date: "4/27/2021"
-output: html_document
+output:
+  html_document:
+    toc: true
+    theme: united
 ---
 
 ```{r setup, include=FALSE}
@@ -19,9 +22,10 @@ library(readr)
 metadata <- read_delim("samples_metadata.csv", 
     "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
+
 Get nº of reads from each sample (from overall_mapping_stats RGI):
 
-```{bash eval=FALSE, include=FALSE}
+```{bash eval=FALSE, include=TRUE}
 cd RGI_analysis
 for stats in *stats.txt; do
     sample0=${stats%.*}
@@ -46,19 +50,13 @@ metadata<-merge(metadata, totalNumReads, by="Run")
 
 ## RGI
 
-### Get files (list of dataframes):
+### Get files (list of dataframes) and assign sample names to each dataframe:
 ```{r message=FALSE}
 RGI_files<-list.files("RGI_analysis", "*.data.txt", full.names = TRUE)
 RGI_data <- lapply(RGI_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE))
-```
-
-### Assign sample names to each dataframe:
-
-```{r}
-RGI_files
-metadata$Run
 names(RGI_data)<-metadata$Run
 ```
+
 ### Calculate RPKM for each dataframe:
 
 ```{r}
@@ -85,6 +83,7 @@ RGI_data<-lapply(RGI_data, function(x) subset(x, x$`Average MAPQ (Completely Map
 ```
 
 ### Calculate RPKM sum per AMR gene family:
+
 Create function:
 
 ```{r message=FALSE}
@@ -93,27 +92,27 @@ amrfamily<-function(x, pipeline){
   y<-x%>%group_by(`AMR Gene Family`)%>%summarise(v1=n(), v2=sum(RPKM))
   names(y)[2:3]<-c(paste('nAMR_genes_perfamily_', pipeline, sep=''),paste('sum_RPKM_', pipeline, sep=''))
   return(y)}
+
+drugclass<-function(x, pipeline){
+  y<-x%>%group_by(`Drug Class`)%>%summarise(v1=n(), v2=sum(RPKM))
+  names(y)[2:3]<-c(paste('nAMR_genes_perdrugclass_', pipeline, sep=''),paste('sum_RPKM_', pipeline, sep=''))
+  return(y)}
+
 ```
 
 Apply to RGI data:
 
 ```{r}
 RGI_summary<-lapply(RGI_data, function(x) amrfamily (x, 'RGI'))
+RGI_summary2<-lapply(RGI_data, function(x) drugclass (x, 'RGI'))
 ```
 
 
 ## ARIBA
-### Get all report files (list of dataframes):
+### Get all report files (list of dataframes) and assign names:
 ```{r message=FALSE, warning=FALSE}
 ariba_files<-list.files("ariba_analysis", full.names = TRUE)
-ariba_files
 ariba_data <- lapply(ariba_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE))
-```
-### Assign sample names to each dataframe:
-
-```{r}
-ariba_files
-metadata$Run
 names(ariba_data)<-metadata$Run
 ```
 ### Remove contig and variant data from ariba reports: 
@@ -141,18 +140,19 @@ aro_index <- read_delim("aro_index.tsv",
     "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
 
-Trasform ARIBA notation to merge with CARD DB and obtain AMR gene family value: 
+Trasform ARIBA notation to merge with CARD DB and obtain AMR gene family and drug class: 
 ```{r}
 library(stringr)
 library(reshape2)
 aribanotation<-function(x){
-y<-colsplit(x$ref_name, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","v1"))
+y<-colsplit(x$ref_name, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final","Model Sequence ID","v1"))
 y$NCBI<-ifelse(str_detect(y$init_final, "_"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
 y$init_final<-ifelse(str_detect(y$init_final, "_"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "_"), y$v1, y$`Model Sequence ID`)
 y<-select(y, -v1)
 x<-cbind(x,y)
-x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+x$'ARO Accession'<-paste('ARO:', x$'ARO Accession', sep='')
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `ARO Accession`) , by="ARO Accession", all.x=TRUE)
 return(x)}
 ```
 
@@ -161,27 +161,26 @@ Apply to list of dataframes:
 ariba_data<-lapply(ariba_data, aribanotation)
 ```
 
-### Calculate RPKM sum per AMR gene family:
+```{r eval=FALSE, include=TRUE}
+lapply(ariba_data, function(x) table(is.na(x$`AMR Gene Family`)))
+```
+
+### Calculate RPKM sum per AMR gene family and Drug Class: 
 
 ```{r}
 ariba_summary<-lapply(ariba_data, function(x) amrfamily (x, 'ariba'))
+ariba_summary2<-lapply(ariba_data, function(x) drugclass (x, 'ariba'))
 ```
 
 ## GROOT
 
-### Get files (list of dataframes):
+### Get files (list of dataframes) and assign names:
 ```{r message=FALSE}
 groot_files<-list.files("groot_analysis", "*.0report", full.names = TRUE)
 groot_data <- lapply(groot_files, function (x) read_delim(x, delim="\t", escape_double = FALSE, trim_ws = TRUE, col_names = c("AMR.gene", "read.count", "gene.length", "coverage.cigar")))
-```
-
-### Assign sample names to each dataframe:
-
-```{r}
-groot_files
-metadata$Run
 names(groot_data)<-metadata$Run
 ```
+
 ### Calculate RPKM for each dataframe:
 
 ```{r}
@@ -190,33 +189,21 @@ for (i in 1:length(groot_data)){
 }
 ```
 
+### Obtain AMR gene family and Drug Class
 
-### Obtain AMR gene family
-
-Trasform GROOT notation to merge with CARD DB and obtain AMR gene family value: 
+Transform GROOT notation to merge with CARD DB and obtain AMR gene family and Drug Class: 
 
 ```{r}
 grootnotation<-function(x){
-y<-colsplit(x$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","v1"))
+y<-colsplit(x$AMR.gene, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final","Model Sequence ID","v1"))
 y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
 y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$v1, y$`Model Sequence ID`)
 y<-select(y, -v1)
 x<-cbind(x,y)
-x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID", all.x=TRUE)
+x$'ARO Accession'<-paste('ARO:', x$'ARO Accession', sep='')
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `ARO Accession` ) , by="ARO Accession", all.x=TRUE)
 return(x)}
-```
-
-
-```{r}
-y<-colsplit(groot_report$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","X"))
-
-y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
-y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
-y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
-y<-select(y, -X)
-groot_report<-cbind(groot_report,y)
-groot_report<-merge(groot_report, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
 ```
 
 Apply to list of dataframes:
@@ -225,13 +212,177 @@ Apply to list of dataframes:
 groot_data<-lapply(groot_data, grootnotation)
 ```
 
+### Calculate RPKM sum per AMR gene family and Drug Class:
+
 ```{r}
-test<-groot_data[[1]]
-dim(test)
+groot_summary<-lapply(groot_data, function(x) amrfamily (x, 'groot'))
+groot_summary2<-lapply(groot_data, function(x) drugclass (x, 'groot'))
 ```
-OJO!!!! algunas seq no están en aro term de card!!!!
-Vigilar que no pase lo mismo con ARIBA
+
+## Merge data from the 3 pipelines (grouped by AMR gene family and Drug Class):
+
+```{r}
+comparison_list<-Map(merge, RGI_summary, ariba_summary, by="AMR Gene Family", all=TRUE)
+comparison_list<-Map(merge, comparison_list, groot_summary, by="AMR Gene Family", all=TRUE)
+comparison_df<-do.call(rbind, comparison_list)
+
+comparison_list2<-Map(merge, RGI_summary2, ariba_summary2, by="Drug Class", all=TRUE)
+comparison_list2<-Map(merge, comparison_list2, groot_summary2, by="Drug Class", all=TRUE)
+comparison_df2<-do.call(rbind, comparison_list2)
+
+```
+
+### Venn diagram
+
+Transform data for Venn diagram (TRUE/FALSE dataframe):
+```{r}
+venntransform<-function(x){
+  x$RGI<-ifelse(is.na(x$sum_RPKM_RGI),FALSE,TRUE)
+  x$Ariba<-ifelse(is.na(x$sum_RPKM_ariba),FALSE,TRUE)
+  x$Groot<-ifelse(is.na(x$sum_RPKM_groot),FALSE,TRUE)
+  x$All<-ifelse(x$RGI==TRUE & x$Ariba==TRUE & x$Groot==TRUE, TRUE, FALSE)
+  return(x)}
+
+comparison_list<-lapply(comparison_list, venntransform)
+comparison_list2<-lapply(comparison_list2, venntransform)
+```
+
+Venn diagram plots:
+https://statisticsglobe.com/ggvenn-r-package#basic-information-about-the-ggvenn-package
+
+```{r}
+library(ggvenn)
+vennplot<-function(x){
+y<-ggplot(x) + geom_venn(aes(A = RGI, B = Ariba, C = Groot),fill_color = c("chartreuse", "orange", "darkorchid1"), text_size=4, set_name_size = 2, stroke_size = 0.2, show_percentage = FALSE)+theme_void()+coord_fixed()+theme(title=element_text(size=5))
+  return(y)}
+
+venn_plots<-lapply(comparison_list, vennplot)
+venn_plots2<-lapply(comparison_list2, vennplot)
+for (i in 1:length(venn_plots))
+  {venn_plots[[i]]<-venn_plots[[i]]+ggtitle(metadata$Run[i])}
+for (i in 1:length(venn_plots2))
+  {venn_plots2[[i]]<-venn_plots2[[i]]+ggtitle(metadata$Run[i])}
+grid.arrange(grobs = venn_plots, ncol = 4, top="AMR gene family")
+grid.arrange(grobs = venn_plots2, ncol = 4, top="Drug Class")
+```
+
+### Quantitative comparison
+
+```{r}
+library(knitr)
+kable(head(comparison_df))
+kable(head(comparison_df2))
+```
 
 
+```{r}
+library(stringr)
+comparison_df$Sample<-str_split_fixed(rownames(comparison_df), "\\.", n = 2)[ ,1]
+comparison_df2$Sample<-str_split_fixed(rownames(comparison_df2), "\\.", n = 2)[ ,1]
 
+n_distinct(comparison_df$`AMR Gene Family`)
+length(comparison_df$`AMR Gene Family`)
+
+n_distinct(comparison_df2$`Drug Class`)
+length(comparison_df2$`Drug Class`)
+```
+Create a dataframe with all AMR gene families and all Gene classes for each sample:
+Change NA values for 0
+
+```{r}
+quant_comp<-function(df_comp){
+nsamples<-n_distinct(df_comp$Sample)
+namrgenes<-n_distinct(df_comp$`AMR Gene Family`)
+mat1<-matrix(nrow=namrgenes*nsamples, ncol=2)
+mat1[ ,1]<-rep(unique(comparison_df$`AMR Gene Family`), nsamples)
+mat1[ ,2]<-rep(metadata$Run, each=namrgenes)
+colnames(mat1)<-c('AMR Gene Family', 'Sample')
+mat1<-as.data.frame(mat1)
+mat2<-merge(mat1, df_comp, by=c("Sample", "AMR Gene Family"), all.x = TRUE)
+mat2[is.na(mat2)]<- 0
+return(mat2)}
+```
+
+```{r}
+quant_comp2<-function(df_comp){
+nsamples<-n_distinct(df_comp$Sample)
+ndrug<-n_distinct(df_comp$`Drug Class`)
+mat1<-matrix(nrow=ndrug*nsamples, ncol=2)
+mat1[ ,1]<-rep(unique(df_comp$`Drug Class`), nsamples)
+mat1[ ,2]<-rep(metadata$Run, each=ndrug)
+colnames(mat1)<-c('Drug Class', 'Sample')
+mat1<-as.data.frame(mat1)
+mat2<-merge(mat1, df_comp, by=c("Sample", "Drug Class"), all.x = TRUE)
+mat2[is.na(mat2)]<- 0
+return(mat2)}
+```
+
+```{r}
+comparison_df<-quant_comp(comparison_df)
+comparison_df2<-quant_comp2(comparison_df2)
+```
+
+Select metadata variables:  
++No more than 1 NA
++At least 2 samples in each group (for categorical variables)
+
+```{r}
+metadata2<-select(metadata, 'Run', 'HIV_serostatus','Host_Age', 'HIV_Profile',  'PCR_human_papilloma_virus', 'host_Residency_Area', 'HCV_coinfection', 'leukocytes','stool_consistency', 'Lymphocytes',  'Anal_cytology')
+dim(comparison_df)
+```
+Add metadata variables to analysis:
+
+```{r}
+comparison_df<-merge(comparison_df, metadata2, by.x = 'Sample', by.y = 'Run')
+comparison_df2<-merge(comparison_df2, metadata2, by.x = 'Sample', by.y = 'Run')
+```
+
+Transform to list grouped by AMR gene family and Drug Class respectively: 
+```{r}
+comparison_list_amr = split(comparison_df, f = comparison_df$`AMR Gene Family`)
+comparison_list_drug = split(comparison_df2, f = comparison_df2$`Drug Class`)
+```
+
+Compare RPKM values according to HIV serostatus with the 3 pipelines:   
++Obtain wicox.test p values  
++Merge datsets  
+
+```{r warning=FALSE}
+HIVfun<-function(list){
+pvalues_RGI<-lapply(list, function(x) wilcox.test(sum_RPKM_RGI~HIV_serostatus, data=x)$p.value)
+pvalues_ariba<-lapply(list, function(x) wilcox.test(sum_RPKM_ariba~HIV_serostatus, data=x)$p.value)
+pvalues_groot<-lapply(list, function(x) wilcox.test(sum_RPKM_groot~HIV_serostatus, data=x)$p.value)
+x<-do.call(rbind.data.frame, pvalues_RGI)
+y<-do.call(rbind.data.frame, pvalues_ariba)
+z<-do.call(rbind.data.frame, pvalues_groot)
+pvalues_all<-cbind(x,y,z)
+rownames(pvalues_all)<-names(pvalues_RGI)
+names(pvalues_all)<-c("RGI", "Ariba","Groot")
+return(pvalues_all)}
+```
+
+```{r warning=FALSE}
+pvalues_all_amr<-HIVfun(comparison_list_amr)
+pvalues_all_drug<-HIVfun(comparison_list_drug)
+```
+
+Retain only statistically significant AMR gene families and Drug classes(VIH +-) according to at least one pipeline:
+
+```{r}
+library(knitr)
+subset_sig<-function(pvalues)
+{sig<-subset(pvalues, pvalues$RGI<=0.05 | pvalues$Ariba<=0.05 | pvalues$Groot<=0.05)
+  return(sig)}
+
+pvalues_amr_sig<-subset_sig(pvalues_all_amr)
+pvalues_drug_sig<-subset_sig(pvalues_all_drug)
+
+kable(round(pvalues_amr_sig,3))
+kable(round(pvalues_drug_sig,3))
+```
+
+```{r}
+##write.csv(pvalues_amr_sig, "pvalues_amr_sig.csv")
+##write.csv(pvalues_drug_sig, "pvalues_drug_sig.csv")
+```
 

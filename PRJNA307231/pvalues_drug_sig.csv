@@ -1,0 +1,17 @@
+"","RGI","Ariba","Groot"
+"aminocoumarin antibiotic;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;glycylcycline;macrolide antibiotic;penam;penem;peptide antibiotic;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan",NA,0.179712494879,0.0253698598220537
+"carbapenem;cephalosporin;cephamycin;monobactam;penam;penem",NA,0.423710797166793,0.0253698598220537
+"cephalosporin; penam",0.0449085898961427,NA,NA
+"cephalosporin;fluoroquinolone antibiotic;glycylcycline;penam;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan",NA,0.179712494879,0.0449085898961427
+"fluoroquinolone antibiotic",0.208690443136964,0.072005657555498,0.0449085898961427
+"fluoroquinolone antibiotic; cephalosporin; cephamycin; penam",0.0361451420465623,NA,NA
+"fluoroquinolone antibiotic; lincosamide antibiotic; nucleoside antibiotic; acridine dye; phenicol antibiotic",0.0253698598220537,NA,NA
+"fosfomycin",0.346521711706107,0.179712494879,0.0449085898961427
+"lincosamide antibiotic;macrolide antibiotic;oxazolidinone antibiotic;phenicol antibiotic;pleuromutilin antibiotic;streptogramin antibiotic;tetracycline antibiotic",NA,0.0361451420465623,0.829356960732679
+"macrolide antibiotic; fluoroquinolone antibiotic; aminoglycoside antibiotic; carbapenem; cephalosporin; glycylcycline; cephamycin; penam; tetracycline antibiotic; peptide antibiotic; aminocoumarin antibiotic; rifamycin antibiotic; phenicol antibiotic; triclosan; penem",0.0177501136522907,NA,NA
+"macrolide antibiotic; fluoroquinolone antibiotic; penam",0.0158730158730159,NA,NA
+"macrolide antibiotic; fluoroquinolone antibiotic; penam; tetracycline antibiotic",0.0200081852916062,NA,NA
+"macrolide antibiotic; lincosamide antibiotic; streptogramin antibiotic; tetracycline antibiotic; oxazolidinone antibiotic; phenicol antibiotic; pleuromutilin antibiotic",0.0317460317460317,NA,NA
+"nitrofuran antibiotic",NA,0.423710797166793,0.0253698598220537
+"nitroimidazole antibiotic",0.00749495751693525,0.179712494879,0.0253698598220537
+"peptide antibiotic;rifamycin antibiotic",NA,0.655836496590659,0.0253698598220537
