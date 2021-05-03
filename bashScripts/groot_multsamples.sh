@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-MYDIR=/home/erubio/Documentos/UOCMaster/bashScripts
+MYDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 seqlen=$1
 
 mkdir groot_analysis
