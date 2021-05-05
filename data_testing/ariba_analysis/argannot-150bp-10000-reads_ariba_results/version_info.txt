@@ -1,0 +1,28 @@
+ARIBA run with this command:
+/home/erubio/miniconda3/envs/ariba2/bin/ariba run ariba_db /home/erubio/Documentos/UOCMaster/data_testing/argannot-150bp-10000-reads_split.1.fastq /home/erubio/Documentos/UOCMaster/data_testing/argannot-150bp-10000-reads_split2.fastq argannot-150bp-10000-reads_ariba_results
+from this directory: /home/erubio/Documentos/UOCMaster/data_testing/ariba_analysis
+
+ARIBA version: 2.14.6
+
+External dependencies:
+bowtie2	2.4.2	/home/erubio/miniconda3/envs/ariba2/bin/bowtie2
+cdhit	4.8.1	/home/erubio/miniconda3/envs/ariba2/bin/cd-hit-est
+nucmer	3.1	/home/erubio/miniconda3/envs/ariba2/bin/nucmer
+
+External dependencies OK: True
+
+Python version:
+3.7.10 | packaged by conda-forge | (default, Feb 19 2021, 16:07:37) 
+[GCC 9.3.0]
+
+Python packages:
+ariba	2.14.6	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/ariba/__init__.py
+bs4	4.9.3	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/bs4/__init__.py
+dendropy	4.5.2	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/dendropy/__init__.py
+pyfastaq	3.17.0	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/pyfastaq/__init__.py
+pymummer	0.10.3	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/pymummer/__init__.py
+pysam	0.16.0.1	/home/erubio/miniconda3/envs/ariba2/lib/python3.7/site-packages/pysam/__init__.py
+
+Python packages OK: True
+
+Everything looks OK: True
