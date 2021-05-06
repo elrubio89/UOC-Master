@@ -1,23 +1,15 @@
 #!/bin/bash
 
-echo "Hello World"
+for stats in *stats.txt; do
+    sample0=${stats%.*}
+    sample=${sample0%.*}
+    totalseq=$(grep ^Total $stats | sed s/[^0-9]//g)
+    printf "$sample\t$totalseq\n" >> totalNumReads.csv; done
 
-echo "Holaaa"
 
-echo "ei que tal"
-
-
-myInFile1=$1
-myInFile2=$2
-
-echo "my Input File 1 is: $myInFile1"
-echo "my Input File 2 is: $myInFile2"
-
-echo "call script as: script.sh File1 File2"
-
-rgi run card_db $myInFile1 -out `basename $myInFile1`
-
-echo "wololo"
-
-echo "wololo2"
-
+for stats in *stats.txt; do
+    sample0=${stats%.*}
+    sample1=${sample0%.*}
+    sample=${sample1#*_}
+    totalseq=$(grep ^Total $stats | sed s/[^0-9]//g)
+    printf "$sample\t$totalseq\n" >> totalNumReads.csv; done

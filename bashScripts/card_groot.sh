@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+MYDIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
 if [ $# -ne 3 ]
     then
     echo "usage: card_groot.sh forward reverse seqlen"
@@ -36,6 +38,8 @@ then
     exit 1
 fi
 
+###################################################################################################
+##Fuera del bucle:
 mkdir groot_analysis
 cd groot_analysis
 
@@ -44,6 +48,8 @@ groot get -d card
 
 groot index -m card.90 -i grootIndex$seqlen -w $seqlen -p 8
 ##Convert a set of clustered reference sequences to variation graphs and then index them
+##################################################################################################
+
 
 groot align -i grootIndex$seqlen -f $forward,$reverse -p 8 -g $sample-groot-graphs >$sample.bam
 ##generates bam file from both sequences
