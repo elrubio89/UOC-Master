@@ -267,10 +267,6 @@ grid.arrange(grobs = venn_plots, ncol = 4, top="AMR gene family")
 grid.arrange(grobs = venn_plots2, ncol = 4, top="Drug Class")
 ```
 
-```{r}
-test<-comparison_list[[1]]
-```
-
 ### RPKM distribution according to nº of pipelines that identify an AMR gene family: 
 
 ```{r}
@@ -305,16 +301,6 @@ ggplot(subset(comparison_df, comparison_df$Groot==1), aes(npipelines, sum_RPKM_g
 
 
 ```
-```{r}
-test<-select(comparison_df, 'AMR Gene Family', Sample, sum_RPKM_RGI, sum_RPKM_groot, sum_RPKM_ariba, RGI, Ariba, Groot)
-test_RGI<-subset(test, test$RGI==1)
-test_Ariba<-subset(test, test$Ariba==1)
-test_Groot<-subset(test, test$Groot==1)
-```
-RGI treshold: 0.1
-Ariba no treshold
-Groot treshold: 0.01
-
 
 ```{r}
 comparison_df$pipelines<-factor(comparison_df$pipelines, ordered = TRUE, levels = c("RGI only", "Ariba only", "Groot only", "Groot+Ariba", "RGI+Groot", "RGI+Ariba", "All"))
@@ -349,6 +335,20 @@ kable(head(Ariba_only))
 kable(head(Groot_only))
 kable(head(All))
 ```
+
+```{r}
+test<-select(comparison_df, 'AMR Gene Family', Sample, sum_RPKM_RGI, sum_RPKM_groot, sum_RPKM_ariba, RGI, Ariba, Groot)
+test_RGI<-subset(test, test$RGI==1)
+test_Ariba<-subset(test, test$Ariba==1)
+test_Groot<-subset(test, test$Groot==1)
+##write.csv(test_RGI, "test_RGI.csv")
+##write.csv(test_Ariba, "test_Ariba.csv")
+##write.csv(test_Groot, "test_Groot.csv")
+```
+
+### RGI treshold: 0.1
+### Ariba no treshold
+### Groot treshold: 0.01
 
 ## Apply treshold
 
