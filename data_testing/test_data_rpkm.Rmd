@@ -11,6 +11,23 @@ knitr::opts_chunk$set(echo = TRUE)
 knitr::opts_knit$set(root.dir = "~/Documentos/Repos/UOC-Master/data_testing/")
 ```
 
+Import CARD data aro index: 
+
+```{r message=FALSE}
+library(stringr)
+library(reshape2)
+library(readr)
+library(dplyr)
+aro_index <- read_delim("~/Documentos/Repos/UOC-Master/PRJNA307231/aro_index.tsv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+
+dim(aro_index)
+length(unique(aro_index$`ARO Accession`))
+
+y<-colsplit(aro_index$`ARO Accession`, ":", c("X", "ARO Number"))
+aro_index<-cbind(aro_index, select(y, `ARO Number`))
+```
+
 # Calculate RPKM
 
 ## RGI
@@ -20,12 +37,18 @@ library(readr)
 RGI_data <- read_delim("RGI_analysis/argannot-150bp-10000-reads.fastq_RGI_output.allele_mapping_data.txt", "\t", escape_double = FALSE, trim_ws = TRUE)
 ```
 
+Obtain AMR gene family from CARD database:
+```{r}
+RGI_data<-merge(
+select(RGI_data, -`AMR Gene Family`, -`Drug Class`, -`Resistance Mechanism`),
+select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number")
+```
+
 
 ```{r}
 library(dplyr)
 totalNumReads<-	10000
 RGI_data<-RGI_data%>%mutate(RPKM=`All Mapped Reads` /(`Reference Length`/1000 * totalNumReads/1000000))
-
 ```
 
 ### Average MAPQ distribution
@@ -61,8 +84,6 @@ AMR_family_RGI<-RGI_data%>%
 kable(head(AMR_family_RGI))
 str(AMR_family_RGI$`sum RPKM (RGI)`)
 ```
-
-
 # ARIBA
 
 ```{r message=FALSE}
@@ -74,8 +95,8 @@ report2: all sequences
 Remove contig and variant data
 
 ```{r}
-##Ariba_data<-Ariba_data %>% filter(gene==1)%>%select(c(1:8,31))%>%unique()
-Ariba_data<-Ariba_data%>%select(c(1:8,31))%>%unique()
+Ariba_data<-Ariba_data %>% filter(gene==1)%>%select(c(1:8,31))%>%unique()
+##Ariba_data<-Ariba_data%>%select(c(1:8,31))%>%unique()
 ```
 I will use the total nº of reads instead mapped reads
 
@@ -84,13 +105,6 @@ Ariba_data<-Ariba_data%>%mutate(RPKM=reads /(ref_len/1000 * totalNumReads/100000
 ```
 
 ### Obtain AMR gene family
-Import CARD data aro index: 
-
-```{r message=FALSE}
-library(readr)
-aro_index <- read_delim("~/Documentos/Repos/UOC-Master/PRJNA307231/aro_index.tsv", 
-    "\t", escape_double = FALSE, trim_ws = TRUE)
-```
 
 Trasform ARIBA notation to merge with CARD  DB
 ```{r}
@@ -103,10 +117,9 @@ y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "_"), y$X, y$`Mo
 y<-select(y, -X)
 Ariba_data<-cbind(Ariba_data,y)
 
-Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession` ) , by="Model Sequence ID")
 ```
 
-Mapping quality?
 
 ### RPKM sum per AMR gene family
 
@@ -145,7 +158,13 @@ y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Seque
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
 y<-select(y, -X)
 Groot_data<-cbind(Groot_data,y)
-Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism` ) , by="Model Sequence ID")
+Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession` ) , by="Model Sequence ID")
+```
+
+Remove non coding AMR sequences:
+
+```{r}
+Groot_data<-Groot_data%>%filter(!is.na(`Protein Accession`))
 ```
 
 Calculate RPKM:
@@ -174,11 +193,6 @@ length(AMR_family_Groot$`AMR Gene Family`)
 AMR_family<-merge(AMR_family_ARIBA, AMR_family_RGI[ ,1:3], by="AMR Gene Family", all=TRUE)
 AMR_family<-merge(AMR_family, AMR_family_Groot, by="AMR Gene Family", all=TRUE)
 ```
-
-```{r}
-write_tsv(AMR_family, "AMR_family_ARIBAall_groot_uniqseq.tsv")
-```
-
 
 ```{r}
 venntransform<-function(x){
@@ -212,16 +226,43 @@ x$pipelines<-ifelse(x$npipelines==3, "All",
                                               ifelse(x$npipelines==2 & x$Groot==0, "RGI+Ariba",
                                                      ifelse(x$RGI==1, "RGI only",
                                                             ifelse(x$Ariba==1, "Ariba only", "Groot only"))))))
+x$pipelines_class<-ifelse(x$npipelines==1,0,1)
 return(x)}
 ```
 
 ```{r}
 AMR_family<-data_trans(AMR_family)
+```
 
+
+```{r}
 AMR_family[AMR_family$pipelines=="RGI only" ,1]
 AMR_family[AMR_family$pipelines=="Groot only" ,1]
 AMR_family[AMR_family$pipelines=="RGI+Groot" ,1]
 AMR_family[AMR_family$pipelines=="Groot+Ariba" ,1]
+```
+
+
+```{r}
+library(cutpointr)
+
+cp_RGI<-AMR_family %>% filter(RGI==1) %>% cutpointr(sum_RPKM_RGI, pipelines_class)
+##cp_ariba<-AMR_family %>% filter(Ariba==1) %>% cutpointr(sum_RPKM_ariba, pipelines_class) 
+##Class ariba only does not exist
+##cp_groot<-AMR_family %>% filter(Groot==1) %>% cutpointr(sum_RPKM_groot, pipelines_class)
+
+ROC<-function(cp){
+plot_roc(cp)+theme_classic()+
+geom_abline(slope = 1, intercept = 0, color = "red", linetype = "dotted")+
+annotate("text", x = 0.5, y = 0.25, label=paste("Value:",round(cp$optimal_cutpoint,2), "\n Sens:", round(cp$sensitivity,2), "\n Spe:", round(cp$specificity,2)), hjust=0)
+  }
+
+roc_RGI<-ROC(cp_RGI)+ggtitle("ROC curve RGI")
+```
+
+```{r}
+library(patchwork)
+roc_RGI
 ```
 
 
@@ -233,10 +274,22 @@ p_RGI<-ggplot(subset(AMR_family, AMR_family$RGI==1), aes(pipelines, sum_RPKM_RGI
 p_Ariba<-ggplot(subset(AMR_family, AMR_family$Ariba==1), aes(pipelines, sum_RPKM_ariba))+geom_boxplot(aes(colour=npipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=npipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Ariba")
 
 p_Groot<-ggplot(subset(AMR_family, AMR_family$Groot==1), aes(pipelines, sum_RPKM_groot))+geom_boxplot(aes(colour=npipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=npipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Groot")
-p_RGI
-p_Ariba
-p_Groot
+p_RGI+scale_y_continuous(trans='log10')
+p_Ariba+scale_y_continuous(trans='log10')
+p_Groot+scale_y_continuous(trans='log10')
+```
+
+```{r}
+box_RGI<-p_RGI+geom_abline(slope = 0, intercept = cp_RGI$optimal_cutpoint, color = "red", linetype = "dotted")+
+  scale_y_continuous(trans='log10')
+
 ```
 
 
+```{r}
+box_RGI| roc_RGI
+```
+```{r}
+##write_tsv(AMR_family, "AMR_family.tsv")
+```
 
