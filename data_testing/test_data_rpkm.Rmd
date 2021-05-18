@@ -41,7 +41,7 @@ Obtain AMR gene family from CARD database:
 ```{r}
 RGI_data<-merge(
 select(RGI_data, -`AMR Gene Family`, -`Drug Class`, -`Resistance Mechanism`),
-select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number`, `ARO Name` ), by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
 
 ```{r}
@@ -123,7 +123,7 @@ y<-select(y, -X)
 Ariba_data<-cbind(Ariba_data,y)
 Ariba_data$`ARO Accession`<-as.numeric(Ariba_data$`ARO Accession`)
 
-Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,  `ARO Number`) , by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,  `ARO Number`, `ARO Name`) , by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
 
 ```{r}
@@ -170,7 +170,7 @@ y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
 y<-select(y, -X)
 Groot_data<-cbind(Groot_data,y)
 Groot_data$`ARO Accession`<-as.numeric(Groot_data$`ARO Accession`)
-Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`, `ARO Number`) ,  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`, `ARO Number`, `ARO Name`) ,  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
 
 
@@ -311,4 +311,45 @@ box_RGI| roc_RGI
 ```{r}
 ##write_tsv(AMR_family, "AMR_family.tsv")
 ```
+
+### Análisis de discrodancias
+
+```{r}
+RGI_data<-merge(RGI_data, select(AMR_family, pipelines, `AMR Gene Family`), by="AMR Gene Family", all.x = TRUE)
+
+Groot_data<-merge(Groot_data, select(AMR_family, pipelines, `AMR Gene Family`), by="AMR Gene Family", all.x = TRUE)
+
+Ariba_data<-merge(Ariba_data, select(AMR_family, pipelines, `AMR Gene Family`), by="AMR Gene Family", all.x = TRUE)
+```
+
+```{r}
+table(RGI_data$pipelines)
+```
+
+
+
+```{r}
+RGI_seqs<-RGI_data%>%filter(pipelines!="All")%>%select(`Reference Sequence`)
+Groot_seqs<-Groot_data%>%filter(pipelines!="All")%>%select(AMR.gene)
+Ariba_seqs<-Ariba_data%>%filter(pipelines!="All")%>%select(ref_name)
+```
+
+```{r}
+write.table(RGI_seqs, "RGI_analysis/RGI_seqs.txt", quote = FALSE, row.names = FALSE, col.names = FALSE)
+
+write.table(Groot_seqs, "groot_analysis/Groot_seqs.txt", quote = FALSE, row.names = FALSE, col.names = FALSE)
+
+write.table(Ariba_seqs, "ariba_analysis/Ariba_seqs.txt", quote = FALSE, row.names = FALSE, col.names = FALSE)
+```
+
+
+```{bash}
+cd RGI_analysis
+samtools view argannot-150bp-10000-reads.fastq_RGI_output.temp.bam | grep -f RGI_seqs.txt > RGI_seqs_bam.txt
+```
+
+
+
+
+
 
