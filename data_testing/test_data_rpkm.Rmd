@@ -27,14 +27,6 @@ length(unique(aro_index$`ARO Accession`))
 y<-colsplit(aro_index$`ARO Accession`, ":", c("X", "ARO Number"))
 aro_index<-cbind(aro_index, select(y, `ARO Number`))
 ```
-Import CARD data version 3.0.4:
-
-```{r}
-aro_index_304 <- read_delim("~/Documentos/Repos/UOC-Master/PRJNA307231/aro_index_3.0.4.tsv", 
-    "\t", escape_double = FALSE, trim_ws = TRUE)
-y<-colsplit(aro_index_304$`ARO Accession`, ":", c("X", "ARO Number"))
-aro_index_304<-cbind(aro_index_304, select(y, `ARO Number`))
-```
 
 # Calculate RPKM
 
@@ -181,13 +173,9 @@ Groot_data$`ARO Accession`<-as.numeric(Groot_data$`ARO Accession`)
 Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`, `ARO Number`) ,  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
 
-```{r}
-Groot_data3<-merge(Groot_data, aro_index_304[ ,-1],  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
-```
-
 
 ```{r}
-table(is.na(Groot_data2$`AMR Gene Family`))
+table(is.na(Groot_data$`AMR Gene Family`))
 ```
 ** 3 secuencias de Groot no mapean con la base de datos CARD:**  
 Versión anterior de CARD?
