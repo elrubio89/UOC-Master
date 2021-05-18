@@ -91,16 +91,18 @@ for (i in 1:length(RGI_data)){
 rginotation<-function(x){
 x<-merge(
 select(x, -`AMR Gene Family`, -`Drug Class`, -`Resistance Mechanism`),
-select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number")
+select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 return(x)}
 ```
-
 
 Apply to list of dataframes:
 ```{r}
 RGI_data<-lapply(RGI_data, rginotation)
 ```
 
+```{r}
+##lapply(RGI_data, function(x) table(is.na(x$`AMR Gene Family`)))
+```
 
 ### Plots (MAPQ distribution per sample)
 
@@ -180,16 +182,24 @@ y<-colsplit(x$ref_name, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final"
 y$NCBI<-ifelse(str_detect(y$init_final, "_"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
 y$init_final<-ifelse(str_detect(y$init_final, "_"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "_"), y$v1, y$`Model Sequence ID`)
+y$`ARO Accession`<-ifelse(y$`ARO Accession`<3000000, y$NCBI, y$`ARO Accession`)
+y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
 y<-select(y, -v1)
 x<-cbind(x,y)
-x$'ARO Accession'<-paste('ARO:', x$'ARO Accession', sep='')
-x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `ARO Accession`,`Protein Accession`) , by="ARO Accession", all.x=TRUE)
+x$'ARO Accession'<-as.numeric(x$'ARO Accession')
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `Protein Accession`, `ARO Number`) , by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 return(x)}
 ```
+
 
 Apply to list of dataframes:
 ```{r}
 ariba_data<-lapply(ariba_data, aribanotation)
+```
+
+
+```{r}
+##lapply(ariba_data, function(x) table(is.na(x$`AMR Gene Family`)))
 ```
 
 ```{r eval=FALSE, include=TRUE}
@@ -230,17 +240,39 @@ y<-colsplit(x$AMR.gene, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final"
 y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
 y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$v1, y$`Model Sequence ID`)
+y$`ARO Accession`<-ifelse(y$`ARO Accession`<3000000, y$NCBI, y$`ARO Accession`)
+y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
 y<-select(y, -v1)
 x<-cbind(x,y)
-x$'ARO Accession'<-paste('ARO:', x$'ARO Accession', sep='')
-x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `ARO Accession`, `Protein Accession` ) , by="ARO Accession", all.x=TRUE)
+x$'ARO Accession'<-as.numeric(x$'ARO Accession')
+x<-merge(x, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`, `Protein Accession`, `ARO Number`) , by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 return(x)}
 ```
+
+
+```{r}
+y<-colsplit(Groot_data$AMR.gene, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final","Model Sequence ID","X"))
+y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final, sep = "") )
+y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
+y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
+y$`ARO Accession`<-ifelse(y$`ARO Accession`<3000000, y$NCBI, y$`ARO Accession`)
+y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
+y<-select(y, -X)
+Groot_data<-cbind(Groot_data,y)
+Groot_data$`ARO Accession`<-as.numeric(Groot_data$`ARO Accession`)
+Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`, `ARO Number`) ,  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+```
+
 
 Apply to list of dataframes:
 
 ```{r}
 groot_data<-lapply(groot_data, grootnotation)
+```
+
+
+```{r}
+###lapply(groot_data, function(x) table(is.na(x$`AMR Gene Family`)))
 ```
 
 Remove non-coding AMR genes:

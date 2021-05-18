@@ -124,7 +124,7 @@ ARO:3002609	39009	4491	323	aadA9	aadA9	ABG49324.1	DQ390458	ANT(3'')	aminoglycosi
 ARO:3002627	39027	4533	426	aadK	aadK	CAB14620.1	AL009126	ANT(6)	aminoglycoside antibiotic	antibiotic inactivation
 ARO:3004683	42732	5568	3382	aadS	aadS	AAA27459.1	M72415.1	ANT(6)	aminoglycoside antibiotic	antibiotic inactivation
 ARO:3003942	40695	4691	2416	abcA	abcA	XP_753111.1	XM_748018.1	ATP-binding cassette (ABC) antibiotic efflux pump	cephalosporin;penam;peptide antibiotic	antibiotic efflux
-ARO:3000753	37133	671	1368	abeM	abeM	BAD89844.2	AB204810	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;fluoroquinolone antibiotic;triclosan	antibiotic efflux
+ARO:3000753	37133	671	1368	abeM	abeM	BAD89844.2	AB204810	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;triclosan	antibiotic efflux
 ARO:3000768	37148	4569	593	abeS	abeS	ACJ59254.1	CP001172.1	small multidrug resistance (SMR) antibiotic efflux pump	aminocoumarin antibiotic;macrolide antibiotic	antibiotic efflux
 ARO:3001815	38215	856	1663	ACC-1	ACC-1	CAB46491.1	AJ133121	ACC beta-lactamase	cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3001816	38216	1852	2024	ACC-2	ACC-2	AAF86691.1	AF180952	ACC beta-lactamase	cephalosporin;monobactam;penam	antibiotic inactivation
@@ -136,7 +136,7 @@ ARO:3004573	42487	5139	3277	Acinetobacter baumannii AbaF	Acinetobacter baumannii
 ARO:3004574	42490	5314	3278	Acinetobacter baumannii AbaQ	Acinetobacter baumannii AbaQ	ACJ41547.2	CP001182.2	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3004578	42502	5148	3281	Acinetobacter baumannii AbuO	Acinetobacter baumannii AbuO	WP_001985623.1	NC_010410.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;benzalkonium chloride;carbapenem;cephalosporin;glycylcycline;penam;tetracycline antibiotic	antibiotic efflux
 ARO:3003796	40481	3566	2300	Acinetobacter baumannii AmpC beta-lactamase	Acinetobacter baumannii ampC beta-lactamase	ACJ42146.1	CP001182.1	ampC-type beta-lactamase	cephalosporin;penam	antibiotic inactivation
-ARO:3004577	42497	5144	3280	Acinetobacter baumannii AmvA	Acinetobacter baumannii AmvA	ACQ82816.1	FJ911554.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;macrolide antibiotic	antibiotic efflux
+ARO:3004577	42497	5144	3280	Acinetobacter baumannii AmvA	Acinetobacter baumannii AmvA	ACQ82816.1	FJ911554.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;macrolide antibiotic	antibiotic efflux
 ARO:3003817	40507	4623	2314	Acinetobacter baumannii gyrA conferring resistance to fluoroquinolones	Acinetobacter baumannii gyrA conferring resistance to fluoroquinolones	AJF82744.1	CP010781.1	fluoroquinolone resistant gyrA	fluoroquinolone antibiotic;nybomycin	antibiotic target alteration
 ARO:3003809	40495	4419	2308	Acinetobacter OprD conferring resistance to imipenem	Acinetobacter baumannii OprD conferring resistance to imipenem	AHB92962.1	CP006768.1	Outer Membrane Porin (Opr)	carbapenem;cephalosporin;cephamycin;monobactam;penam;penem	reduced permeability to antibiotic;resistance by absence
 ARO:3003818	40508	6039	2315	Acinetobacter baumannii parC conferring resistance to fluoroquinolone	Acinetobacter baumannii parC conferring resistance to fluoroquinolones	WP_000202252.1	NZ_CP009257.1	fluoroquinolone resistant parC	fluoroquinolone antibiotic	antibiotic target alteration
@@ -191,6 +191,9 @@ ARO:3005037	43235	6073	3780	ADC-159	ADC-159	ATP60652.1	MG229642.1	ADC beta-lacta
 ARO:3003860	40559	5364	2346	ADC-16	ADC-16	CAK95245.1	AM283525.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
 ARO:3003861	40560	5419	2347	ADC-17	ADC-17	CAK95244.1	AM283524.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
 ARO:3003862	40561	5421	2348	ADC-18	ADC-18	CAK95243.1	AM283523.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
+ARO:3005244	43600	6330	3966	ADC-181	ADC-181	AZK35803.1	MK248721.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
+ARO:3005245	43601	6331	3967	ADC-182	ADC-182	AZK35804.1	MK248722.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
+ARO:3005246	43602	6332	3968	ADC-183	ADC-183	AZK35805.1	MK248723.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
 ARO:3003863	40562	5424	2349	ADC-19	ADC-19	CAK95242.1	AM283522.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
 ARO:3003848	40545	5288	2335	ADC-2	ADC-2	AAO43172.1	AY177427.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
 ARO:3003864	40563	5427	2350	ADC-20	ADC-20	CAK95241.1	AM283521.1	ADC beta-lactamase without carbapenemase activity	cephalosporin	antibiotic inactivation
@@ -307,8 +310,8 @@ ARO:3004736	42846	5746	3551	ARL-3	ARL-3	APY23844.1	KY363208.1	ARL Beta-lactamase
 ARO:3004737	42847	5747	3552	ARL-4	ARL-4	APY23838.1	KY363206.1	ARL Beta-lactamase	penam	antibiotic inactivation
 ARO:3004738	42848	5748	3553	ARL-5	ARL-5	APY23862.1	KY363214.1	ARL Beta-lactamase	penam	antibiotic inactivation
 ARO:3004739	42849	5749	3554	ARL-6	ARL-6	APY23865.1	KY464892.1	ARL Beta-lactamase	penam	antibiotic inactivation
-ARO:3000838	37218	5453	1390	arlR	arlR	ATC67679.1	CP023390.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
-ARO:3000839	37219	5398	182	arlS	arlS	ABD30512.1	CP000253.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3000838	37218	5453	1390	arlR	arlR	ATC67679.1	CP023390.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3000839	37219	5398	182	arlS	arlS	ABD30512.1	CP000253.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000858	37238	3397	1405	armA	armA	ADC55560.1	GU437214.1	16S rRNA methyltransferase (G1405)	aminoglycoside antibiotic	antibiotic target alteration
 ARO:3004056	41121	5228	2688	ArmR	ArmR	AAG07106.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3002985	39419	5385	1643	arnA	arnA	AAG06942.1	AE004091.2	pmr phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
@@ -328,7 +331,7 @@ ARO:3002986	39420	4677	1820	bacA	bacA	AAC76093.1	U00096.3	undecaprenyl pyrophosp
 ARO:3004452	41663	4424	2891	Bacillus clausii chloramphenicol acetyltransferase	Bacillus clausii chloramphenicol acetyltransferase	AAQ63644.1	AY238971.1	chloramphenicol acetyltransferase (CAT)	phenicol antibiotic	antibiotic inactivation
 ARO:3002672	39106	143	2002	Bacillus pumilus cat86	Bacillus pumilus cat86	AAA22289.1	K00544	chloramphenicol acetyltransferase (CAT)	phenicol antibiotic	antibiotic inactivation
 ARO:3003324	39908	3342	1558	Bacillus subtilis mprF	Bacillus subtilis mprF	CAX52582.1	AL009126	defensin resistant mprF	peptide antibiotic	antibiotic target alteration
-ARO:3003788	40473	3558	2293	Bacillus subtilis pgsA mutations conferring resistance to daptomycin	Bacillus subtilis pgsA with mutation conferring resistance to daptomycin	BAA85265	AB016245	daptomycin resistant pgsA	peptide antibiotic	antibiotic target alteration
+ARO:3003788	40473	6284	2293	Bacillus subtilis pgsA mutations conferring resistance to daptomycin	Bacillus subtilis pgsA with mutation conferring resistance to daptomycin	BAB95031.1	BA000033.2	daptomycin resistant pgsA	peptide antibiotic	antibiotic target alteration
 ARO:3000828	37208	5369	1337	baeR	baeR	BAA15935.1	AP009048.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;aminoglycoside antibiotic	antibiotic efflux
 ARO:3000829	37209	608	986	baeS	baeS	BAA15934.1	AP009048	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;aminoglycoside antibiotic	antibiotic efflux
 ARO:3003984	40866	3857	2521	BahA	BahA	APB03218.1	KX531048.1	Bah amidohydrolase	peptide antibiotic	antibiotic inactivation
@@ -361,8 +364,8 @@ ARO:3000160	36299	4710	1374	blaI	blaI	ABU39978.1	EF540343.1	blaZ beta-lactamase	
 ARO:3000217	36356	4663	2063	blaR1	blaR1	ABU39979.1	EF540343.1	blaZ beta-lactamase	penam	antibiotic inactivation
 ARO:3005111	43326	6151	3839	blaS1	blaS1	AAP97895.1	AY332268.1	blaS	cephalosporin;cephamycin;penam	antibiotic inactivation
 ARO:3005036	43234	6084	3789	BLMT	BLMT	BAF34030.1	AB255435.1	Bleomycin resistant protein	glycopeptide antibiotic	antibiotic inactivation
-ARO:3003006	39440	710	1975	blt	blt	AAC36944.1	L32599	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
-ARO:3003007	39441	86	1256	bmr	bmr	AAA22277.1	M33768	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;nucleoside antibiotic;phenicol antibiotic	antibiotic efflux
+ARO:3003006	39440	710	1975	blt	blt	AAC36944.1	L32599	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3003007	39441	86	1256	bmr	bmr	AAA22277.1	M33768	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;nucleoside antibiotic;phenicol antibiotic	antibiotic efflux
 ARO:3003504	40106	3268	2143	Borreliella burgdorferi 16S rRNA mutation conferring resistance to gentamicin	Borreliella burgdorferi 16S rRNA mutation conferring resistance to gentamicin		NR_044732.2	16s rRNA with mutation conferring resistance to aminoglycoside antibiotics	aminoglycoside antibiotic;glycopeptide antibiotic;glycylcycline;nucleoside antibiotic;peptide antibiotic;tetracycline antibiotic	antibiotic target alteration
 ARO:3003503	40105	3266	2127	Borreliella burgdorferi 16S rRNA mutation conferring resistance to kanamycin	Borreliella burgdorferi 16S rRNA mutation conferring resistance to kanamycin		NR_044732.2	16s rRNA with mutation conferring resistance to aminoglycoside antibiotics	aminoglycoside antibiotic;glycopeptide antibiotic;glycylcycline;nucleoside antibiotic;peptide antibiotic;tetracycline antibiotic	antibiotic target alteration
 ARO:3003502	40104	3267	2154	Borreliella burgdorferi 16S rRNA mutation conferring resistance to spectinomycin	Borreliella burgdorferi 16S rRNA mutation conferring resistance to spectinomycin		NR_044732.2	16s rRNA with mutation conferring resistance to aminoglycoside antibiotics	aminoglycoside antibiotic;glycopeptide antibiotic;glycylcycline;nucleoside antibiotic;peptide antibiotic;tetracycline antibiotic	antibiotic target alteration
@@ -424,7 +427,7 @@ ARO:3000855	37235	760	1109	CAU-1 beta-lactamase	CAU-1	CAC87665.1	AJ308331	CAU be
 ARO:3002999	39433	1188	2	CblA-1	CblA-1	ACT97415.1	GQ343019	CblA beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3004764	42878	5764	3567	CBP-1	CBP-1	ALF06101.1	KP718480.1	CBP beta-lactamase	penam	antibiotic inactivation
 ARO:3000578	36717	1275	1381	CcrA beta-lactamase	CcrA	AAA22904.1	M63556	CcrA beta-lactamase	carbapenem	antibiotic inactivation
-ARO:3003835	40526	4621	2321	cdeA	cdeA	CAE00499.1	AJ574887.1	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3003835	40526	4621	2321	cdeA	cdeA	CAE00499.1	AJ574887.1	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3003009	39443	302	1719	ceoA	ceoA	AAB58160.1	U97042	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3003010	39444	121	1252	ceoB	ceoB	AAB58161.1	U97042	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3003559	40165	3285	1677	cepA beta-lactamase	cepA	AAA21532.1	U05883	cepA beta-lactamase	cephalosporin	antibiotic inactivation
@@ -480,7 +483,7 @@ ARO:3002694	39128	656	971	cmlA4	cmlA4	AAF27726.1	AF156486	major facilitator supe
 ARO:3002695	39129	695	245	cmlA5	cmlA5	AAM77075.1	AY115475	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3002696	39130	728	1435	cmlA6	cmlA6	AAK52606.1	AF294653	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3004665	42708	5549	3365	cmlA8	cmlA8	ABW91179.1	EU182575.1	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
-ARO:3005043	43241	6079	3786	cmlA9	cmlA9	ABZ01840.1	AY963803.6	major facilitator superfamily (MFS) antibiotic efflux pump	N/A	antibiotic efflux
+ARO:3005043	43241	6079	3786	cmlA9	cmlA9	ABZ01840.1	AY963803.6	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3002698	39132	17	486	cmlB	cmlB	AAD22144.1	AF034958	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3002699	39133	731	1038	cmlB1	cmlB1	CAL30186.1	AM296481	major facilitator superfamily (MFS) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3002700	39134	82	703	cmlv	cmlv	AAB36568.1	U09991	chloramphenicol phosphotransferase	phenicol antibiotic	antibiotic inactivation
@@ -509,22 +512,29 @@ ARO:3002128	38528	1178	844	CMY-117	CMY-117	AIT76097.1	KM087844	CMY beta-lactamas
 ARO:3002129	38529	1265	308	CMY-118	CMY-118	AIT76091.1	KM087838	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002130	38530	1344	1796	CMY-119	CMY-119	AIT76098.1	KM087845	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002023	38423	1421	1877	CMY-12	CMY-12	CAA76382.1	Y16785	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3003129	39706	6294	3931	CMY-121	CMY-121	AIZ48988.1	KM507172	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003130	39707	6277	3916	CMY-122	CMY-122	WP_063859757.1	NG_048793	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003132	39709	6274	3913	CMY-124	CMY-124	WP_063859763.1	NG_048794	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003133	39710	6275	3914	CMY-125	CMY-125	WP_063859768.1	NG_048795	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3003135	39712	6300	3937	CMY-127	CMY-127	AKO62864.1	KM985465	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3003136	39713	6298	3935	CMY-128	CMY-128	AKO62865.1	KM985466	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3003137	39714	6299	3936	CMY-129	CMY-129	AKO62866.1	KM985467	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002024	38424	4561	525	CMY-13	CMY-13	AAQ16660.2	AY339625	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3003138	39715	6303	3940	CMY-130	CMY-130	AKI06385.1	KP207589	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003170	39747	5774	2067	CMY-131	CMY-131	AKG51729.1	KP281294.1	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003652	40262	5775	3577	CMY-132	CMY-132	AKZ20822.1	KP862820.1	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003653	40263	5776	3578	CMY-133	CMY-133	AKZ20821.1	KP862819.1	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3003654	40264	6251	3890	CMY-134	CMY-134	AKA60779.1	KP860987	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3004778	42893	5777	3579	CMY-135	CMY-135	AKP17985.1	KP981366.1	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3004854	42990	5922	3652	CMY-136	CMY-136	AVR61040.1	MG844436.1	CMY beta-lactamase	cephalosporin;cephamycin	antibiotic inactivation
+ARO:3005220	43576	6305	3942	CMY-138	CMY-138	ALM96710.1	KT997883	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005191	43544	6268	3907	CMY-139	CMY-139	WP_063859815.1	NG_048807	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002025	38425	1662	1089	CMY-14	CMY-14	CAD88479.1	AJ555825	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005185	43538	6262	3901	CMY-140	CMY-140	WP_065102238.1	NG_050943	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005196	43549	6273	3912	CMY-141	CMY-141	WP_065644637.1	NG_051215	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005195	43548	6272	3911	CMY-142	CMY-142	WP_070064537.1	NG_051753	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005204	43560	6252	3891	CMY-143	CMY-143	WP_071593223.1	NG_052047	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3005219	43575	6304	3941	CMY-144	CMY-144	APC23883.1	KY066478	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005197	43551	6276	3915	CMY-145	CMY-145	WP_075985684.1	NG_052649	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005181	43534	6258	3897	CMY-146	CMY-146	WP_075985683.1	NG_052648	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005180	43533	6257	3896	CMY-147	CMY-147	WP_077767289.1	NG_052898	CMY beta-lactamase	cephamycin	antibiotic inactivation
@@ -532,6 +542,9 @@ ARO:3005192	43545	6269	3908	CMY-148	CMY-148	WP_085562395.1	NG_054681	CMY beta-la
 ARO:3005190	43543	6267	3906	CMY-149	CMY-149	WP_085562396.1	NG_054682	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002026	38426	1737	1650	CMY-15	CMY-15	CAD88477.1	AJ555823	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005016	43207	6050	3760	CMY-150	CMY-150	PUU64961.1	QCWX01000028.1	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3005217	43573	6297	3934	CMY-151	CMY-151	ARE65229.1	KY780116	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3005216	43572	6295	3932	CMY-152	CMY-152	ARM19732.1	KY978224	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3005218	43574	6302	3939	CMY-153	CMY-153	ARQ85812.1	MF042206	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005194	43547	6271	3910	CMY-154	CMY-154	WP_088245213.1	NG_055270	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005200	43555	6280	3919	CMY-155	CMY-155	WP_094009802.1	NG_055473	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3005182	43535	6259	3898	CMY-156	CMY-156	WP_104009849.1	NG_056410	CMY beta-lactamase	cephamycin	antibiotic inactivation
@@ -550,7 +563,7 @@ ARO:3005199	43554	6279	3918	CMY-171	CMY-171	WP_168247875.1	NG_068165	CMY beta-la
 ARO:3005177	43530	6255	3894	CMY-173	CMY-173	WP_190259774.1	NG_070783	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002029	38429	1974	1433	CMY-18	CMY-18	AAU95778.1	AY743434	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002030	38430	761	1129	CMY-19	CMY-19	BAE48233.1	AB194410	CMY beta-lactamase	cephamycin	antibiotic inactivation
-ARO:3002013	38413	821	600	CMY-2	CMY-2	CAA62957.1	X91840	CMY beta-lactamase	cephalosporin;cephamycin	antibiotic inactivation
+ARO:3002013	38413	821	600	CMY-2	CMY-2	CAA62957.1	X91840	CMY beta-lactamase	carbapenem;cephalosporin;cephamycin;penam	antibiotic inactivation
 ARO:3002031	38431	903	840	CMY-20	CMY-20	AAX58682.2	AY960293	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002032	38432	957	256	CMY-21	CMY-21	AAZ66866.1	DQ139328	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002033	38433	1035	1543	CMY-22	CMY-22	ABB72431.1	DQ256079	CMY beta-lactamase	cephamycin	antibiotic inactivation
@@ -623,12 +636,14 @@ ARO:3002097	38497	1037	2027	CMY-84	CMY-84	AFK73455.1	JQ733579	CMY beta-lactamase
 ARO:3002098	38498	1117	283	CMY-85	CMY-85	AHL39322.1	KJ207202	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002099	38499	1197	1140	CMY-86	CMY-86	AHL39327.1	KJ207204	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002100	38500	1284	1829	CMY-87	CMY-87	BAL63057.1	AB699171	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3002102	38502	6301	3938	CMY-89	CMY-89	CCK86742.1	HE819403	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002020	38420	1363	136	CMY-9	CMY-9	BAB72158.1	AB061794	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002103	38503	1444	894	CMY-90	CMY-90	CCK86743.1	HE819404	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002106	38506	1549	1756	CMY-93	CMY-93	AHM76768.1	KF992025	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002107	38507	1626	1163	CMY-94	CMY-94	AGC54798.1	JX514368	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002108	38508	1702	301	CMY-95	CMY-95	AGC54799.1	JX514369	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002109	38509	6281	3920	CMY-96	CMY-96	WP_063859917.1	NG_048893	CMY beta-lactamase	cephamycin	antibiotic inactivation
+ARO:3002110	38510	6296	3933	CMY-97	CMY-97	AFZ85213.1	KC007363	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002111	38511	1778	297	CMY-98	CMY-98	AGH70380.1	KC603538	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3002070	38470	1860	1593	CMY-99	CMY-99	AGU59995.1	KF305673	CMY beta-lactamase	cephamycin	antibiotic inactivation
 ARO:3004639	42633	5448	3337	Corynebacterium striatum tetA	Corynebacterium striatum tetA	NP_862226.1	NC_004939.1	major facilitator superfamily (MFS) antibiotic efflux pump	penam;tetracycline antibiotic	antibiotic efflux
@@ -690,7 +705,7 @@ ARO:3002000	38400	1105	878	CTX-M-142	CTX-M-142	AGW25368.1	KF240809	CTX-M beta-la
 ARO:3002002	38402	1185	1768	CTX-M-144	CTX-M-144	AHX39588.1	KJ020573	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3002005	38405	1272	380	CTX-M-147	CTX-M-147	AHA80961.1	KF513180	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3002006	38406	1351	1944	CTX-M-148	CTX-M-148	AHX39589.1	KJ020574	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
-ARO:3001878	38278	1430	2035	CTX-M-15	CTX-M-15	AAL02127.1	AY044436	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
+ARO:3001878	38278	1430	2035	CTX-M-15	CTX-M-15	AAL02127.1	AY044436	CTX-M beta-lactamase	cephalosporin;penam	antibiotic inactivation
 ARO:3002008	38408	1511	362	CTX-M-151	CTX-M-151	BAP34782.1	AB916359	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3002009	38409	1589	1616	CTX-M-152	CTX-M-152	AHY20039.1	KJ461948	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3003163	39740	1666	31	CTX-M-155	CTX-M-155	AIS67611.1	KM211508	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
@@ -716,10 +731,10 @@ ARO:3001885	38285	1411	1755	CTX-M-23	CTX-M-23	AAL99990.1	AF488377	CTX-M beta-lac
 ARO:3001886	38286	1477	175	CTX-M-24	CTX-M-24	AAN38836.1	AY143430	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3001887	38287	1551	367	CTX-M-25	CTX-M-25	AAM70498.1	AF518567	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3001888	38288	1628	1371	CTX-M-26	CTX-M-26	AAN75444.1	AY157676	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
-ARO:3001889	38289	1704	1825	CTX-M-27	CTX-M-27	AAO61597.1	AY156923	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
+ARO:3001889	38289	1704	1825	CTX-M-27	CTX-M-27	AAO61597.1	AY156923	CTX-M beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001890	38290	1780	1202	CTX-M-28	CTX-M-28	CAD70280.1	AJ549244	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3001891	38291	1862	1930	CTX-M-29	CTX-M-29	AAP22736.1	AY267213	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
-ARO:3001866	38266	1965	1317	CTX-M-3	CTX-M-3	CAA71321.1	Y10278	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
+ARO:3001866	38266	1965	1317	CTX-M-3	CTX-M-3	CAA71321.1	Y10278	CTX-M beta-lactamase	cephalosporin;cephamycin;penam	antibiotic inactivation
 ARO:3001892	38292	2043	463	CTX-M-30	CTX-M-30	AAP43508.1	AY292654	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3001893	38293	786	799	CTX-M-31	CTX-M-31	CAD99181.1	AJ567481	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
 ARO:3001894	38294	867	1586	CTX-M-32	CTX-M-32	CAD89606.1	AJ557142	CTX-M beta-lactamase	cephalosporin	antibiotic inactivation
@@ -796,6 +811,7 @@ ARO:3003499	40101	3259	2155	Cutibacterium acnes 16S rRNA mutation conferring res
 ARO:3003974	40779	4442	2462	Cutibacterium acnes gyrA conferring resistance to fluoroquinolones	Cutibacterium acnes gyrA conferring resistance to fluoroquinolones	AER05434.1	CP003084.1	fluoroquinolone resistant gyrA	fluoroquinolone antibiotic;nybomycin	antibiotic target alteration
 ARO:3003970	40743	3769	2436	D-Ala-D-Ala ligase	D-Ala-D-Ala ligase	AAN62561.1	AY168442.1	van ligase	glycopeptide antibiotic	antibiotic target alteration
 ARO:3004780	42895	5778	3580	DES-1	DES-1	AAM45855.1	AF426161.1	DES beta-lactamase	penam	antibiotic inactivation
+ARO:3005354	43714	6457	4085	dfr22	dfr22	CAF31623.1	AJ628423	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002854	39288	5109	1992	dfrA1	dfrA1	AAP74961.2	KJ541681.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3003011	39445	686	1497	dfrA10	dfrA10	AHG97174.1	KF976462	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002858	39292	5110	1139	dfrA12	dfrA12	ADG84870.1	GU585907.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
@@ -821,7 +837,12 @@ ARO:3003105	39679	69	511	dfrA3	dfrA3	AAA25550.1	J03306	trimethoprim resistant di
 ARO:3004552	42455	5116	3260	dfrA30	dfrA30	CAQ53849.2	AM997279.2	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3005084	43294	6118	3819	dfrA31	dfrA31	BAD88719.1	AB200915.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3004555	42460	5119	3263	dfrA32	dfrA32	ACZ52983.1	GU067642.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005346	43705	6451	4078	DfrA34	DfrA34	WP_058652112.1	NG_062229	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3005164	43516	6214	3887	dfrA35	dfrA35	ASF80997.1	KY887596.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005348	43708	6453	4080	DfrA36	DfrA36	WP_000949574.1	NG_065842	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005347	43706	6452	4079	DfrA37	DfrA37	WP_132586462.1	NG_070720	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005349	43709	6454	4081	DfrA38	DfrA38	WP_197749399.1	NG_071175	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005351	43711	6456	4083	DfrA39	DfrA39	WP_149100971.1	NG_070722	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3004642	42653	5469	3342	dfrA3b	dfrA3b	AAN85115.1	AY162283.2	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002861	39295	2104	1582	dfrA5	dfrA5	ABB89122.1	DQ278190	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3004547	42450	5111	3255	dfrA6	dfrA6	ACY06082.1	FJ905898.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
@@ -836,6 +857,7 @@ ARO:3004498	42133	6117	3076	dfrB4	dfrB4	ABY55281.1	EU339233.1	trimethoprim resis
 ARO:3004549	42452	5113	3257	dfrB5	dfrB5	AAX46054.1	AY943084.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3003023	39457	430	710	dfrB6	dfrB6	ADO00942.1	GU060319	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3004556	42461	5120	3264	dfrB7	dfrB7	ADB54781.1	GU295656.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005350	43710	6455	4082	DfrB9	DfrB9	WP_071846200.1	NG_052167	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002865	39299	4707	1397	dfrC	dfrC	AAO04716.1	AE015929.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002866	39300	683	474	dfrD	dfrD	AAA85213.1	U43152	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3002875	39309	4696	1544	dfrE	dfrE	EOD99669.1	AIIS01000002.1	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
@@ -872,7 +894,7 @@ ARO:3003954	40724	3757	2426	efmA	efmA	BAG75524.1	AB467372.1	major facilitator su
 ARO:3003955	40726	5259	2427	efpA	efpA	CCP45647.1	AL123456.3	major facilitator superfamily (MFS) antibiotic efflux pump	isoniazid;rifamycin antibiotic	antibiotic efflux
 ARO:3003948	40703	5893	2421	efrA	efrA	WP_104671188.1	NZ_PTWF01000025.1	ATP-binding cassette (ABC) antibiotic efflux pump	fluoroquinolone antibiotic;macrolide antibiotic;rifamycin antibiotic	antibiotic efflux
 ARO:3003949	40704	6247	2422	efrB	efrB	CDO61516.1	HG970103.1	ATP-binding cassette (ABC) antibiotic efflux pump	fluoroquinolone antibiotic;macrolide antibiotic;rifamycin antibiotic	antibiotic efflux
-ARO:3003551	40153	3290	618	emeA	emeA	BAC11911.1	AB091338	multidrug and toxic compound extrusion (MATE) transporter	acridine dye	antibiotic efflux
+ARO:3003551	40153	3290	618	emeA	emeA	BAC11911.1	AB091338	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;disinfecting agents and intercalating dyes	antibiotic efflux
 ARO:3000027	36036	411	1757	emrA	emrA	BAA16547.1	AP009048	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000074	36213	20	1847	emrB	emrB	AAC75733.1	U00096	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000309	36448	3622	1974	emrD	emrD	EFF04178.1	GG749185.1	major facilitator superfamily (MFS) antibiotic efflux pump	N/A	antibiotic efflux
@@ -1001,8 +1023,8 @@ ARO:3004109	41230	4487	2776	Escherichia coli rob	Escherichia coli rob	NP_418813.
 ARO:3003288	39872	5493	627	Escherichia coli rpoB mutants conferring resistance to rifampicin	Escherichia coli rpoB mutants conferring resistance to rifampicin	BAB38333.1	BA000007.3	rifamycin-resistant beta-subunit of RNA polymerase (rpoB)	peptide antibiotic;rifamycin antibiotic	antibiotic target alteration;antibiotic target replacement
 ARO:3003381	39965	2074	1005	Escherichia coli soxR with mutation conferring antibiotic resistance	Escherichia coli soxR with mutation conferring antibiotic resistance	AAC77033.1	U00096	ATP-binding cassette (ABC) antibiotic efflux pump;major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	cephalosporin;fluoroquinolone antibiotic;glycylcycline;penam;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux;antibiotic target alteration
 ARO:3003511	40113	5276	2066	Escherichia coli soxS with mutation conferring antibiotic resistance	Escherichia coli soxS with mutation conferring antibiotic resistance	AAC77032.1	U00096.3	ATP-binding cassette (ABC) antibiotic efflux pump;General Bacterial Porin with reduced permeability to beta-lactams;major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;glycylcycline;monobactam;penam;penem;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux;antibiotic target alteration;reduced permeability to antibiotic
-ARO:3003893	40595	3668	2374	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	CDJ73205	HG738867	antibiotic-resistant UhpT	fosfomycin	antibiotic target alteration
 ARO:3003893	40595	3671	2376	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	CDJ73205	HG738867	antibiotic-resistant UhpT	fosfomycin	antibiotic target alteration
+ARO:3003893	40595	3668	2374	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	Escherichia coli UhpA with mutation conferring resistance to fosfomycin	CDJ73205	HG738867	antibiotic-resistant UhpT	fosfomycin	antibiotic target alteration
 ARO:3003890	40592	3667	2373	Escherichia coli UhpT with mutation conferring resistance to fosfomycin	Escherichia coli UhpT with mutation conferring resistance to fosfomycin	CDJ73208	HG738867	antibiotic-resistant UhpT	fosfomycin	antibiotic target alteration
 ARO:3003717	40371	3432	2232	ESP-1	ESP-1	AJP77085	KP109681	ESP beta-lactamase	carbapenem	antibiotic inactivation
 ARO:3000832	37212	5466	1015	evgA	evgA	BAB36671.1	BA000007.3	major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	fluoroquinolone antibiotic;macrolide antibiotic;penam;tetracycline antibiotic	antibiotic efflux
@@ -1135,7 +1157,7 @@ ARO:3004820	42950	5812	3614	HERA-5	HERA-5	CAD60969.1	AJ536089.1	HERA beta-lactam
 ARO:3004821	42951	5813	3615	HERA-6	HERA-6	CAD60970.1	AJ536090.1	HERA beta-lactamase	penam	antibiotic inactivation
 ARO:3004822	42952	5814	3616	HERA-8	HERA-8	CAD60972.1	AJ536092.1	HERA beta-lactamase	penam	antibiotic inactivation
 ARO:3004092	41198	4072	2753	HMB-1 beta-lactamase	HMB-1	AMY61250.1	KU961660	HMB beta-lactamase	carbapenem	antibiotic inactivation
-ARO:3003953	40723	5260	2425	hmrM	hmrM	ADO96486.1	CP002276.1	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3003953	40723	5260	2425	hmrM	hmrM	ADO96486.1	CP002276.1	multidrug and toxic compound extrusion (MATE) transporter	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000676	37020	5476	1248	H-NS	H-NS	BAB35162.1	BA000007.3	major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;penam;tetracycline antibiotic	antibiotic efflux
 ARO:3003964	40735	5480	2430	hp1181	hp1181	AAD08227.1	AE000511.1	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic;nitroimidazole antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3003965	40736	4598	2431	hp1184	hp1184	NP_207975.1	NC_000915.1	multidrug and toxic compound extrusion (MATE) transporter	fluoroquinolone antibiotic;macrolide antibiotic;nitroimidazole antibiotic;tetracycline antibiotic	antibiotic efflux
@@ -1240,13 +1262,44 @@ ARO:3002324	38724	1971	494	KPC-14	KPC-14	AFV48348.1	JX524191	KPC beta-lactamase	
 ARO:3002325	38725	2049	926	KPC-15	KPC-15	AGF70638.1	KC433553	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002326	38726	792	496	KPC-16	KPC-16	AGJ01153.1	KC465199	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002327	38727	873	2038	KPC-17	KPC-17	AGJ01154.1	KC465200	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3002328	38728	6463	4091	KPC-18	KPC-18	AKO63215.1	KP681699.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002329	38729	954	873	KPC-19	KPC-19	AIH07017.1	KJ775801	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002312	38712	1032	1745	KPC-1	KPC-2	AAK70220.1	AY034847	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3003180	39757	1112	1389	KPC-22	KPC-22	AIX87991.1	KM379100	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005356	43716	6464	4088	KPC-23	KPC-23	AWU66461.1	MH450213.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3004496	42038	5343	3024	KPC-24	KPC-24	AKQ06274.1	KR052099.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005357	43717	6493	4089	KPC-25	KPC-25	WP_065419571.1	NG_051167.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005358	43718	6462	4090	KPC-26	KPC-26	ANY26940.1	KX619622.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005359	43719	6466	4092	KPC-27	KPC-27	AOR05747.1	KX828722.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005361	43721	6468	4094	KPC-28	KPC-28	APG42690.1	KY282958.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005360	43720	6467	4093	KPC-29	KPC-29	AQM40193.1	KY563764.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002313	38713	1192	1153	KPC-3	KPC-3	AAL05630.1	AF395881	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005364	43724	6471	4097	KPC-30	KPC-30	AQT03460.1	KY646302.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005362	43722	6469	4095	KPC-31	KPC-31	OKK72649.1	MAPH01000113.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005363	43723	6470	4096	KPC-32	KPC-32	OKL07573.1	MAPO01000050	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005365	43725	6472	4098	KPC-33	KPC-33	AUD37084.1	CP025144.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005366	43726	6473	4099	KPC-34	KPC-34	AMS25623.1	KU985429.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005367	43727	6474	4100	KPC-35	KPC-35	AWR93230.1	MH404098.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005368	43728	6475	4101	KPC-36	KPC-36	AXC08545.1	MH593787.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005369	43729	6476	4102	KPC-37	KPC-37	AXL13972.1	MH718730.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005370	43730	6477	4103	KPC-38	KPC-38	AYP70144.1	MK098861.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005371	43731	6478	4104	KPC-39	KPC-39	AYR04937.1	MK118771.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002314	38714	5884	454	KPC-4	KPC-4	ACA34343.1	EU447304.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005372	43732	6479	4105	KPC-40	KPC-40	RDT05676.1	QRBR01000058.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005373	43733	6480	4106	KPC-41	KPC-41	QBC36180.1	MK497255.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005374	43734	6481	4107	KPC-42	KPC-42	QBC75465.1	MK467612.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005375	43735	6482	4108	KPC-43	KPC-43	QBO66649.1	MK628511.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005376	43736	6483	4109	KPC-45	KPC-45	QDM39441.1	MN104596.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005377	43737	6484	4110	KPC-46	KPC-46	QED08959.1	MN267701.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005378	43738	6485	4111	KPC-49	KPC-49	QFX75995.1	MN619655.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002315	38715	1358	1012	KPC-5	KPC-5	ABY91240.1	EU400222	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005379	43739	6486	4112	KPC-50	KPC-50	QGJ02578.1	MN654342.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005380	43740	6487	4113	KPC-51	KPC-51	QGT31448.1	MN725731.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005381	43741	6488	4114	KPC-52	KPC-52	QGT31449.1	MN725732.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005382	43742	6489	4115	KPC-54	KPC-54	QHA33651.1	MN854706.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005383	43743	6490	4116	KPC-55	KPC-55	QIS31290.1	MT028409.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005384	43744	6491	4117	KPC-56	KPC-56	QIC04092.1	MT040751.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
+ARO:3005385	43745	6492	4118	KPC-57	KPC-57	QJD09264.1	MT358626.1	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002316	38716	1437	1283	KPC-6	KPC-6	ACB71165.1	EU555534	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002317	38717	1517	1866	KPC-7	KPC-7	ACE62798.1	EU729727	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002318	38718	1870	162	KPC-8	KPC-8	ACI95258.1	FJ234412	KPC beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
@@ -1369,6 +1422,7 @@ ARO:3004693	42745	5578	3391	MCR-3.12	MCR-3.12	AVZ47168.1	MG564491.1	MCR phosphoe
 ARO:3004511	42220	5328	3139	MCR-3.2	MCR-3.2	OYN70668.1	NMWW01000143.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
 ARO:3004662	42705	5546	3363	MCR-3.3	MCR-3.3	ASU10319.1	MF495680.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
 ARO:3004691	42743	5576	3390	MCR-3.4	MCR-3.4	SBZ31568.1	FLXA01000011.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
+ARO:3005221	43577	6306	3943	mcr-3.41	mcr-3.41	MBA2799562.1	JACEGL010000001.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
 ARO:3004505	42213	5577	3133	MCR-3.5	MCR-3.5	ASU04896.1	MF489760.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
 ARO:3004503	42210	5338	3131	MCR-3.6	MCR-3.6	AST36140.1	MF598076.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
 ARO:3004510	42219	5329	3138	MCR-3.7	MCR-3.7	AST36141.1	MF598077.1	MCR phosphoethanolamine transferase	peptide antibiotic	antibiotic target alteration
@@ -1396,10 +1450,10 @@ ARO:3000796	37176	286	121	mdtF	mdtF	AAC76539.1	U00096	resistance-nodulation-cell
 ARO:3001329	37728	4574	603	mdtG	mdtG	ABV18113.1	CP000800.1	major facilitator superfamily (MFS) antibiotic efflux pump	fosfomycin	antibiotic efflux
 ARO:3001216	37615	4493	375	mdtH	mdtH	AAC74149.2	U00096	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3001327	37726	4682	1752	mdtK	MdtK	AML99881.1	CP014358.1	multidrug and toxic compound extrusion (MATE) transporter	fluoroquinolone antibiotic	antibiotic efflux
-ARO:3001214	37613	4730	1191	mdtM	mdtM	AAC77293.1	U00096.3	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;lincosamide antibiotic;nucleoside antibiotic;phenicol antibiotic	antibiotic efflux
-ARO:3003548	40150	4705	1442	mdtN	mdtN	BAE78084.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;nucleoside antibiotic	antibiotic efflux
-ARO:3003549	40151	4664	2056	mdtO	mdtO	BAE78083.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;nucleoside antibiotic	antibiotic efflux
-ARO:3003550	40152	4454	45	mdtP	mdtP	BAE78082.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;nucleoside antibiotic	antibiotic efflux
+ARO:3001214	37613	4730	1191	mdtM	mdtM	AAC77293.1	U00096.3	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;lincosamide antibiotic;nucleoside antibiotic;phenicol antibiotic	antibiotic efflux
+ARO:3003548	40150	4705	1442	mdtN	mdtN	BAE78084.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;nucleoside antibiotic	antibiotic efflux
+ARO:3003549	40151	4664	2056	mdtO	mdtO	BAE78083.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;nucleoside antibiotic	antibiotic efflux
+ARO:3003550	40152	4454	45	mdtP	mdtP	BAE78082.1	AP009048.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;nucleoside antibiotic	antibiotic efflux
 ARO:3000617	36911	227	1321	mecA	mecA	AGC51118.1	KC243783	methicillin resistant PBP2	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic target replacement
 ARO:3003440	40024	3282	1595	mecB	mecB	BAI83385.1	AB498758	methicillin resistant PBP2	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic target replacement
 ARO:3001209	37590	5248	810	mecC	mecC	CCC86795.1	FR821779.1	methicillin resistant PBP2	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic target replacement
@@ -1422,28 +1476,28 @@ ARO:3000800	37180	52	805	MexC	MexC	AAB41956.1	U57969	resistance-nodulation-cell 
 ARO:3000801	37181	335	1523	MexD	MexD	AAB41957.1	U57969	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;aminoglycoside antibiotic;cephalosporin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3000803	37183	5525	1067	MexE	MexE	AAG05881.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	diaminopyrimidine antibiotic;fluoroquinolone antibiotic;phenicol antibiotic	antibiotic efflux
 ARO:3000804	37184	5530	1300	MexF	MexF	AAG05882.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	diaminopyrimidine antibiotic;fluoroquinolone antibiotic;phenicol antibiotic	antibiotic efflux
-ARO:3000806	37186	5202	995	mexG	MexG	AAG07592.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3000807	37187	5354	1344	mexH	MexH	AAG07593.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3000808	37188	5392	1647	mexI	MexI	AAG07594.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000806	37186	5202	995	mexG	MexG	AAG07592.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000807	37187	5354	1344	mexH	MexH	AAG07593.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000808	37188	5392	1647	mexI	MexI	AAG07594.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3003692	40340	5274	2205	mexJ	MexJ	AAG07065.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	macrolide antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux
 ARO:3003693	40341	4651	2206	mexK	MexK	AAG07064.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	macrolide antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux
 ARO:3003710	40364	5380	2219	mexL	MexL	AAG07066.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	macrolide antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux
 ARO:3003704	40358	3409	2216	mexM	mexM	BAE06005.1	AB219523.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
 ARO:3003705	40359	3410	2217	mexN	mexN	BAE06006.1	AB219523.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	phenicol antibiotic	antibiotic efflux
-ARO:3003698	40350	3405	2211	mexP	mexP	BAE06007.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003699	40351	3406	2212	mexQ	mexQ	BAE06008.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3000506	36645	5452	1474	mexR	MexR	AAG03813.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux;antibiotic target alteration
+ARO:3003698	40350	3405	2211	mexP	mexP	BAE06007.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;disinfecting agents and intercalating dyes;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003699	40351	3406	2212	mexQ	mexQ	BAE06008.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;disinfecting agents and intercalating dyes;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3000506	36645	5252	2678	mexR	MexR	AAG03813.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux;antibiotic target alteration
+ARO:3000506	36645	5452	1474	mexR	MexR	AAG03813.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux;antibiotic target alteration
 ARO:3000813	37193	667	1041	MexS	MexS	ADT64081.1	HQ433550	resistance-nodulation-cell division (RND) antibiotic efflux pump	diaminopyrimidine antibiotic;fluoroquinolone antibiotic;phenicol antibiotic	antibiotic efflux
 ARO:3000814	37194	5414	1608	MexT	MexT	AAG05880.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	diaminopyrimidine antibiotic;fluoroquinolone antibiotic;phenicol antibiotic	antibiotic efflux
-ARO:3003030	39464	3464	2207	mexV	MexV	AAG07762.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003031	39465	3462	2208	mexW	MexW	AAG07763.1	NC_002516.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003034	39468	244	334	mexX	mexX	BAA34299.1	AB015853	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003033	39467	414	1786	mexY	mexY	BAA34300.1	AB015853	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003709	40363	5526	2223	mexZ	MexZ	AAG05408.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003030	39464	3464	2207	mexV	MexV	AAG07762.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003031	39465	3462	2208	mexW	MexW	AAG07763.1	NC_002516.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003034	39468	244	334	mexX	mexX	BAA34299.1	AB015853	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003033	39467	414	1786	mexY	mexY	BAA34300.1	AB015853	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003709	40363	5526	2223	mexZ	MexZ	AAG05408.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3003844	40538	4599	2332	mfd	mfd	NP_415632.1	NC_000913.3	quinolone resistance protein (qnr)	fluoroquinolone antibiotic	antibiotic target protection
 ARO:3003035	39469	4588	801	mfpA	mfpA	CCP46182.1	AL123456	quinolone resistance protein (qnr)	fluoroquinolone antibiotic	antibiotic target protection
-ARO:3000815	37195	5404	154	mgrA	mgrA	BAB41874.1	BA000018.3	ATP-binding cassette (ABC) antibiotic efflux pump;major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;cephalosporin;fluoroquinolone antibiotic;penam;peptide antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000815	37195	5404	154	mgrA	mgrA	BAB41874.1	BA000018.3	ATP-binding cassette (ABC) antibiotic efflux pump;major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;cephalosporin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;penam;peptide antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3003820	40510	5880	2317	mgrB	mgrB	NP_416340.1	NC_000913.3	ATP-binding cassette (ABC) antibiotic efflux pump;pmr phosphoethanolamine transferase	macrolide antibiotic;peptide antibiotic	antibiotic efflux;antibiotic target alteration;resistance by absence
 ARO:3000462	36601	311	515	mgtA	mgtA	ABA28305.2	DQ185434	mgt macrolide glycotransferase	macrolide antibiotic	antibiotic inactivation
 ARO:3002166	38566	1024	1702	MIR-1	MIR-1	AAD22636.1	M37839	MIR beta-lactamase	cephalosporin;monobactam	antibiotic inactivation
@@ -1674,7 +1728,7 @@ ARO:3003497	40099	4137	2152	Neisseria meningitidis 16S rRNA mutation conferring 
 ARO:3003937	40660	5467	2409	Neisseria meningititis PBP2 conferring resistance to beta-lactam	Neisseria meningititis PBP2 conferring resistance to beta-lactam	AAF40852.1	AE002098.2	Penicillin-binding protein mutations conferring resistance to beta-lactam antibiotics	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic target alteration
 ARO:3003589	40199	3362	2138	NmcA beta-lactamase	NmcA	CAA79967.1	Z21956	NmcA beta-lactamase	carbapenem;cephalosporin;cephamycin;penam	antibiotic inactivation
 ARO:3003665	40275	4662	2072	NmcR	NmcR	CAA79966.1	Z21956.1	NmcA beta-lactamase	carbapenem;cephalosporin;cephamycin;penam	antibiotic inactivation
-ARO:3000391	36530	268	1554	norA	norA	AAS68233.1	AY566250	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic	antibiotic efflux
+ARO:3000391	36530	268	1554	norA	norA	AAS68233.1	AY566250	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000421	36560	4734	1167	norB	norB	CCQ22388.1	HE999704.1	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3002522	38922	344	1210	novA	novA	AAF67494.2	AF170880	ATP-binding cassette (ABC) antibiotic efflux pump	aminocoumarin antibiotic	antibiotic efflux
 ARO:3002665	39065	273	218	npmA	npmA	BAF80809.1	AB261016	16S rRNA methyltransferase (A1408)	aminoglycoside antibiotic	antibiotic target alteration
@@ -1727,12 +1781,12 @@ ARO:3000866	37246	498	1824	oleI	oleI	ABA42118.2	DQ195535	ole glycosyltransferase
 ARO:3005044	43242	6080	3787	OmpA	OmpA	CDO13836.1	FO834906.1	General Bacterial Porin with reduced permeability to beta-lactams	carbapenem;cephalosporin;cephamycin;monobactam;penam;penem	reduced permeability to antibiotic
 ARO:3003037	39471	3687	2130	opcM	opcM	AAC43969.1	U38944.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;fluoroquinolone antibiotic	antibiotic efflux
 ARO:3004072	41154	5207	2716	OpmB	OpmB	AAG05913.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;macrolide antibiotic;monobactam;tetracycline antibiotic	antibiotic efflux
-ARO:3000809	37189	5356	442	opmD	OpmD	AAG07595.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3003700	40352	3407	2213	opmE	opmE	BAE06009.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000809	37189	5356	442	opmD	OpmD	AAG07595.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3003700	40352	3407	2213	opmE	opmE	BAE06009.1	AB219524.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;carbapenem;diaminopyrimidine antibiotic;disinfecting agents and intercalating dyes;macrolide antibiotic;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3003682	40317	5382	2195	OpmH	OpmH	AAG08359.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	triclosan	antibiotic efflux
 ARO:3003039	39473	315	1570	oprA	OprA	BAM10414.1	AB639410	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;carbapenem;fluoroquinolone antibiotic;macrolide antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3000802	37182	385	704	OprJ	OprJ	AAB41958.1	U57969	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminocoumarin antibiotic;aminoglycoside antibiotic;cephalosporin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;penam;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux
-ARO:3000379	36518	5378	1305	OprM	OprM	AAG03816.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminocoumarin antibiotic;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux
+ARO:3000379	36518	5378	1305	OprM	OprM	AAG03816.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminocoumarin antibiotic;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;diaminopyrimidine antibiotic;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;peptide antibiotic;phenicol antibiotic;sulfonamide antibiotic;tetracycline antibiotic	antibiotic efflux
 ARO:3000805	37185	5524	172	OprN	OprN	AAG05883.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	diaminopyrimidine antibiotic;fluoroquinolone antibiotic;phenicol antibiotic	antibiotic efflux
 ARO:3004142	41270	4486	2796	OprZ	OprZ	EGP45230	AFRQ01000061.1	resistance-nodulation-cell division (RND) antibiotic efflux pump	aminoglycoside antibiotic;cephalosporin;fluoroquinolone antibiotic;macrolide antibiotic	antibiotic efflux
 ARO:3003746	40402	3517	2263	optrA	optrA	AKA86814	KP399637	ABC-F ATP-binding cassette ribosomal protection protein	lincosamide antibiotic;macrolide antibiotic;oxazolidinone antibiotic;phenicol antibiotic;pleuromutilin antibiotic;streptogramin antibiotic;tetracycline antibiotic	antibiotic target protection
@@ -2123,15 +2177,25 @@ ARO:3003642	40252	5741	3546	OXA-485	OXA-485	KSG40284.1	LLNM01000004.1	OXA beta-l
 ARO:3003643	40253	5742	3547	OXA-486	OXA-486	QBY97442.1	CP038661.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3003645	40255	5743	3548	OXA-488	OXA-488	TKV86805.1	SMRY02000082.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001671	38071	1766	1679	OXA-49	OXA-49	AAP40270.1	AY288523	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005335	43694	6440	4067	OXA-496	OXA-496	WP_064483990.1	NG_050781	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005343	43702	6448	4075	OXA-499	OXA-499	WP_063864112.1	NG_049775	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001400	37800	1844	909	OXA-5	OXA-5	CAA41211.1	X58272	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001796	38196	1935	1928	OXA-50	OXA-50	AAQ76277.1	AY306130	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001612	38012	2013	450	OXA-51	OXA-51	CAC83905.2	AJ309734	OXA beta-lactamase	carbapenem;cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3001810	38210	812	1341	OXA-53	OXA-53	AAP43641.1	AY289608	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3004362	41535	4262	2877	OXA-535	OXA-535	AOQ26572.1	KX828709.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005317	43674	6415	4049	OXA-539	OXA-539	WP_071593233.1	NG_052064	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001812	38212	893	441	OXA-54	OXA-54	AAR89917.1	AY500137	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005314	43671	6412	4046	OXA-540	OXA-540	WP_071846203.1	NG_052174	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005321	43678	6420	4053	OXA-541	OXA-541	WP_071846384.1	NG_052519	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005318	43675	6416	4050	OXA-543	OXA-543	WP_058132644.1	NG_068179	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005222	43578	6307	3944	OXA-544	OXA-544	WP_071537493	NG_068180	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001813	38213	979	1258	OXA-55	OXA-55	AAR03105.1	AY343493	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001795	38195	1056	1765	OXA-56	OXA-56	AAR32651.1	AY445080	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001771	38171	1137	2048	OXA-57	OXA-57	CAF74882.1	AJ631966	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005324	43681	6423	4056	OXA-570	OXA-570	WP_102607462.1	NG_056179	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005326	43684	6425	4058	OXA-571	OXA-571	WP_102607463.1	NG_056180	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005325	43683	6424	4057	OXA-573	OXA-573	WP_064808881.1	NG_056182	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001611	38011	5914	1112	OXA-58	OXA-58	ACC58995.1	CP000864.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001772	38172	1304	1449	OXA-59	OXA-59	CAG15145.1	AJ632249	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001808	38208	1381	47	OXA-60	OXA-60	AAQ08905.1	AF525303	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
@@ -2139,14 +2203,24 @@ ARO:3001773	38173	1464	104	OXA-61	OXA-61	AAT01092.1	AY587956	OXA beta-lactamase	
 ARO:3001792	38192	1537	1411	OXA-62	OXA-62	AAR32134.1	AY423074	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001764	38164	1615	782	OXA-63	OXA-63	AAU88145.1	AY619003	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001613	38013	1692	959	OXA-64	OXA-64	AAW81336.1	AY750907	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005333	43692	6432	4065	OXA-641	OXA-641	WP_109545072.1	NG_057486	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005339	43698	6444	4071	OXA-646	OXA-646	WP_039902635.1	NG_065432	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005337	43696	6442	4069	oxa-647	oxa-647	WP_140423315.1	NG_065433	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005338	43697	6443	4070	OXA-648	OXA-648	WP_140423316.1	NG_065434	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005340	43699	6445	4072	OXA-649	OXA-649	WP_109545071.1	NG_057485	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001614	38014	1767	1325	OXA-65	OXA-65	AAW81337.1	AY750908	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005342	43701	6447	4074	OXA-653	OXA-653	WP_087554513.1	NG_057615	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001615	38015	4337	1870	OXA-66	OXA-66	ABK34774.1	EF016356.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3004489	41930	5348	2960	OXA-663	OXA-663	OWG16436.1	JCMW02000002.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3004479	41740	4762	2909	OXA-664	OXA-664	EOR02560.1	AQFM01000048.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3004478	41738	4763	2910	OXA-665	OXA-665	EPF70268.1	ATGI01000038.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005158	43375	6209	3883	OXA-668	OXA-668	KEC85091.1	JICM01000013.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001437	37837	1936	1530	OXA-67	OXA-67	ABF50983.1	DQ491200	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005328	43686	6427	4060	OXA-671	OXA-671	WP_081401608.1	NG_062218	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005327	43685	6426	4059	OXA-672	OXA-672	WP_023271137.1	NG_062221	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005329	43687	6428	4061	OXA-673	OXA-673	WP_016162389.1	NG_062214	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001616	38016	2014	623	OXA-68	OXA-68	AAW81339.1	AY750910	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005319	43676	6418	4051	OXA-681	OXA-681	WP_122630881.1	NG_062301	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001617	38017	5522	55	OXA-69	OXA-69	CAM86994.1	CU459141.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001402	37802	894	1143	OXA-7	OXA-7	CAA53242.1	X75562	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001618	38018	980	1807	OXA-70	OXA-70	AAW81341.1	AY750912	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
@@ -2154,18 +2228,23 @@ ARO:3001619	38019	1057	1196	OXA-71	OXA-71	AAW81342.1	AY750913	OXA beta-lactamase
 ARO:3001705	38105	5838	1881	OXA-72	OXA-72	ADB28892.1	GU199039.2	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3004837	42971	5903	3633	OXA-724	OXA-724	CAB76928.1	AJ276031.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001785	38185	1218	1715	OXA-73	OXA-73	AAW22056.1	AY762325	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005320	43677	6419	4052	OXA-737	OXA-737	WP_122630856.1	NG_062269	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001798	38198	1305	1610	OXA-74	OXA-74	CAH69530.1	AJ854182	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001620	38020	5352	523	OXA-75	OXA-75	CAP01453.1	CU468230.2	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001621	38021	1465	1841	OXA-76	OXA-76	AAX51234.1	AY949203	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001622	38022	1538	560	OXA-77	OXA-77	AAX51233.1	AY949202	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005315	43672	6413	4047	OXA-779	OXA-779	WP_122634438.1	NG_062354	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001645	38045	1616	1551	OXA-78	OXA-78	AAW81358.1	AY862132	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001633	38033	1693	497	OXA-79	OXA-79	ABV71246.1	EU019534	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001634	38034	1768	1882	OXA-80	OXA-80	ABV71247.1	EU019535	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005160	43378	6211	3885	OXA-812	OXA-812	QBQ03037.1	MK645924.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005159	43377	6210	3884	OXA-818	OXA-818	QBQ03043.1	MK645930.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001635	38035	1846	1288	OXA-82	OXA-82	ABV71248.1	EU019536	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005344	43703	6449	4076	OXA-825	OXA-825	WP_140423318.1	NG_065436	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001623	38023	1937	239	OXA-83	OXA-83	ABC26007.1	DQ309277	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005322	43679	6421	4054	OXA-835	OXA-835	WP_148044422.1	NG_065880	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005060	43263	6095	3800	OXA-837	OXA-837	QEE23059.1	MN313890.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005316	43673	6414	4048	OXA-838	OXA-838	QEJ74001.1	MN339504	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001624	38024	2015	2026	OXA-84	OXA-84	ABC26006.1	DQ309276	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005130	43347	6173	3856	OXA-846	OXA-846	QEJ80883.1	MN370854.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001780	38180	814	289	OXA-85	OXA-85	AAP69916.1	AY227054	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
@@ -2174,14 +2253,20 @@ ARO:3001703	38103	895	981	OXA-86	OXA-86	AAZ78361.1	DQ149247	OXA beta-lactamase	c
 ARO:3001704	38104	981	430	OXA-87	OXA-87	ABC84263.1	DQ348075	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001626	38026	1058	1132	OXA-88	OXA-88	ABD48715.1	DQ392963	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001625	38025	1139	1416	OXA-89	OXA-89	ABE03012.1	DQ445683	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005332	43691	6431	4064	OXA-895	OXA-895	WP_100886243.1	NG_067157	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005341	43700	6446	4073	OXA-897	OXA-897	WP_164461290.1	NG_068017	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005094	43307	6127	3827	OXA-898	OXA-898	QHT72948.1	MN968728.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005093	43306	6126	3826	OXA-899	OXA-899	QHT72949.1	MN968729.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001404	37804	1219	243	OXA-9	OXA-9	AAA98406.1	M55547	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001650	38050	1306	48	OXA-90	OXA-90	CAJ77809.1	AM231719	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3005136	43353	6185	3862	OXA-906	OXA-906	QIC04089.1	MT040744.1	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001627	38027	1383	1575	OXA-91	OXA-91	ABF47914.1	DQ519086	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005336	43695	6441	4068	OXA-915	OXA-915	WP_168370988.1	NG_068224	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001632	38032	1427	902	OXA-92	OXA-92	ABC61637.1	DQ335566	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005323	43680	6422	4055	OXA-926	OXA-926	WP_114268491.1	NG_070748	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001628	38028	1428	457	OXA-93	OXA-93	ABF47916.1	DQ519087	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005331	43690	6430	4063	OXA-930	OXA-930	WP_151781119.1	NG_070785	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005330	43689	6429	4062	OXA-931	OXA-931	WP_190259776.1	NG_070786	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001629	38029	1466	899	OXA-94	OXA-94	ABF47917.1	DQ519088	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001630	38030	1539	1040	OXA-95	OXA-95	ABF47918.1	DQ519089	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001631	38031	1617	605	OXA-96	OXA-96	ABF47919.1	DQ519090	OXA beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
@@ -2212,30 +2297,70 @@ ARO:3002414	38814	983	637	OXY-6-2	OXY-6-2	CAI43423.1	AJ871875	OXY beta-lactamase
 ARO:3002415	38815	1060	34	OXY-6-3	OXY-6-3	CAI43424.1	AJ871876	OXY beta-lactamase	cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3002416	38816	1141	913	OXY-6-4	OXY-6-4	CAI43425.1	AJ871877	OXY beta-lactamase	cephalosporin;monobactam;penam	antibiotic inactivation
 ARO:3005150	43367	6199	3875	PAC-1	PAC-1	APM84516.1	KY285014.1	PAC beta-lactamase	cephalosporin	antibiotic inactivation
-ARO:3005068	43272	6101	3806	ParR	ParR	AAG05188.1	AE004091.2	Outer Membrane Porin (Opr);resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux;reduced permeability to antibiotic
-ARO:3005067	43271	6100	3805	ParS	ParS	AAG05187.1	AE004091.2	Outer Membrane Porin (Opr);resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux;reduced permeability to antibiotic
+ARO:3005068	43272	6101	3806	ParR	ParR	AAG05188.1	AE004091.2	Outer Membrane Porin (Opr);resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux;reduced permeability to antibiotic
+ARO:3005067	43271	6100	3805	ParS	ParS	AAG05187.1	AE004091.2	Outer Membrane Porin (Opr);resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;aminoglycoside antibiotic;carbapenem;cephalosporin;cephamycin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;macrolide antibiotic;monobactam;penam;penem;phenicol antibiotic;tetracycline antibiotic	antibiotic efflux;reduced permeability to antibiotic
 ARO:3003493	40095	3252	2116	Pasteurella multocida 16S rRNA mutation conferring resistance to spectinomycin	Pasteurella multocida 16S rRNA mutation conferring resistance to spectinomycin		NC_002663.1	16s rRNA with mutation conferring resistance to aminoglycoside antibiotics	aminoglycoside antibiotic;glycopeptide antibiotic;glycylcycline;nucleoside antibiotic;peptide antibiotic;tetracycline antibiotic	antibiotic target alteration
 ARO:3000024	36033	5128	2081	patA	patA	AAK76137.1	AE005672.3	ATP-binding cassette (ABC) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000025	36034	5129	2112	patB	patB	AAK76136.1	AE005672.3	ATP-binding cassette (ABC) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3000621	36963	4586	726	PC1 beta-lactamase (blaZ)	PC1 beta-lactamase (blaZ)	ABX30738.1	CP000732.1	blaZ beta-lactamase	penam	antibiotic inactivation
 ARO:3002497	38897	1308	400	PDC-1	PDC-1	ACQ82807.1	FJ666065	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3002509	38909	1385	678	PDC-10	PDC-10	ACQ82815.1	FJ666073	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005305	43662	6403	4037	PDC-104	PDC-104	WP_058129018.1	NG_049871.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005277	43634	6373	4009	PDC-105	PDC-105	WP_063864562.1	NG_049872.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005132	43349	6179	3858	PDC-11	PDC-11	ACX31161.1	GQ845014.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005303	43660	6401	4035	PDC-117	PDC-117	WP_031687354.1	NG_055481.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005278	43635	6374	4010	PDC-118	PDC-118	WP_094009806.1	NG_055482.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005309	43666	6407	4041	PDC-119	PDC-119	WP_058128316.1	NG_055483.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005127	43344	6165	3853	PDC-14	PDC-14	ACX31164.1	GQ845017.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005306	43663	6404	4038	PDC-173	PDC-173	WP_099982812.1	NG_055780.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005299	43656	6397	4031	PDC-183	PDC-183	WP_087587954.1	NG_054969.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005295	43652	6393	4027	PDC-19a	PDC-19a	WP_003132320.1	NG_049889.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005292	43649	6390	4024	PDC-19b	PDC-19b	WP_023874922.1	NG_049890.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3002498	38898	1468	1107	PDC-2	PDC-2	ACQ82806.1	FJ666064	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005285	43642	6383	4017	PDC-201	PDC-201	WP_087587966.1	NG_054986.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005300	43657	6398	4032	PDC-207	PDC-207	WP_058161279.1	NG_054992.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005289	43646	6387	4021	PDC-212	PDC-212	WP_088245217.1	NG_055274.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005274	43631	6370	4006	PDC-225	PDC-225	WP_058169941.1	NG_056103.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005155	43372	6204	3880	PDC-23	PDC-23	CBZ41773.1	FR822747.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005304	43661	6402	4036	PDC-231	PDC-231	WP_104009860.1	NG_056423.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005143	43360	6193	3869	PDC-240	PDC-240	AUT06977.1	MG696099.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005297	43654	6395	4029	PDC-255	PDC-255	WP_109791189.1	NG_057587.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005311	43668	6409	4043	PDC-257	PDC-257	WP_109791191.1	NG_057589.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005281	43638	6379	4014	PDC-258	PDC-258	WP_109791192.1	NG_057590.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005284	43641	6382	4016	PDC-264	PDC-264	WP_109791198.1	NG_057596.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005296	43653	6394	4028	PDC-272	PDC-272	WP_109791204.1	NG_057603.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005156	43373	6206	3881	PDC-28	PDC-28	AEM44533.1	JF326298.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
-ARO:3002500	38900	1541	715	PDC-3	PDC-3	ACQ82808.1	FJ666066	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005276	43633	6372	4008	PDC-284	PDC-284	WP_111672897.1	NG_060554.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005287	43644	6385	4019	PDC-285	PDC-285	WP_073669325.1	NG_060555.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005307	43664	6405	4039	PDC-292	PDC-292	WP_111672904.1	NG_060562.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005298	43655	6396	4030	PDC-293	PDC-293	WP_111672905.1	NG_060563.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3002500	38900	1541	715	PDC-3	PDC-3	ACQ82808.1	FJ666066	PDC beta-lactamase	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic inactivation
+ARO:3005301	43658	6399	4033	PDC-306	PDC-306	WP_116786838.1	NG_061625.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005310	43667	6408	4042	PDC-313	PDC-313	WP_122630851.1	NG_062264.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005280	43637	6377	4013	PDC-323	PDC-323	WP_150823481.1	NG_066530.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005279	43636	6376	4012	PDC-324	PDC-324	WP_150823482.1	NG_066531.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005288	43645	6386	4020	PDC-337	PDC-337	WP_148044429.1	NG_065889.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005286	43643	6384	4018	PDC-346	PDC-346	WP_148044438.1	NG_065898.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005290	43647	6388	4022	PDC-352	PDC-352	WP_148044444.1	NG_065904.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005302	43659	6400	4034	PDC-376	PDC-376	WP_148044462.1	NG_065928.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005293	43650	6391	4025	PDC-380	PDC-380	WP_148044466.1	NG_065932.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005283	43640	6381	4011	PDC-384	PDC-384	WP_150823491.1	NG_066540.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005308	43665	6406	4040	PDC-393	PDC-393	WP_164461297.1	NG_068033.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3002501	38901	1619	1	PDC-4	PDC-4	ACQ82809.1	FJ666067	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005157	43374	6207	3882	PDC-41	PDC-41	AIG19978.1	KJ949056.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005282	43639	6380	4015	PDC-413	PDC-413	WP_168247897.1	NG_068201.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005312	43669	6410	4044	PDC-429	PDC-429	WP_179284370.1	NG_070195.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005134	43351	6183	3860	PDC-43	PDC-43	AIG19980.1	KJ949058.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005275	43632	6371	4007	PDC-438	PDC-438	WP_179284377.1	NG_070204.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005142	43359	6192	3868	PDC-44	PDC-44	AIG19981.1	KJ949059.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005313	43670	6411	4045	PDC-449	PDC-449	WP_179284386.1	NG_070215.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005145	43362	6195	3871	PDC-45	PDC-45	AIG19982.1	KJ949060.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005294	43651	6392	4026	PDC-461	PDC-461	WP_197749410.1	NG_071219.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3005291	43648	6389	4023	PDC-464	PDC-464	WP_197749413.1	NG_071222.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005128	43345	6170	3854	PDC-47	PDC-47	AIG19984.1	KJ949062.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005148	43365	6198	3874	PDC-48	PDC-48	AIG19985.1	KJ949063.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005146	43363	6196	3872	PDC-49	PDC-49	AIG19986.1	KJ949064.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
-ARO:3002502	38902	1696	352	PDC-5	PDC-5	ACQ82810.1	FJ666068	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
+ARO:3002502	38902	1696	352	PDC-5	PDC-5	ACQ82810.1	FJ666068	PDC beta-lactamase	carbapenem;cephalosporin;cephamycin;monobactam;penam	antibiotic inactivation
 ARO:3005147	43364	6197	3873	PDC-50	PDC-50	AIG19987.1	KJ949065.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005129	43346	6172	3855	PDC-51	PDC-51	AIG19988.1	KJ949066.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
 ARO:3005141	43358	6191	3867	PDC-52	PDC-52	AIG19989.1	KJ949067.1	PDC beta-lactamase	carbapenem;cephalosporin;monobactam	antibiotic inactivation
@@ -2310,16 +2435,16 @@ ARO:3003702	40355	3408	2215	Pseudomonas aeruginosa gyrA and parC conferring resi
 ARO:3003684	40319	5277	2196	Pseudomonas aeruginosa gyrA conferring resistance to fluoroquinolones	Pseudomonas aeruginosa gyrA conferring resistance to fluoroquinolones	AAG06556.1	AE004091.2	fluoroquinolone resistant gyrA	fluoroquinolone antibiotic;nybomycin	antibiotic target alteration
 ARO:3003686	40321	5273	2224	Pseudomonas aeruginosa oprD with mutation conferring resistance to imipenem	Pseudomonas aeruginosa oprD with mutation conferring resistance to imipenem	AAG04347.1	AE004091.2	Outer Membrane Porin (Opr)	carbapenem;cephalosporin;cephamycin;monobactam;penam;penem	reduced permeability to antibiotic
 ARO:3003685	40320	5275	2198	Pseudomonas aeruginosa parE conferring resistance to fluoroquinolones	Pseudomonas aeruginosa parE conferring resistance to fluoroquinolones	AAG08352.1	AE004091.2	fluoroquinolone resistant parE	fluoroquinolone antibiotic	antibiotic target alteration
-ARO:3004107	41228	5395	2775	Pseudomonas aeruginosa soxR	Pseudomonas aeruginosa soxR	AAG05661.1	AE004091.2	ATP-binding cassette (ABC) antibiotic efflux pump;major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;cephalosporin;fluoroquinolone antibiotic;glycylcycline;penam;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux;antibiotic target alteration
+ARO:3004107	41228	5395	2775	Pseudomonas aeruginosa soxR	Pseudomonas aeruginosa soxR	AAG05661.1	AE004091.2	ATP-binding cassette (ABC) antibiotic efflux pump;major facilitator superfamily (MFS) antibiotic efflux pump;resistance-nodulation-cell division (RND) antibiotic efflux pump	acridine dye;cephalosporin;disinfecting agents and intercalating dyes;fluoroquinolone antibiotic;glycylcycline;penam;phenicol antibiotic;rifamycin antibiotic;tetracycline antibiotic;triclosan	antibiotic efflux;antibiotic target alteration
 ARO:3003895	40597	5367	1600	Pseudomonas mutant PhoP conferring resistance to colistin	Pseudomonas mutant PhoP conferring resistance to colistin	AAG04568.1	AE004091.2	ATP-binding cassette (ABC) antibiotic efflux pump;pmr phosphoethanolamine transferase	macrolide antibiotic;peptide antibiotic	antibiotic efflux;antibiotic target alteration
 ARO:3003896	40598	5426	383	Pseudomonas mutant PhoQ conferring resistance to colistin	Pseudomonas mutant PhoQ conferring resistance to colistin	AAG04569.1	AE004091.2	ATP-binding cassette (ABC) antibiotic efflux pump;pmr phosphoethanolamine transferase	macrolide antibiotic;peptide antibiotic	antibiotic efflux;antibiotic target alteration
 ARO:3003688	40325	3389	2201	PvrR	PvrR	AAM15533.1	AF482691.2	phenotypic variant regulator	aminoglycoside antibiotic	resistance by absence
 ARO:3003046	39480	265	372	qacA	qacA	BAJ09383.1	AB566411	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3003047	39481	307	558	qacB	qacB	AAQ10694.1	AF535087	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
-ARO:3005009	43197	6044	3754	qacE	qacE	AEH26330.1	HQ730118.1	major facilitator superfamily (MFS) antibiotic efflux pump	N/A	antibiotic efflux
-ARO:3005010	43198	6045	3755	qacEdelta1	qacEdelta1	AAC44316.1	U49101.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye	antibiotic efflux
-ARO:3003836	40527	6141	2323	qacH	qacH	CAA76544.1	Y16945.1	small multidrug resistance (SMR) antibiotic efflux pump	N/A	antibiotic efflux
-ARO:3005098	43313	6142	3830	qacL	qacL	AAZ42322	DQ149925.1	small multidrug resistance (SMR) antibiotic efflux pump	N/A	antibiotic efflux
+ARO:3005009	43197	6044	3754	qacE	qacE	AEH26330.1	HQ730118.1	major facilitator superfamily (MFS) antibiotic efflux pump	disinfecting agents and intercalating dyes	antibiotic efflux
+ARO:3005010	43198	6045	3755	qacEdelta1	qacEdelta1	AAC44316.1	U49101.1	major facilitator superfamily (MFS) antibiotic efflux pump	acridine dye;disinfecting agents and intercalating dyes	antibiotic efflux
+ARO:3003836	40527	6141	2323	qacH	qacH	CAA76544.1	Y16945.1	small multidrug resistance (SMR) antibiotic efflux pump	disinfecting agents and intercalating dyes	antibiotic efflux
+ARO:3005098	43313	6142	3830	qacL	qacL	AAZ42322	DQ149925.1	small multidrug resistance (SMR) antibiotic efflux pump	disinfecting agents and intercalating dyes	antibiotic efflux
 ARO:3000448	36587	398	1206	qepA	QepA1	AEZ36150.1	JQ064560	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3004103	41215	5516	2771	QepA2	QepA2	ACF70723.1	EU847537.1	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
 ARO:3004378	41552	4267	2879	QepA3	QepA3	AEZ36150.1	JQ064560.1	major facilitator superfamily (MFS) antibiotic efflux pump	fluoroquinolone antibiotic	antibiotic efflux
@@ -2565,10 +2690,47 @@ ARO:3003154	39731	917	1557	SHV-187	SHV-187	CEA29750.1	LN515533	SHV beta-lactamas
 ARO:3003155	39732	989	344	SHV-188	SHV-188	CEA29751.1	LN515534	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3003156	39733	2125	1968	SHV-189	SHV-189	AJO16047.1	KP050494	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001077	37457	1147	1438	SHV-19	SHV-19	AAF34333.1	AF117743	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005239	43595	6325	3961	SHV-193	SHV-193	WP_063864668.1	NG_050058.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005223	43579	6308	3945	SHV-194	SHV-194	WP_065419573.1	NG_051169.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005210	43566	6288	3925	SHV-195	SHV-195	WP_068981648.1	NG_051484.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005229	43585	6314	3951	SHV-196	SHV-196	WP_069280714.1	NG_051521.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005214	43570	6292	3929	SHV-197	SHV-197	WP_072081993.1	NG_052582.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005209	43565	6287	3924	SHV-198	SHV-198	WP_088245226.1	NG_055284.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005232	43588	6317	3954	SHV-199	SHV-199	WP_094009815.1	NG_055503.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005237	43593	6323	3959	SHV-1b-b	SHV-1b-b	WP_063864669.1	NG_050059.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001060	37440	1234	1053	SHV-2	SHV-2	AAD37413.1	AF148851	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001078	37458	1314	825	SHV-20	SHV-20	AAF34334.1	AF117744	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005248	43604	6334	3970	SHV-200	SHV-200	WP_096807447.1	NG_055588.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005211	43567	6289	3926	SHV-201	SHV-201	WP_122630838.1	NG_062244.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005253	43609	6339	3975	SHV-202	SHV-202	WP_122630839.1	NG_062245.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005249	43605	6335	3971	SHV-203	SHV-203	WP_099156054.1	NG_055668.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005213	43569	6291	3928	SHV-204	SHV-204	WP_109791212.1	NG_057611.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005207	43563	6285	3922	SHV-205	SHV-205	WP_122630863.1	NG_062276.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005227	43583	6312	3949	SHV-206	SHV-206	WP_004143591.1	NG_062278.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005236	43592	6322	3958	SHV-207	SHV-207	WP_064733493.1	NG_062279.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005226	43582	6311	3948	SHV-208	SHV-208	WP_122630865.1	NG_062280.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005242	43598	6328	3964	SHV-209	SHV-209	WP_122630866.1	NG_062281.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001079	37459	1391	374	SHV-21	SHV-21	AAF34335.1	AF117745	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005225	43581	6310	3947	SHV-210	SHV-210	WP_115196748.1	NG_062282.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005230	43586	6315	3952	SHV-211	SHV-211	WP_023341517.1	NG_062283.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005212	43568	6290	3927	SHV-212	SHV-212	WP_122630867.1	NG_062284.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005251	43607	6337	3973	SHV-213	SHV-213	WP_122630868.1	NG_062285.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005235	43591	6321	3957	SHV-214	SHV-214	WP_122630869.1	NG_062286.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005243	43599	6329	3965	SHV-215	SHV-215	WP_122630870.1	NG_062287.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005215	43571	6293	3930	SHV-216	SHV-216	WP_122630871.1	NG_062288.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005250	43606	6336	3972	SHV-217	SHV-217	WP_122630872.1	NG_062289.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005238	43594	6324	3960	SHV-218	SHV-218	WP_122630873.1	NG_062290.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005231	43587	6316	3953	SHV-219	SHV-219	WP_122630874.1	NG_062291.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001080	37460	1474	1158	SHV-22	SHV-22	AAF34336.1	AF117746	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005224	43580	6309	3946	SHV-220	SHV-220	WP_109232473.1	NG_062292.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005252	43608	6338	3974	SHV-221	SHV-221	WP_122630875.1	NG_062293.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005208	43564	6286	3923	SHV-222	SHV-222	WP_122630876.1	NG_062294.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005234	43590	6319	3956	SHV-223	SHV-223	WP_117241614.1	NG_062295.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005240	43596	6326	3962	SHV-224	SHV-224	WP_104159136.1	NG_062296.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005241	43597	6327	3963	SHV-225	SHV-225	WP_122630877.1	NG_062297.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005228	43584	6313	3950	SHV-226	SHV-226	WP_122630878.1	NG_062298.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005233	43589	6318	3955	SHV-227	SHV-227	WP_122630879.1	NG_062299.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
+ARO:3005247	43603	6333	3969	SHV-228	SHV-228	WP_122630880.1	NG_062300.1	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001081	37461	1560	1599	SHV-23	SHV-23	AAF34337.1	AF117747	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001082	37462	1637	57	SHV-24	SHV-24	BAA84973.1	AB023477	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
 ARO:3001083	37463	1713	1014	SHV-25	SHV-25	AAF37209.2	AF208796	SHV beta-lactamase	carbapenem;cephalosporin;penam	antibiotic inactivation
@@ -2823,7 +2985,9 @@ ARO:3001384	37784	848	302	TEM-207	TEM-207	AGK40892.1	KC818234	TEM beta-lactamase
 ARO:3001385	37785	929	1916	TEM-208	TEM-208	AGL39384.1	KC865667	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3001386	37786	1001	1010	TEM-209	TEM-209	AGW25367.1	KF240808	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000892	37272	1077	631	TEM-21	TEM-21	CAA76794.1	Y17582	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3001387	37787	6349	3985	TEM-210	TEM-210	WP_032072208.1	NG_050243.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3001388	37788	1159	1672	TEM-211	TEM-211	AHA80960.1	KF513179	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3001389	37789	6350	3986	TEM-212	TEM-212	WP_063864901.1	NG_050245.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3001390	37790	1246	709	TEM-213	TEM-213	AHA58207.1	KF663615	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3001391	37791	2126	378	TEM-214	TEM-214	AJO16044.1	KP050491	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3001392	37792	2127	1999	TEM-215	TEM-215	AJO16045.1	KP050492	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
@@ -2832,14 +2996,39 @@ ARO:3001394	37794	1572	751	TEM-217	TEM-217	CDN33426.1	HG934763	TEM beta-lactamas
 ARO:3003157	39734	1649	1218	TEM-219	TEM-219	AIS39742.1	KM114268	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000893	37273	1725	445	TEM-22	TEM-22	CAA76795.1	Y17583	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3003158	39735	3723	2398	TEM-220	TEM-220	AIW68620.1	KM998962.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005255	43611	6351	3987	TEM-224	TEM-224	WP_063864908.1	NG_050254.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005256	43612	6352	3988	TEM-225	TEM-225	WP_075985686.1	NG_052651.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005257	43613	6353	3989	TEM-226	TEM-226	WP_085562398.1	NG_054684.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005258	43614	6354	3990	TEM-227	TEM-227	WP_085562406.1	NG_054696.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005259	43615	6355	3991	TEM-228	TEM-228	WP_164461302.1	NG_068038.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005260	43616	6356	3992	TEM-229	TEM-229	WP_080699425.1	NG_056416.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005261	43617	6357	3993	TEM-230	TEM-230	WP_104009854.1	NG_056417.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005262	43618	6358	3994	TEM-231	TEM-231	WP_104009855.1	NG_056418.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005263	43619	6359	3995	TEM-232	TEM-232	WP_109545059.1	NG_057472.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005264	43620	6360	3996	TEM-233	TEM-233	WP_109791184.1	NG_057581.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005265	43621	6361	3997	TEM-234	TEM-234	WP_109791210.1	NG_057609.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005266	43622	6362	3998	TEM-235	TEM-235	WP_110174956.1	NG_059898.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005267	43624	6363	3999	TEM-236	TEM-236	WP_116786831.1	NG_061611.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005268	43625	6364	4000	TEM-237	TEM-237	WP_122630841.1	NG_062250.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005269	43626	6365	4001	TEM-238	TEM-238	WP_131419583.1	NG_067163.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000894	37274	1801	2000	TEM-24	TEM-24	CAA46345.1	X65253	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005270	43627	6366	4002	TEM-240	TEM-240	WP_150823495.1	NG_066544.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005271	43628	6367	4003	TEM-241	TEM-241	WP_148044472.1	NG_065938.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005272	43629	6368	4004	TEM-242	TEM-242	WP_148044473.1	NG_065939.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3005273	43630	6369	4005	TEM-243	TEM-243	WP_197749416.1	NG_071226.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000896	37276	5840	811	TEM-26	TEM-26	WP_047028173.1	NG_050256.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000898	37278	1958	1022	TEM-28	TEM-28	AAC32891.1	U37195	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000899	37279	2036	1011	TEM-29	TEM-29	CAA76796.1	Y17584	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000875	37255	4678	1819	TEM-3	TEM-3	CAA45828.1	X64523.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000900	37280	930	735	TEM-30	TEM-30	CAD24670.1	AJ437107	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000901	37281	6342	3978	TEM-31	TEM-31	WP_165539487.1	NG_068213.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000902	37282	6343	3979	TEM-32	TEM-32	WP_052944427.1	NG_050261.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000903	37283	4506	415	TEM-33	TEM-33	ADL13944.1	GU371926	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000904	37284	1160	54	TEM-34	TEM-34	AGE11905.1	KC292503	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000905	37285	6344	3980	TEM-35	TEM-35	WP_063864910.1	NG_050264.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000906	37286	6345	3981	TEM-36	TEM-36	WP_075985685.1	NG_052650.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000907	37287	6346	3982	TEM-37	TEM-37	WP_159373457.1	NG_068214.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000909	37289	6347	3983	TEM-39	TEM-39	WP_148044474.1	NG_065940.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000876	37256	5503	2115	TEM-4	TEM-4	CDR98216.1	LK391770.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000910	37290	1247	1436	TEM-40	TEM-40	CBX53726.1	FR717535	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000911	37291	6246	860	TEM-42	TEM-42	CAA66659.1	X98047	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
@@ -2848,6 +3037,7 @@ ARO:3000914	37294	1495	1278	TEM-45	TEM-45	CAA64682.1	X95401	TEM beta-lactamase	c
 ARO:3000916	37296	1573	77	TEM-47	TEM-47	CAA71322.1	Y10279	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000917	37297	1650	1785	TEM-48	TEM-48	CAA71323.1	Y10280	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000918	37298	1726	918	TEM-49	TEM-49	CAA71324.1	Y10281	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000877	37257	6340	3976	TEM-5	TEM-5	WP_109963600.1	NG_068215.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000921	37301	1802	504	TEM-52	TEM-52	CAA73933.1	Y13612	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000922	37302	1886	1740	TEM-53	TEM-53	AAD22538.1	AF104441	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000923	37303	1959	1173	TEM-54	TEM-54	AAD22539.1	AF104442	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
@@ -2879,6 +3069,7 @@ ARO:3000953	37333	1497	1890	TEM-86	TEM-86	CAC43230.1	AJ277415	TEM beta-lactamase
 ARO:3000954	37334	1575	115	TEM-87	TEM-87	AAG44570.1	AF250872	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000955	37335	1652	956	TEM-88	TEM-88	AAK14792.1	AY027590	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000956	37336	1727	647	TEM-89	TEM-89	AAK71474.1	AY039040	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
+ARO:3000881	37261	6341	3977	TEM-9	TEM-9	WP_102607453.1	NG_056168.1	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000957	37337	1804	1137	TEM-90	TEM-90	AAK30619.1	AF351241	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000958	37338	1888	277	TEM-91	TEM-91	BAB16308.1	AB049569	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
 ARO:3000959	37339	1961	220	TEM-92	TEM-92	AAF66653.1	AF143804	TEM beta-lactamase	cephalosporin;monobactam;penam;penem	antibiotic inactivation
@@ -2966,6 +3157,8 @@ ARO:3000237	36376	563	826	tolC	TolC	ACN32294.1	FJ768952	ATP-binding cassette (AB
 ARO:3003679	40314	5270	2192	TriA	TriA	AAG03546.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	triclosan	antibiotic efflux
 ARO:3003680	40315	5384	2193	TriB	TriB	AAG03547.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	triclosan	antibiotic efflux
 ARO:3003681	40316	5383	2194	TriC	TriC	AAG03548.1	AE004091.2	resistance-nodulation-cell division (RND) antibiotic efflux pump	triclosan	antibiotic efflux
+ARO:3005334	43693	6439	4066	Trimethoprim-resistant dihydrofolate reductase DfrA42	Trimethoprim-resistant dihydrofolate reductase DfrA42	WP_045475347.1	NG_071176	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
+ARO:3005345	43704	6450	4077	Trimethoprim-resistant dihydrofolate reductase DfrA43	Trimethoprim-resistant dihydrofolate reductase DfrA43	WP_188331861.1	NG_070721	trimethoprim resistant dihydrofolate reductase dfr	diaminopyrimidine antibiotic	antibiotic target replacement
 ARO:3004450	41645	5501	2889	TRU-1	TRU-1	ABW05394.1	EU046614.1	TRU beta-lactamase	cephalosporin;penam	antibiotic inactivation
 ARO:3003060	39494	4186	49	tsnR	tsnR	AAA99931.1	L39157.1	non-erm 23S ribosomal RNA methyltransferase (A1067)	peptide antibiotic	antibiotic target alteration
 ARO:3000844	37224	1163	392	TUS-1 beta-lactamase	TUS-1	AAN63648.1	AF441287	TUS beta-lactamase	carbapenem;cephalosporin;cephamycin	antibiotic inactivation

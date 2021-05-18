@@ -27,6 +27,14 @@ length(unique(aro_index$`ARO Accession`))
 y<-colsplit(aro_index$`ARO Accession`, ":", c("X", "ARO Number"))
 aro_index<-cbind(aro_index, select(y, `ARO Number`))
 ```
+Import CARD data version 3.0.4:
+
+```{r}
+aro_index_304 <- read_delim("~/Documentos/Repos/UOC-Master/PRJNA307231/aro_index_3.0.4.tsv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+y<-colsplit(aro_index_304$`ARO Accession`, ":", c("X", "ARO Number"))
+aro_index_304<-cbind(aro_index_304, select(y, `ARO Number`))
+```
 
 # Calculate RPKM
 
@@ -41,9 +49,12 @@ Obtain AMR gene family from CARD database:
 ```{r}
 RGI_data<-merge(
 select(RGI_data, -`AMR Gene Family`, -`Drug Class`, -`Resistance Mechanism`),
-select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number")
+select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,`ARO Number` ), by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
 
+```{r}
+table(is.na(RGI_data$`AMR Gene Family`))
+```
 
 ```{r}
 library(dplyr)
@@ -110,14 +121,21 @@ Trasform ARIBA notation to merge with CARD  DB
 ```{r}
 library(stringr)
 library(reshape2)
-y<-colsplit(Ariba_data$ref_name, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","X"))
+y<-colsplit(Ariba_data$ref_name, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final","Model Sequence ID","X"))
 y$NCBI<-ifelse(str_detect(y$init_final, "_"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
 y$init_final<-ifelse(str_detect(y$init_final, "_"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "_"), y$X, y$`Model Sequence ID`)
+y$`ARO Accession`<-ifelse(y$`ARO Accession`<3000000, y$NCBI, y$`ARO Accession`)
+y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
 y<-select(y, -X)
 Ariba_data<-cbind(Ariba_data,y)
+Ariba_data$`ARO Accession`<-as.numeric(Ariba_data$`ARO Accession`)
 
-Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession` ) , by="Model Sequence ID")
+Ariba_data<-merge(Ariba_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`,  `ARO Number`) , by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+```
+
+```{r}
+table(is.na(Ariba_data$`AMR Gene Family`))
 ```
 
 
@@ -151,15 +169,29 @@ Trasform GROOT notation and merge with CARD  DB
 library(stringr)
 library(reshape2)
 library(dplyr)
-y<-colsplit(Groot_data$AMR.gene, "\\.", c("ARO Term", "ARO Acession","NCBI","init_final","Model Sequence ID","X"))
-
-y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final) )
+y<-colsplit(Groot_data$AMR.gene, "\\.", c("ARO Term", "ARO Accession","NCBI","init_final","Model Sequence ID","X"))
+y$NCBI<-ifelse(str_detect(y$init_final, "-"),y$NCBI ,paste(y$NCBI,".",y$init_final, sep = "") )
 y$init_final<-ifelse(str_detect(y$init_final, "-"), y$init_final, y$`Model Sequence ID`)
 y$`Model Sequence ID`<-ifelse(str_detect(y$`Model Sequence ID`, "-"), y$X, y$`Model Sequence ID`)
+y$`ARO Accession`<-ifelse(y$`ARO Accession`<3000000, y$NCBI, y$`ARO Accession`)
+y$`ARO Accession`<-str_split_fixed(y$`ARO Accession`, "\\.", 2)[ ,1]
 y<-select(y, -X)
 Groot_data<-cbind(Groot_data,y)
-Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession` ) , by="Model Sequence ID")
+Groot_data$`ARO Accession`<-as.numeric(Groot_data$`ARO Accession`)
+Groot_data<-merge(Groot_data, select(aro_index,`Model Sequence ID`, `AMR Gene Family`,`Drug Class`, `Resistance Mechanism`,`Protein Accession`, `ARO Number`) ,  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
 ```
+
+```{r}
+Groot_data3<-merge(Groot_data, aro_index_304[ ,-1],  by.x = "ARO Accession", by.y="ARO Number", all.x = TRUE)
+```
+
+
+```{r}
+table(is.na(Groot_data2$`AMR Gene Family`))
+```
+** 3 secuencias de Groot no mapean con la base de datos CARD:**  
+Versión anterior de CARD?
+
 
 Remove non coding AMR sequences:
 
@@ -182,7 +214,6 @@ AMR_family_Groot<-Groot_data%>%
             sum_RPKM_groot=sum(RPKM))%>%arrange(desc(sum_RPKM_groot))
 kable(head(AMR_family_Groot))
 ```
-
 
 # ARIBA vs RGI vs GROOT
 
