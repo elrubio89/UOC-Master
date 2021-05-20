@@ -314,6 +314,8 @@ box_RGI| roc_RGI
 
 ### Análisis de discrodancias
 
+Añado la información de los pipelines que han detectado cada secuencia en cada base de datos:
+
 ```{r}
 RGI_data<-merge(RGI_data, select(AMR_family, pipelines, `AMR Gene Family`), by="AMR Gene Family", all.x = TRUE)
 
@@ -325,9 +327,7 @@ Ariba_data<-merge(Ariba_data, select(AMR_family, pipelines, `AMR Gene Family`), 
 ```{r}
 table(RGI_data$pipelines)
 ```
-
-
-
+Selecciono las secuencias discordantes para cada base de datos: 
 ```{r}
 RGI_seqs<-RGI_data%>%filter(pipelines!="All")%>%select(`Reference Sequence`)
 Groot_seqs<-Groot_data%>%filter(pipelines!="All")%>%select(AMR.gene)
@@ -342,14 +342,54 @@ write.table(Groot_seqs, "groot_analysis/Groot_seqs.txt", quote = FALSE, row.name
 write.table(Ariba_seqs, "ariba_analysis/Ariba_seqs.txt", quote = FALSE, row.names = FALSE, col.names = FALSE)
 ```
 
+Busco las secuencias originales que han mapeado con las secuencias discordantes en cada pipeline: 
 
 ```{bash}
 cd RGI_analysis
 samtools view argannot-150bp-10000-reads.fastq_RGI_output.temp.bam | grep -f RGI_seqs.txt > RGI_seqs_bam.txt
 ```
 
+```{bash}
+cd groot_analysis
+samtools view argannot-150bp-10000-reads-uniqseq.bam | grep -f Groot_seqs.txt > Groot_seqs_bam.txt
+```
 
+Ariba: no se genera nigún BAM file 
 
+Abro los archivos generados (Groot y RGI):
+```{r message=FALSE, warning=FALSE}
+library(readr)
+RGI_seqs_bam <- read_delim("RGI_analysis/RGI_seqs_bam.txt", 
+    "\t", escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)
+RGI_seqs_bam<-RGI_seqs_bam%>%select(X1, X3)%>%rename(data_seq=X1, `Reference Sequence`=X3 )
+```
 
+```{r message=FALSE, warning=FALSE}
+Groot_seqs_bam <- read_delim("groot_analysis/Groot_seqs_bam.txt", 
+    "\t", escape_double = FALSE, col_names = FALSE, 
+    trim_ws = TRUE)
+Groot_seqs_bam<-Groot_seqs_bam%>%select(X1, X3)%>%rename(data_seq=X1, `Reference Sequence`=X3 )
+Groot_seqs_bam$`Reference Sequence`<-str_remove(Groot_seqs_bam$`Reference Sequence`, "\\*")
+```
 
+Obtengo la información de CARD de las secuencias discordantes: 
+
+```{r}
+RGI_seqs_bam<-merge(RGI_seqs_bam, select(RGI_data, `AMR Gene Family`,`Reference Sequence`,`ARO Term`, `Resistance Mechanism`, `Drug Class`, RPKM, pipelines), by="Reference Sequence", all.x = TRUE)
+RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq, "~~~", 3)[,2]
+RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq_simplified, "\\)", 2)[ ,2]
+```
+
+```{r}
+
+Groot_seqs_bam<-merge(Groot_seqs_bam, select(Groot_data, `AMR Gene Family`,AMR.gene,`ARO Term`, `Resistance Mechanism`, `Drug Class`, RPKM, pipelines), by.x="Reference Sequence", by.y="AMR.gene", all.x = TRUE)
+Groot_seqs_bam$data_seq_simplified<-str_split_fixed(Groot_seqs_bam$data_seq, "~~~", 3)[,2]
+Groot_seqs_bam$data_seq_simplified<-str_split_fixed(Groot_seqs_bam$data_seq_simplified, "\\)", 2)[ ,2]
+```
+
+```{r}
+write_tsv(RGI_seqs_bam, "RGI_analysis/RGI_seqs_bam.tsv")
+write_tsv(Groot_seqs_bam, "groot_analysis/Groot_seqs_bam.tsv")
+```
 
