@@ -180,7 +180,6 @@ table(is.na(Groot_data$`AMR Gene Family`))
 ** 3 secuencias de Groot no mapean con la base de datos CARD:**  
 Versión anterior de CARD?
 
-
 Remove non coding AMR sequences:
 
 ```{r}
@@ -223,7 +222,7 @@ venntransform<-function(x){
 
 library(ggvenn)
 vennplot<-function(x){
-y<-ggplot(x) + geom_venn(aes(A = RGI, B = Ariba, C = Groot),fill_color = c("chartreuse", "orange", "darkorchid1"), text_size=4, set_name_size = 2, stroke_size = 0.2, show_percentage = FALSE)+theme_void()+coord_fixed()+theme(title=element_text(size=5))
+y<-ggplot(x) + geom_venn(aes(A = RGI, B = Ariba, C = Groot),fill_color = c("chartreuse", "orange", "darkorchid1"), text_size=4, set_name_size = 5, stroke_size = 0.2, show_percentage = FALSE)+theme_void()+coord_fixed()+theme(title=element_text(size=20))
   return(y)}
 ```
 
@@ -379,6 +378,7 @@ Obtengo la información de CARD de las secuencias discordantes:
 RGI_seqs_bam<-merge(RGI_seqs_bam, select(RGI_data, `AMR Gene Family`,`Reference Sequence`,`ARO Term`, `Resistance Mechanism`, `Drug Class`, RPKM, pipelines), by="Reference Sequence", all.x = TRUE)
 RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq, "~~~", 3)[,2]
 RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq_simplified, "\\)", 2)[ ,2]
+RGI_seqs_bam$concordance<-ifelse(tolower(RGI_seqs_bam$data_seq_simplified)%in%tolower(RGI_seqs_bam$`ARO Term`) | tolower(RGI_seqs_bam$`ARO Term`)%in%tolower(RGI_seqs_bam$data_seq_simplified),1,0)
 ```
 
 ```{r}
@@ -386,10 +386,21 @@ RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq_simplifi
 Groot_seqs_bam<-merge(Groot_seqs_bam, select(Groot_data, `AMR Gene Family`,AMR.gene,`ARO Term`, `Resistance Mechanism`, `Drug Class`, RPKM, pipelines), by.x="Reference Sequence", by.y="AMR.gene", all.x = TRUE)
 Groot_seqs_bam$data_seq_simplified<-str_split_fixed(Groot_seqs_bam$data_seq, "~~~", 3)[,2]
 Groot_seqs_bam$data_seq_simplified<-str_split_fixed(Groot_seqs_bam$data_seq_simplified, "\\)", 2)[ ,2]
+Groot_seqs_bam$concordance<-ifelse(tolower(Groot_seqs_bam$data_seq_simplified)%in%tolower(Groot_seqs_bam$`ARO Term`) | tolower(Groot_seqs_bam$`ARO Term`)%in%tolower(Groot_seqs_bam$data_seq_simplified) ,1,0)
 ```
 
 ```{r}
 write_tsv(RGI_seqs_bam, "RGI_analysis/RGI_seqs_bam.tsv")
 write_tsv(Groot_seqs_bam, "groot_analysis/Groot_seqs_bam.tsv")
 ```
+
+Calculo de sensibiliad, especificidad:
+
+VP: nº secuencias identificadas por los 3 pipelines + nº seq id por 1-2 pipelines correctamente.
+
+FP: nº de secuencias id por 1-2 pipelines incorrectamente
+
+FN: nº de secuencias no mapeadas
+
+VN: no hay (todas las secuencias son gene de resistencia)
 

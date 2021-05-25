@@ -1,8 +1,6 @@
 
 
-# Test data
-
-# Groot from ARG-ANNOT
+# Bash scripts: Test data
 
 ## RGI
 
@@ -136,7 +134,7 @@ bash $script $test 150
 
 ## ARIBA
 
-ARIBA requires forward and reverse sequences. I split the fastq file in two: 
+ARIBA requires forward and reverse sequences: we split the fastq file in two using fastqsplitter:
 
 ```bash
 fastqsplitter -i argannot-150bp-10000-reads.fastq -o argannot-150bp-10000-reads_split.1.fastq -o argannot-150bp-10000-reads_split2.fastq
