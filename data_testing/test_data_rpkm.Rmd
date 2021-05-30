@@ -180,6 +180,7 @@ table(is.na(Groot_data$`AMR Gene Family`))
 ** 3 secuencias de Groot no mapean con la base de datos CARD:**  
 Versión anterior de CARD?
 
+
 Remove non coding AMR sequences:
 
 ```{r}
@@ -222,7 +223,7 @@ venntransform<-function(x){
 
 library(ggvenn)
 vennplot<-function(x){
-y<-ggplot(x) + geom_venn(aes(A = RGI, B = Ariba, C = Groot),fill_color = c("chartreuse", "orange", "darkorchid1"), text_size=4, set_name_size = 5, stroke_size = 0.2, show_percentage = FALSE)+theme_void()+coord_fixed()+theme(title=element_text(size=20))
+y<-ggplot(x) + geom_venn(aes(A = RGI, B = Ariba, C = Groot),fill_color = c("chartreuse", "orange", "darkorchid1"), text_size=4, set_name_size = 2, stroke_size = 0.2, show_percentage = FALSE)+theme_void()+coord_fixed()+theme(title=element_text(size=5))
   return(y)}
 ```
 
@@ -254,10 +255,15 @@ AMR_family<-data_trans(AMR_family)
 
 
 ```{r}
-AMR_family[AMR_family$pipelines=="RGI only" ,1]
-AMR_family[AMR_family$pipelines=="Groot only" ,1]
-AMR_family[AMR_family$pipelines=="RGI+Groot" ,1]
-AMR_family[AMR_family$pipelines=="Groot+Ariba" ,1]
+discrodant_families<-list(AMR_family[AMR_family$pipelines=="RGI only" ,1],
+AMR_family[AMR_family$pipelines=="Groot only" ,1],
+AMR_family[AMR_family$pipelines=="RGI+Groot" ,1],
+AMR_family[AMR_family$pipelines=="Groot+Ariba" ,1])
+names(discrodant_families)<-c("RGI only", "Groot only", "RGI+Groot", "Groot+Ariba")
+```
+
+```{r}
+capture.output(discrodant_families, file = "discrodant_families.txt")
 ```
 
 
@@ -287,19 +293,19 @@ roc_RGI
 ```{r}
 AMR_family$pipelines<-factor(AMR_family$pipelines, ordered = TRUE, levels = c("RGI only", "Ariba only", "Groot only", "Groot+Ariba", "RGI+Groot", "RGI+Ariba", "All"))
 
-p_RGI<-ggplot(subset(AMR_family, AMR_family$RGI==1), aes(pipelines, sum_RPKM_RGI))+geom_boxplot(aes(colour=npipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=npipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("RGI")
+p_RGI<-ggplot(subset(AMR_family, AMR_family$RGI==1), aes(pipelines, sum_RPKM_RGI))+geom_boxplot(aes(colour=pipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=pipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("RGI")+scale_y_continuous(trans='log10')+theme(axis.text.x = element_text(angle=45, hjust = 1), axis.title.x = element_blank())
 
-p_Ariba<-ggplot(subset(AMR_family, AMR_family$Ariba==1), aes(pipelines, sum_RPKM_ariba))+geom_boxplot(aes(colour=npipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=npipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Ariba")
+p_Ariba<-ggplot(subset(AMR_family, AMR_family$Ariba==1), aes(pipelines, sum_RPKM_ariba))+geom_boxplot(aes(colour=pipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=pipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Ariba")+scale_y_continuous(trans='log10')+theme(axis.text.x = element_text(angle=45, hjust=1), axis.title.x = element_blank())
 
-p_Groot<-ggplot(subset(AMR_family, AMR_family$Groot==1), aes(pipelines, sum_RPKM_groot))+geom_boxplot(aes(colour=npipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=npipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Groot")
-p_RGI+scale_y_continuous(trans='log10')
-p_Ariba+scale_y_continuous(trans='log10')
-p_Groot+scale_y_continuous(trans='log10')
+p_Groot<-ggplot(subset(AMR_family, AMR_family$Groot==1), aes(pipelines, sum_RPKM_groot))+geom_boxplot(aes(colour=pipelines), outlier.shape = NA, na.rm = TRUE)+geom_jitter(width = 0.2, aes(colour=pipelines))+theme_classic()+theme(legend.position = "none")+ggtitle("Groot")+scale_y_continuous(trans='log10')+theme(axis.text.x = element_text(angle=45, hjust=1),axis.title.x = element_blank())
+p_RGI+p_Ariba+p_Groot
 ```
 
 ```{r}
 box_RGI<-p_RGI+geom_abline(slope = 0, intercept = cp_RGI$optimal_cutpoint, color = "red", linetype = "dotted")+
   scale_y_continuous(trans='log10')
+
+box_RGI
 
 ```
 
@@ -374,6 +380,8 @@ Groot_seqs_bam$`Reference Sequence`<-str_remove(Groot_seqs_bam$`Reference Sequen
 
 Obtengo la información de CARD de las secuencias discordantes: 
 
+Obtengo la información de CARD de las secuencias discordantes: 
+
 ```{r}
 RGI_seqs_bam<-merge(RGI_seqs_bam, select(RGI_data, `AMR Gene Family`,`Reference Sequence`,`ARO Term`, `Resistance Mechanism`, `Drug Class`, RPKM, pipelines), by="Reference Sequence", all.x = TRUE)
 RGI_seqs_bam$data_seq_simplified<-str_split_fixed(RGI_seqs_bam$data_seq, "~~~", 3)[,2]
@@ -394,7 +402,7 @@ write_tsv(RGI_seqs_bam, "RGI_analysis/RGI_seqs_bam.tsv")
 write_tsv(Groot_seqs_bam, "groot_analysis/Groot_seqs_bam.tsv")
 ```
 
-Calculo de sensibiliad, especificidad:
+## Calculo de sensibiliad, especificidad:
 
 VP: nº secuencias identificadas por los 3 pipelines + nº seq id por 1-2 pipelines correctamente.
 
@@ -402,5 +410,67 @@ FP: nº de secuencias id por 1-2 pipelines incorrectamente
 
 FN: nº de secuencias no mapeadas
 
-VN: no hay (todas las secuencias son gene de resistencia)
+VN: no hay (todas las secuencias son genes de resistencia)
+
+Total: 10000 seq
+
+```{r}
+RGI_seqs_bam<- read_delim("RGI_analysis/RGI_seqs_bam_manual.csv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+table(RGI_seqs_bam$concordance)
+nrow(RGI_seqs_bam)
+```
+### RGI:
+9473 secuencias mapeadas: (mapping stats)
+  232 mapeadas por 2-1 pipeline (len de RGI_seqs_bam)
+    224 mapeadas correctamente
+    8 mapeadas incorrectamente
+  9241 mapeadas por los 3 pipelines (9473-232)
+527 secuencias no mapeadas
+
+```{r}
+vp<-9241+232
+fp<-8
+fn<-527
+vn<-0
+sensibilidad_rgi<-vp*100/(vp+fn)
+especificidad_rgi<-vn*100/(vn+fp)
+vpp_rgi<-vp*100/(vp+fp)
+
+sensibilidad_rgi
+especificidad_rgi
+vpp_rgi
+```
+### GROOT:
+```{bash}
+samtools view groot_analysis/argannot-150bp-10000-reads-uniqseq.bam | wc -l
+```
+```{r message=FALSE, warning=FALSE}
+Groot_seqs_bam<- read_delim("groot_analysis/Groot_seqs_bam_manual.csv", 
+    "\t", escape_double = FALSE, trim_ws = TRUE)
+nrow(Groot_seqs_bam)
+table(Groot_seqs_bam$concordance)
+```
+
+8822 secuencias mapeadas: (bam file)
+  694 mapeadas por 2-1 pipeline (len de Groot_seqs_bam)
+    680 mapeadas correctamente
+    14 mapeadas incorrectamente
+  8128 mapeadas por los 3 pipelines (8822-694)
+1178 secuencias no mapeadas
+
+
+```{r}
+vp<-8128+680
+fp<-14
+fn<-1178
+vn<-0
+sensibilidad_groot<-vp*100/(vp+fn)
+especificidad_groot<-vn*100/(vn+fp)
+vpp_groot<-vp*100/(vp+fp)
+
+sensibilidad_groot
+especificidad_groot
+vpp_groot
+```
 
