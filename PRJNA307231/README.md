@@ -1,6 +1,6 @@
 [TOC]
 
-# 10 samples: PRJNA307231
+# Bash scripts: PRJNA307231
 
 
 
@@ -52,7 +52,7 @@ multiqc .
 
 ### Quality filter (fastp):
 
-- q-: remove sequences with qualiti <=q20
+- q-: remove sequences with quality <=q20
 - l-: minimum sequence length= 50 pb
 - *-f: trim first 10 bp from each sequence*
 - -c: enable base correction in overlapped regions (only for PE data), default is disabled
