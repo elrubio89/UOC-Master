@@ -1,5 +1,5 @@
 ---
-title: "RPKM"
+title: "R analysis test data"
 output:
   html_document:
     toc: yes
