@@ -1,7 +1,6 @@
 ---
 title: "RPKM_multsamples"
 author: "Elisa Rubio"
-date: "4/27/2021"
 output:
   html_document:
     toc: true
@@ -427,15 +426,16 @@ kable(head(All))
 ##write.csv(comparison_df, "comparison_df.csv")
 ```
 
-###################################################################################################
 
+
+```{r eval=FALSE, include=FALSE}
 ## ROC curves
-https://cran.r-project.org/web/packages/cutpointr/vignettes/cutpointr.html
+##https://cran.r-project.org/web/packages/cutpointr/vignettes/cutpointr.html
 
-Transform npipelines variable to:  
-TRUE: >=2 pipelines  
-FALSE: 1 pipeline  
-```{r}
+##Transform npipelines variable to:  
+##TRUE: >=2 pipelines  
+##FALSE: 1 pipeline  
+
 comparison_df$pipelines_class<-ifelse(comparison_df$npipelines==1,0,1)
 library(cutpointr)
 
@@ -456,21 +456,22 @@ roc_groot<-ROC(cp_groot)+ggtitle("ROC curve Groot")
 ```
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 box_RGI<-p_RGI+geom_abline(slope = 0, intercept = cp_RGI$optimal_cutpoint, color = "red", linetype = "dotted")
 box_Ariba<-p_Ariba+geom_abline(slope = 0, intercept = cp_ariba$optimal_cutpoint, color = "red", linetype = "dotted")
 box_Groot<-p_Groot+geom_abline(slope = 0, intercept = cp_groot$optimal_cutpoint, color = "red", linetype = "dotted")
 
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 (box_RGI |roc_RGI)/(box_Ariba| roc_ariba)/(box_Groot|roc_groot)
 ```
 
 
-## Apply treshold
 
-```{r}
+
+```{r eval=FALSE, include=FALSE}
+## Apply treshold
 x<-comparison_list[[1]]
 treshold<-function(x){
 x$sum_RPKM_RGI<-ifelse(x$sum_RPKM_RGI<=cp_RGI$optimal_cutpoint, NA, x$sum_RPKM_RGI)
@@ -486,7 +487,7 @@ comparison_list_th<-lapply(comparison_list, treshold)
 
 ```
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 comparison_list_th_venn<-lapply(comparison_list_th, venntransform)
 venn_plots_th<-lapply(comparison_list_th_venn, vennplot)
 for (i in 1:length(venn_plots_th))
@@ -496,7 +497,7 @@ grid.arrange(grobs = venn_plots_th, ncol = 4, top="AMR gene family (th)")
 ```
 
 
-```{r}
+```{r eval=FALSE, include=FALSE}
 for (i in 1:length(venn_plots))
   {venn_plots[[i]]<-venn_plots[[i]]+ggtitle(metadata$Run[i])}
 grid.arrange(grobs = venn_plots, ncol = 4, top="AMR gene family")
@@ -524,9 +525,10 @@ grid.arrange(grobs = venn_plots, ncol = 4, top="AMR gene family")
 
 
 
-### Quantitative comparison
+
 
 ```{r eval=FALSE, include=FALSE}
+### Quantitative comparison
 library(knitr)
 kable(head(comparison_df))
 
@@ -542,10 +544,11 @@ length(comparison_df$`AMR Gene Family`)
 n_distinct(comparison_df2$`Drug Class`)
 length(comparison_df2$`Drug Class`)
 ```
-Create a dataframe with all AMR gene families and all Gene classes for each sample:
-Change NA values for 0
+
 
 ```{r eval=FALSE, include=FALSE}
+##Create a dataframe with all AMR gene families and all Gene classes for each sample:
+##Change NA values for 0
 quant_comp<-function(df_comp){
 nsamples<-n_distinct(df_comp$Sample)
 namrgenes<-n_distinct(df_comp$`AMR Gene Family`)
@@ -579,32 +582,36 @@ comparison_df<-quant_comp(comparison_df)
 
 ```
 
-Select metadata variables:  
-+No more than 1 NA
-+At least 2 samples in each group (for categorical variables)
+
 
 ```{r eval=FALSE, include=FALSE}
+##Select metadata variables:  
+##+No more than 1 NA
+##+At least 2 samples in each group (for categorical variables)
 metadata2<-select(metadata, 'Run', 'HIV_serostatus','Host_Age', 'HIV_Profile',  'PCR_human_papilloma_virus', 'host_Residency_Area', 'HCV_coinfection', 'leukocytes','stool_consistency', 'Lymphocytes',  'Anal_cytology')
 dim(comparison_df)
 ```
-Add metadata variables to analysis:
+
 
 ```{r eval=FALSE, include=FALSE}
+##Add metadata variables to analysis:
 comparison_df<-merge(comparison_df, metadata2, by.x = 'Sample', by.y = 'Run')
 comparison_df2<-merge(comparison_df2, metadata2, by.x = 'Sample', by.y = 'Run')
 ```
 
-Transform to list grouped by AMR gene family and Drug Class respectively: 
 ```{r eval=FALSE, include=FALSE}
+##Transform to list grouped by AMR gene family and Drug Class respectively: 
 comparison_list_amr = split(comparison_df, f = comparison_df$`AMR Gene Family`)
 comparison_list_drug = split(comparison_df2, f = comparison_df2$`Drug Class`)
 ```
 
-Compare RPKM values according to HIV serostatus with the 3 pipelines:   
-+Obtain wicox.test p values  
-+Merge datsets  
+
 
 ```{r eval=FALSE, include=FALSE,warning=FALSE}
+##Compare RPKM values according to HIV serostatus with the 3 pipelines:   
+##+Obtain wicox.test p values  
+##+Merge datsets  
+
 HIVfun<-function(list){
 pvalues_RGI<-lapply(list, function(x) wilcox.test(sum_RPKM_RGI~HIV_serostatus, data=x)$p.value)
 pvalues_ariba<-lapply(list, function(x) wilcox.test(sum_RPKM_ariba~HIV_serostatus, data=x)$p.value)
@@ -623,9 +630,10 @@ pvalues_all_amr<-HIVfun(comparison_list_amr)
 pvalues_all_drug<-HIVfun(comparison_list_drug)
 ```
 
-Retain only statistically significant AMR gene families and Drug classes(VIH +-) according to at least one pipeline:
+
 
 ```{r eval=FALSE, include=FALSE}
+##Retain only statistically significant AMR gene families and Drug classes(VIH +-) according to at least one pipeline:
 library(knitr)
 subset_sig<-function(pvalues)
 {sig<-subset(pvalues, pvalues$RGI<=0.05 | pvalues$Ariba<=0.05 | pvalues$Groot<=0.05)
